@@ -1,0 +1,273 @@
+# Figures
+
+The report's 27 figures as PNG files: Figures 1 to 9 of the main text and A1 to A18 of the appendix. The files keep the short names of the report's sources, which do not follow the report's numbering (`fig_F3k.png`, for example, is Figure 4). Each heading below therefore gives the figure's number in the report and its file; the line under it names the script in `report/` that redraws the figure from `results/` into `build/figures/` under the same name. The figure's title (the first sentence of its caption), its alternative text and its long description follow.
+
+## Figure 1: `fig_F1.png`
+
+Drawn by `report/build_fig_F1.py`.
+
+**Modeled daily mean NO<sub>2</sub> (ppb) of the two U-Net emulators against CMAQ, contiguous US land cells of the 12 km grid, test days of the held-out years 2015 to 2019.**
+
+Alternative text: Ten binned scatter plots of emulator against CMAQ daily mean NO2 for two U-Nets and five held-out years, to judge agreement.
+
+Description: Figure of ten square panels in two rows and five columns. Column heads over the top row, under one spanning head Held-out year: 2015, 2016, 2017, 2018, 2019. Row heads at the right edge of each row, read upward: Reference U-Net (top row, tagged (a) at its top-left), Residual U-Net (bottom row, tagged (b)). Horizontal axis label, shared: CMAQ daily mean NO2 (ppb), tick labels on the bottom row. Vertical axis label, shared: Emulator daily mean NO2 (ppb), tick labels on the left column. Both axes of every panel have ticks 0, 10, 20, 30. Each panel shows gray square bins of 0.5 ppb whose shade gives the count of cell-days, a dashed black one-to-one line on a thin white band from 0 to 30 ppb, and a solid least-squares line fitted to the binned values, blue in the top row and vermilion in the bottom row, also on a thin white band. Above each panel's upper right corner its slope is printed: Reference U-Net 2015, 0.92; Reference U-Net 2016, 0.93; Reference U-Net 2017, 0.94; Reference U-Net 2018, 0.97; Reference U-Net 2019, 0.93; Residual U-Net 2015, 0.87; Residual U-Net 2016, 0.91; Residual U-Net 2017, 0.90; Residual U-Net 2018, 0.90; Residual U-Net 2019, 0.93. A line key directly under the axis label names the dashed line One-to-one and the solid lines Least-squares fit, reference U-Net and Least-squares fit, residual U-Net. Under it, a key titled Cell-days per bin has six gray swatches from light to black: 1 to 9, 10 to 99, 100 to 999, 1,000 to 9,999, 10,000 to 99,999, 100,000 or more.
+
+## Figure 2: `fig_F2.png`
+
+Drawn by `report/build_fig_maps.py`.
+
+**Modeled mean surface NO<sub>2</sub> (ppb) over the 339 test days of 2016, CMAQ and two emulators, contiguous US land cells of the 12 km grid, 2016 held out.**
+
+Alternative text: US maps of 2016 mean NO2 from CMAQ and the residual U-Net, and each U-Net minus CMAQ in purple and green, with insets.
+
+Description: Top row: two maps of the contiguous United States in an equal-area projection, (a) CMAQ and (b) the residual U-Net, mean surface NO2 over the 2016 test days in six classes of one blue hue from pale (under 1 ppb) to dark (16 ppb or more), each title giving the land mean (1.54 ppb for both); a horizontal key under them has breaks at 1, 2, 4, 8 and 16 ppb and a pointed open end. Middle and bottom rows: (c) the reference U-Net minus CMAQ and (d) the residual U-Net minus CMAQ, in four purple classes (below CMAQ) and four green classes (above CMAQ), steps of 0.2 ppb; dots mark the cells where the emulator is above CMAQ. A box on each map marks the Northeast corridor, enlarged at its right with a 200 km scale bar; in each inset small open circles mark New York and Philadelphia, each named beside it or joined to its name by a thin line. Under the maps, one key names the classes, with the lowest and highest differences, -4.7 and 3.5 ppb, at its ends and, above it, the share of land cells in each class as a solid vermilion line (residual U-Net) and a dashed blue line (reference U-Net); entries name the dots and the hatch. Hatching marks the 85 cells of US land not evaluated; white lines are state boundaries and a gray line the coast and national borders; water and land outside the US are white.
+
+## Figure 3: `fig_F3.png`
+
+Drawn by `report/build_fig_F3.py`.
+
+**Modeled daily mean NO<sub>2</sub> (ppb) of CMAQ and the residual U-Net in 10 large US cities, and each U-Net minus CMAQ, on the 339 test days of 2016.**
+
+Alternative text: Ten city panels of 2016 daily NO2, CMAQ and the residual U-Net, with strips of each U-Net minus CMAQ.
+
+Description: Figure of ten city panel pairs in five rows and two columns. Key above, centered: CMAQ (wide light gray line), Reference U-Net (blue dashed line), Residual U-Net (vermilion solid line), Zero difference (black line). City panels: (a) New York, (b) Los Angeles, (c) Chicago, (d) Houston, (e) Phoenix, (f) Philadelphia, (g) San Antonio, (h) San Diego, (i) Dallas, (j) Austin. Each has an upper plot with CMAQ and the residual U-Net, vertical ticks 0, 20, 40 at the left, and a strip below with each U-Net minus CMAQ about a black zero line, vertical ticks minus 10, 0, 10 at the right. Gaps in each series mark the 27 held-back and buffer days; ticks mark month starts. One title at the far left, City daily mean NO2 (ppb), and one at the far right, U-Net minus CMAQ (ppb), each centered on the ten panel pairs. Month names under the bottom strips; axis label Month of 2016.
+
+## Figure 4: `fig_F3k.png`
+
+Drawn by `report/build_fig_F3k.py`.
+
+**Mean error (ME) of each U-Net against CMAQ in modeled daily mean NO<sub>2</sub> (ppb), 10 large US cities, 339 test days of 2016.**
+
+Alternative text: Ten city rows of each U-Net's 2016 mean error against CMAQ, on pale 10th to 90th percentile bars of the daily differences.
+
+Description: Figure of one panel. Key above, centered: Reference U-Net (pale blue bar, square), Residual U-Net (pale vermilion bar, disc), Zero difference (black line). Title: Mean error (U-Net minus CMAQ), 2016. One row per city, highest CMAQ mean first; rows, top to bottom: New York, Los Angeles, Chicago, Houston, Philadelphia, Phoenix, Dallas, San Diego, San Antonio, Austin; each row has a blue square and a vermilion disc at the two U-Nets' mean errors over the 339 test days of 2016, joined by a gray line, each on a pale bar from the 10th to the 90th percentile with end ticks, the square's bar above the disc's; a black zero line; vertical axis title City, a tick at each city; horizontal axis U-Net minus CMAQ (ppb), ticks minus 3 to 3.
+
+## Figure 5: `fig_F4.png`
+
+Drawn by `report/build_fig_F4.py`.
+
+**Four comparisons, fixed in advance, of the residual U-Net with other models of daily mean surface NO<sub>2</sub>, scored against CMAQ on the contiguous US land cells of the 12 km grid, held-out years 2015 to 2019.**
+
+Alternative text: Four stacked panels of the four comparisons fixed in advance, each with four rows of a point and its interval.
+
+Description: A key line above panel (a) names a solid line Zero and a dashed line Margin. In every panel the rows, from the top, are named at the left and each row's interval level is printed at the right; one vertical title, Analysis, at the left and one, Interval level, at the right are centred on the four stacked panels. Panel (a), titled C-1: weekday climatology, shows C-1: skill score of the residual U-Net against the weekday climatology. Horizontal axis title: Skill score; ticks 0.70, 0.75, 0.80. A short broken part of the axis at its left holds the dashed margin line at 0, tick 0. Rows: Confirmatory, filled vermilion circle, 98.75%: 0.763 (0.752 to 0.771); 14-day blocks, open circle, 98.75%: 0.763 (0.749 to 0.772); Forward year, open triangle, 95%: 0.769 (0.752 to 0.780); Held-back days, open diamond, 95%: 0.759 (0.724 to 0.774). Panel (b), titled C-2: gradient-boosted trees, shows C-2: RMSE of the gradient-boosted trees minus that of the residual U-Net. Horizontal axis title: RMSE difference (ppb); ticks 0.00, 0.05, 0.10, 0.15, 0.20, 0.25, 0.30. A solid vertical line at 0 and a dashed vertical line at the margin, 0.05 (Margin, 0.05 ppb). Rows: Confirmatory, filled vermilion circle, 98.33%: 0.100 (0.095 to 0.105); 14-day blocks, open circle, 98.33%: 0.100 (0.093 to 0.105); Forward year, open triangle, 95%: 0.088 (0.080 to 0.094); Held-back days, open diamond, 95%: 0.115 (0.094 to 0.130). Panel (c), titled C-3: reference U-Net, shows C-3: RMSE of the reference U-Net minus that of the residual U-Net. Horizontal axis title: RMSE difference (ppb); ticks 0.00, 0.05, 0.10, 0.15, 0.20, 0.25, 0.30. A solid vertical line at 0 and a dashed vertical line at the margin, 0.05 (Margin, 0.05 ppb). Rows: Confirmatory, filled vermilion circle, 97.5%: 0.074 (0.071 to 0.076); 14-day blocks, open circle, 97.5%: 0.074 (0.070 to 0.077); Forward year, open triangle, 95%: 0.072 (0.065 to 0.078); Held-back days, open diamond, 95%: 0.085 (0.075 to 0.092). Panel (d), titled C-4: weekday climatology, mean map, shows C-4: mean-map RMSE of the weekday climatology minus that of the residual U-Net. Horizontal axis title: Mean-map RMSE difference (ppb); ticks 0.00, 0.05, 0.10, 0.15, 0.20, 0.25, 0.30. A solid vertical line at 0 and a dashed vertical line at the margin, 0.05 (Margin, 0.05 ppb). Rows: Confirmatory, filled vermilion circle, 95%: 0.129 (0.117 to 0.152); 14-day blocks, open circle, 95%: 0.129 (0.117 to 0.155); Forward year, open triangle, 95%: 0.164 (0.129 to 0.195); Held-back days, open diamond, 95%: 0.174 (0.161 to 0.262).
+
+## Figure 6: `fig_F5.png`
+
+Drawn by `report/build_fig_F5.py`.
+
+**Skill score, RMSE and mean error of modeled daily mean NO<sub>2</sub> against CMAQ by held-out year, 2015 to 2019, test days, contiguous US land cells of the 12 km grid.**
+
+Alternative text: Four panels: skill score by model with year ranges, U-Net seeds, RMSE by held-out year, and mean error against unbiased RMSE.
+
+Description: Panel (a) Skill score by model: one row per model, from the top Residual U-Net; Reference U-Net; Per-cell network; Gradient-boosted trees; Linear model on tree features; Weather regression; Weekday climatology; Emission-scaled climatology; Cell mean; vertical axis Model; horizontal axis Skill score; each row a large mark at the five-year mean, small filled gray dots for each year and a pale band over their range; a vertical line at 0, labeled Zero skill at its upper end. Panel (b) Every seed: vertical axis Model and held-out year, rows 2016 and 2019 under Residual U-Net, then 2016 and 2019 under Reference U-Net; horizontal axis Skill score; open marks for each seed, filled for seed 0. Panel (c) RMSE by held-out year: vertical axis RMSE (ppb); horizontal axis Held-out year, 2015 to 2019; each model a line of marks, set apart within each year. The key at the right of (c) and (d) names the nine models in the order of (a); under it a solid black line is keyed Zero mean error. Panel (d) Mean error and unbiased RMSE: horizontal axis Unbiased RMSE (ppb), vertical axis Mean error (ppb); gray rings of equal RMSE, with values 0.50, 0.75, 1.00 and 1.25 on a scale over the frame titled Equal RMSE (ppb), each value over a tick where its ring meets the top of the frame; a line at 0, keyed Zero mean error under the models' key; marks of Residual U-Net, Reference U-Net, Gradient-boosted trees, Weekday climatology, each labeled by its year's last two digits and joined to it by a short gray line; a gray box around the crowded marks of the U-Nets and the trees near zero mean error, drawn magnified in an inset in the lower middle, joined to the box by two gray lines; the marks in the box are labeled in the inset; mean error is drawn at 1.5 times the scale of unbiased RMSE, here and in the inset, so the rings appear as stretched arcs.
+
+## Figure 7: `fig_F6.png`
+
+Drawn by `report/build_fig_F6.py`.
+
+**Mean error of modeled daily mean NO<sub>2</sub> (ppb, the model minus CMAQ) in each decile of CMAQ's cell-days, contiguous US land cells of the 12 km grid, test days of the held-out years 2015 to 2019.**
+
+Alternative text: Mean error by CMAQ decile for two U-Nets with year ranges, two baselines, and decile 10 by year.
+
+Description: Key above, three columns, the last entry, a black line, centred in a row of its own: Residual U-Net; Its range over the years; Reference U-Net; Its range over the years; Gradient-boosted trees; Weekday climatology; Zero difference. Panel (a) Five-year mean and range over years, by decile: horizontal axis Decile of CMAQ's daily mean NO2 in each held-out year, ticks 1 to 10; top axis Bound between deciles, range over years (ppb), between deciles 1 to 2: 0.21 to 0.26; 2 to 3: 0.36 to 0.44; 3 to 4: 0.53 to 0.65; 4 to 5: 0.72 to 0.88; 5 to 6: 0.94 to 1.14; 6 to 7: 1.19 to 1.45; 7 to 8: 1.51 to 1.86; 8 to 9: 1.99 to 2.49; 9 to 10: 2.89 to 3.74; vertical axis Model minus CMAQ (ppb); a line at 0. The light vermilion band and the light blue band both widen toward decile 10, where all four mean lines fall below 0; the weekday climatology's line leaves the panel at its lower edge, marked by a downward arrow and the value minus 1.44. Panel (b) Decile 10 by year, below panel (a) at the same width: rows 2015 to 2019 (vertical axis Held-out year); horizontal axis Model minus CMAQ, decile 10 (ppb); a disc for the residual U-Net and a square for the reference U-Net in each year, joined by a gray line; a line at 0.
+
+## Figure 8: `fig_A_F6.png`
+
+Drawn by `report/build_fig_A_F6.py`.
+
+**Error of modeled daily mean surface NO<sub>2</sub> against CMAQ by stratum: RMSE (ppb) on the contiguous US land cells of the 12 km grid, held-out years 2015 to 2019.**
+
+Alternative text: Dot charts of RMSE for four models by season and urban class, coast class and boundary-layer decile, then magnified.
+
+Description: Key in one row: Residual U-Net; Reference U-Net; Gradient-boosted trees; Weekday climatology; each a mark on a pale bar. Panel (a) By season and urban class: vertical axis RMSE (ppb), ticks 0, 2, 4; horizontal axis Season and urban class: Winter, Spring, Summer, Fall under each of Urban cells, Intermediate cells, Rural cells. Means: Urban cells winter: Residual U-Net 1.53, Reference U-Net 1.83, Gradient-boosted trees 2.02, Weekday climatology 4.40; Urban cells spring: Residual U-Net 1.22, Reference U-Net 1.44, Gradient-boosted trees 1.58, Weekday climatology 3.17; Urban cells summer: Residual U-Net 1.09, Reference U-Net 1.31, Gradient-boosted trees 1.40, Weekday climatology 2.41; Urban cells fall: Residual U-Net 1.36, Reference U-Net 1.59, Gradient-boosted trees 1.81, Weekday climatology 3.70; Intermediate cells winter: Residual U-Net 1.16, Reference U-Net 1.35, Gradient-boosted trees 1.44, Weekday climatology 2.99; Intermediate cells spring: Residual U-Net 0.83, Reference U-Net 0.98, Gradient-boosted trees 1.03, Weekday climatology 1.98; Intermediate cells summer: Residual U-Net 0.72, Reference U-Net 0.86, Gradient-boosted trees 0.89, Weekday climatology 1.52; Intermediate cells fall: Residual U-Net 0.96, Reference U-Net 1.12, Gradient-boosted trees 1.21, Weekday climatology 2.43; Rural cells winter: Residual U-Net 0.57, Reference U-Net 0.64, Gradient-boosted trees 0.68, Weekday climatology 1.15; Rural cells spring: Residual U-Net 0.43, Reference U-Net 0.49, Gradient-boosted trees 0.50, Weekday climatology 0.81; Rural cells summer: Residual U-Net 0.40, Reference U-Net 0.46, Gradient-boosted trees 0.47, Weekday climatology 0.70; Rural cells fall: Residual U-Net 0.47, Reference U-Net 0.54, Gradient-boosted trees 0.57, Weekday climatology 0.97. Panel (b) By coast and edge class: vertical axis RMSE (ppb), ticks 0.0, 0.5, 1.0, 1.5, 2.0; horizontal axis Coast and edge class: Grid edge (710 cells), Coast (1,855 cells), Border (4,151 cells), Interior (46,878 cells). Means: Grid edge: Residual U-Net 0.58, Reference U-Net 0.63, Gradient-boosted trees 0.66, Weekday climatology 1.08; Coast: Residual U-Net 0.71, Reference U-Net 0.81, Gradient-boosted trees 0.86, Weekday climatology 1.52; Border: Residual U-Net 0.56, Reference U-Net 0.64, Gradient-boosted trees 0.69, Weekday climatology 1.22; Interior: Residual U-Net 0.48, Reference U-Net 0.56, Gradient-boosted trees 0.58, Weekday climatology 0.99. Panel (c) By boundary-layer height decile: on the vertical scale of panel (b), ticked, not labeled again; horizontal axis Boundary-layer height decile (1 shallowest), deciles 1, 2, 3, 4, 5, 6, 7, 8, 9, 10. Means: decile 1: Residual U-Net 0.74, Reference U-Net 0.83, Gradient-boosted trees 0.89, Weekday climatology 1.61; decile 2: Residual U-Net 0.64, Reference U-Net 0.74, Gradient-boosted trees 0.77, Weekday climatology 1.18; decile 3: Residual U-Net 0.57, Reference U-Net 0.65, Gradient-boosted trees 0.68, Weekday climatology 1.01; decile 4: Residual U-Net 0.52, Reference U-Net 0.60, Gradient-boosted trees 0.62, Weekday climatology 0.95; decile 5: Residual U-Net 0.48, Reference U-Net 0.56, Gradient-boosted trees 0.58, Weekday climatology 0.92; decile 6: Residual U-Net 0.44, Reference U-Net 0.52, Gradient-boosted trees 0.54, Weekday climatology 0.91; decile 7: Residual U-Net 0.41, Reference U-Net 0.49, Gradient-boosted trees 0.50, Weekday climatology 0.92; decile 8: Residual U-Net 0.38, Reference U-Net 0.44, Gradient-boosted trees 0.46, Weekday climatology 0.92; decile 9: Residual U-Net 0.35, Reference U-Net 0.40, Gradient-boosted trees 0.41, Weekday climatology 0.86; decile 10: Residual U-Net 0.31, Reference U-Net 0.34, Gradient-boosted trees 0.35, Weekday climatology 0.69. Panel (d) As (a), magnified: vertical axis Season and urban class, rows Winter, urban, Spring, urban, Summer, urban, Fall, urban, Winter, intermediate, Spring, intermediate, Summer, intermediate, Fall, intermediate, Winter, rural, Spring, rural, Summer, rural, Fall, rural; horizontal axis RMSE (ppb), ticks 0.0, 0.5, 1.0, 1.5, 2.0; weekday climatology means beyond the axis printed after an arrow: winter, urban 4.40; spring, urban 3.17; summer, urban 2.41; fall, urban 3.70; winter, intermediate 2.99; fall, intermediate 2.43. Panel (e) As (b), magnified: vertical axis Coast and edge class, rows Grid edge, Coast, Border, Interior. Panel (f) As (c), magnified: vertical axis Boundary-layer height decile, rows 1 (shallowest), 2, 3, 4, 5, 6, 7, 8, 9, 10 (deepest). Each on the same horizontal axis RMSE (ppb), ticks 0.4, 0.8, 1.2; weekday climatology means beyond it printed after an arrow: coast 1.52; boundary-layer decile 1 1.61.
+
+## Figure 9: `fig_F7.png`
+
+Drawn by `report/build_fig_maps.py`.
+
+**Mean difference between the residual U-Net and CMAQ in modeled daily mean surface NO<sub>2</sub> (ppb) by season, contiguous US land cells of the 12 km grid, test days of the held-out years 2015 to 2019.**
+
+Alternative text: Four US maps by season: the residual U-Net minus CMAQ, mean of five held-out years, purple below and green above.
+
+Description: Four maps of the contiguous United States in an equal-area projection, two by two: (a) winter (JFD), (b) spring (MAM), (c) summer (JJA), (d) fall (SON), each titled with its land mean (-0.027, -0.018, -0.002 and -0.002 ppb). Each cell shows the residual U-Net minus CMAQ, the mean of the five held-out years, in four purple classes (below CMAQ) and four green classes (above CMAQ), steps of 0.1 ppb; dots mark the cells where the emulator is above CMAQ. Under each map a bar splits its land cells into those below CMAQ (dark gray, share printed at the left) and above it (light gray, share at the right), with a mark at 50 percent (69 and 31, 62 and 38, 47 and 53, 43 and 57 percent). One key block under the maps: at the left a color bar titled Residual U-Net minus CMAQ, mean NO2 (ppb), with the lowest and highest values, -1.5 and 1.2 ppb, at its ends and the two sides named under them; at the right three entries name the bars, the dots and the hatch. Hatching marks the 85 cells of US land not evaluated; white lines are state boundaries and a gray line the coast and national borders; water and land outside the US are white.
+
+## Figure A1: `fig_ad1_design.png`
+
+Drawn by `report/build_fig_ad1_design.py`.
+
+**Study design of the emulators of modeled daily mean surface NO<sub>2</sub> on the contiguous US grid: the role of each day of 2015 to 2019 in each of the five folds.**
+
+Alternative text: Calendar of five fold rows, 2015 to 2019, showing test, training, validation and held-back days.
+
+Description: Five horizontal strips, one per held-out year 2015 to 2019 (left axis, Held-out year), across the days of 2015 to 2019 (bottom axis, Calendar year). In each strip the held-out year is dark (test days); the other four years are pale (training days) with mid-tone stripes every fifth ISO week (validation days). Narrow white columns with a thin outline run through all five strips at the same dates: the held-back and buffer days, three blocks a year in 2015 to 2018 and the last weeks of 2019. Right axis, Test days: 2015 338, 2016 339, 2017 338, 2018 338, 2019 334.
+
+## Figure A2: `fig_F2S.png`
+
+Drawn by `report/build_fig_F2S.py`.
+
+**Modeled mean surface NO<sub>2</sub> (ppb) of each land cell over the 2016 test days: the two U-Nets against CMAQ, contiguous US land cells of the 12 km grid, 2016 held out of training.**
+
+Alternative text: Per-cell 2016 mean NO2 of two U-Nets against CMAQ, the spread of their differences, and the differences by CMAQ level.
+
+Description: Six panels in three rows, with a key at the top: Residual U-Net (vermilion solid line, disc), Reference U-Net (blue dashed line, square), Zero difference (black line) and Level 0.2 (black dashed line). Row 1. Panels a (reference U-Net) and b (residual U-Net): x axis CMAQ 2016 cell mean NO2 (ppb), y axis U-Net 2016 cell mean NO2 (ppb), both logarithmic over one range shared by the two panels, gray bins in classes of 1 to 9, 10 to 99 and 100 to 999 cells per bin and a black one-to-one line on top; key under them: Cells per bin, 1 to 9, 10 to 99 and 100 to 999, and One-to-one. Panel c, Per-cell difference, 2016: back-to-back step histograms of U-Net minus CMAQ (ppb), the residual U-Net above a dark gray baseline and the reference U-Net below it, y axis Cells, a black zero line; each U-Net's mean difference marked by a short stroke on the baseline, keyed under the panel as Mean difference (residual U-Net minus 0.002 ppb, reference U-Net minus 0.026 ppb). Row 2. Panel d, Absolute difference: share of land cells (%) against the absolute difference (ppb) from 0 to 0.4, a black dashed line at 0.2 ppb with the shares 95.7% (residual) and 88.2% (reference) marked; panel e, Signed difference: the same share against U-Net minus CMAQ from minus 0.4 to 0.4 ppb, a black zero line. Row 3. Panel f: median and 10th and 90th percentiles of U-Net minus CMAQ (ppb) against CMAQ 2016 cell mean NO2 (ppb, logarithmic, 0.1-decade bins), a black zero line, and a gray bar strip of cells per bin below, its ticks and title Cells at the right.
+
+## Figure A3: `fig_A_F3.png`
+
+Drawn by `report/build_fig_maps.py`.
+
+**Mean difference between the residual U-Net and CMAQ in modeled daily mean surface NO<sub>2</sub> (ppb) over the test days of each held-out year, contiguous US land cells of the 12 km grid.**
+
+Alternative text: Five US maps of the residual U-Net minus CMAQ, one per held-out year, and two strips of yearly shares and means.
+
+Description: Five maps of the contiguous United States in an equal-area projection, two a row: (a) 2015, 338 test days, (b) 2016, 339 (as Figure 2(d)), (c) 2017, 338, (d) 2018, 338, (e) 2019, 334, each the held-out year's test-day mean of the residual U-Net minus CMAQ, in four purple classes (below CMAQ) and four green classes (above CMAQ), steps of 0.2 ppb; dots mark the cells where the residual U-Net is above CMAQ. Beside (e), two strips list the years from 2015 at the top to 2019 at the bottom, y axis titled Held-out year: (f) Below CMAQ, x axis Land cells (%), the percent of land cells below CMAQ, each year a filled vermilion disc on a line from 50 percent, and (g) Land mean, x axis Difference (ppb), the land mean, each a disc on a line from zero, with the values in a column at the right of each strip (82, 48, 48, 47 and 27 percent; -0.099, -0.002, -0.001, -0.002 and +0.040 ppb for 2015 to 2019); 2016 is an open disc. One key block under the maps: at the left a color bar titled Residual U-Net minus CMAQ, mean NO2 (ppb), with the lowest and highest values, -6.5 and 3.5 ppb, at its ends and the two sides named under them; at the right six entries name the discs, the two strips' black lines (Half the land cells, Zero difference), the dots and the hatch. Hatching marks the 85 cells of US land not evaluated; white lines are state boundaries and a gray line the coast and national borders; water and land outside the US are white.
+
+## Figure A4: `fig_A_F1.png`
+
+Drawn by `report/build_fig_A_F1.py`.
+
+**Modeled daily mean NO<sub>2</sub> (ppb) of CMAQ and the reference U-Net in 10 large US cities, and each U-Net against CMAQ, on the 339 test days of 2016.**
+
+Alternative text: Ten panels of 2016 city daily NO2, CMAQ and the reference U-Net, then ten scatters of each U-Net against CMAQ.
+
+Description: Figure of ten line-chart panels in five rows and two columns, then ten square scatter panels in two rows of five. Key above, centered: CMAQ (wide light gray line), Reference U-Net (blue dashed line, square), Residual U-Net (vermilion disc), One-to-one (black line). Line panels: (a) New York, (b) Los Angeles, (c) Chicago, (d) Houston, (e) Phoenix, (f) Philadelphia, (g) San Antonio, (h) San Diego, (i) Dallas, (j) Austin; each shows CMAQ and the reference U-Net over 2016 with gaps at the held-back and buffer days; vertical ticks 0, 20, 40; shared label City daily mean NO2 (ppb); month names under the bottom row; axis label Month of 2016. Scatter panels: (k) New York, (l) Los Angeles, (m) Chicago, (n) Houston, (o) Phoenix, (p) Philadelphia, (q) San Antonio, (r) San Diego, (s) Dallas, (t) Austin; horizontal axis CMAQ city daily mean NO2 (ppb), vertical axis U-Net city daily mean NO2 (ppb), both 0 to 40 with ticks 0, 20, 40; small translucent blue squares and vermilion discs, one per test day, and a black one-to-one line.
+
+## Figure A5: `fig_A_F2.png`
+
+Drawn by `report/build_fig_A_F2.py`.
+
+**Modeled daily mean NO<sub>2</sub> (ppb) averaged over the contiguous US land cells of the 12 km grid, CMAQ and the two U-Net emulators, on the test days of each held-out year from 2015 to 2019, with each U-Net's daily difference from CMAQ.**
+
+Alternative text: Daily land mean NO2 of CMAQ and two U-Nets, five held-out years, and their differences; Table 2 gives the mean errors.
+
+Description: Figure of five year rows and two overlay panels. Key at the top: CMAQ (wide light gray line), Residual U-Net (vermilion solid line), Reference U-Net (blue dashed line), Zero difference (black line). Rows (a) 2015 held out to (e) 2019 held out: each an upper axes with the three daily series, vertical ticks 0, 2, 4 at the left, and a strip below with each U-Net minus CMAQ about a black zero line, vertical ticks minus 0.4, 0.0, 0.4 at the right; December 2019 shaded gray. One title at the far left, NO2 (ppb), and one at the far right, U-Net minus CMAQ (ppb), each centered on the five rows; each year's mean error is in Table 2. Month names under row (e); label Month of the held-out year. Panels (f) Residual U-Net minus CMAQ and (g) Reference U-Net minus CMAQ: the five years' daily differences overlaid, one shade per year from light (2015) to dark (2019), each year named at the right, a black zero line; label Month of each held-out year.
+
+## Figure A6: `fig_A_F5.png`
+
+Drawn by `report/build_fig_A_F5.py`.
+
+**Day-to-day persistence of the error of modeled daily mean surface NO<sub>2</sub> against CMAQ: the median over the contiguous US land cells of the 12 km grid of each cell's error autocorrelation, by lag, held-out years 2015 to 2019 (unitless).**
+
+Alternative text: Median error autocorrelation by lag for four models: lag 1 by season, then by season and by model.
+
+Description: Ten panels in three rows, with one key at the top. Key, models: Residual U-Net (vermilion solid line, disc), Reference U-Net (blue dashed line, square), Gradient-boosted trees (dark gray dash-dot line, triangle), Weekday climatology (light gray dotted line, cross); then the seasons Winter (JFD), Spring (MAM), Summer (JJA), Fall (SON) (thin gray lines, light to dark, marked in turn by a thin diamond, a plus, a star and a pentagon), Range over the five years (pale bars and band), and Level 0.2 (black dashed line). Row 1, panel (a) Lag 1 by season: y axis Season, rows Whole year, Winter (JFD), Spring (MAM), Summer (JJA), Fall (SON); for each, four marks, one per model, on pale bars; x axis Median error autocorrelation at lag 1, ticks 0.0, 0.1, 0.2, 0.3; a black dashed line at 0.2. Row 2, panels (b) Whole year, (c) Winter (JFD), (d) Spring (MAM), (e) Summer (JJA), (f) Fall (SON): the four models' lines over lags 1 to 14, the residual U-Net's range as a vermilion band and the reference U-Net's as two thin blue lines. Row 3, panels (g) Residual U-Net, (h) Reference U-Net, (i) Gradient-boosted trees, (j) Weekday climatology: the model's whole-year line and four thin gray season lines, each with its own mark. Shared axis titles of rows 2 and 3, each drawn once: Lag (days), under row 3, ticks 1, 7, 14 on both rows; Median error autocorrelation, ticks 0.0, 0.1, 0.2, 0.3, 0.4. Whole-year and season values, panel (b): mean median at lag 1, 7 and 14: Residual U-Net 0.18, 0.04, 0.04; Reference U-Net 0.18, 0.05, 0.05; Gradient-boosted trees 0.19, 0.03, 0.03; Weekday climatology 0.32, 0.03, 0.02. Whole-year and season values, panel (c): mean median at lag 1, 7 and 14: Residual U-Net 0.13, 0.01, minus 0.01; Reference U-Net 0.11, 0.01, minus 0.00; Gradient-boosted trees 0.15, 0.00, minus 0.01; Weekday climatology 0.30, minus 0.01, minus 0.03. Whole-year and season values, panel (d): mean median at lag 1, 7 and 14: Residual U-Net 0.15, 0.00, 0.00; Reference U-Net 0.15, 0.01, 0.01; Gradient-boosted trees 0.16, 0.00, 0.00; Weekday climatology 0.29, 0.02, minus 0.01. Whole-year and season values, panel (e): mean median at lag 1, 7 and 14: Residual U-Net 0.17, 0.01, 0.01; Reference U-Net 0.18, 0.01, 0.02; Gradient-boosted trees 0.18, 0.01, 0.01; Weekday climatology 0.29, 0.00, 0.01. Whole-year and season values, panel (f): mean median at lag 1, 7 and 14: Residual U-Net 0.14, 0.02, 0.01; Reference U-Net 0.14, 0.03, 0.01; Gradient-boosted trees 0.16, 0.01, minus 0.00; Weekday climatology 0.32, 0.02, minus 0.01.
+
+## Figure A7: `fig_A_F7.png`
+
+Drawn by `report/build_fig_A_F7.py`.
+
+**Share of cell-days whose emission inputs to the networks of modeled daily mean surface NO<sub>2</sub> fall outside the cell's training range, on the contiguous US land cells of the 12 km grid, held-out years 2015 to 2019 (percent).**
+
+Alternative text: Two dot charts with heat strips of the share of cell-days with emission inputs outside training range, by year and class.
+
+Description: Vertical axis of the upper panels: Percent of cell-days out of training range, ticks 0 to 100 by 20, shared; under each panel a heat strip of the same shares, one column per year (2015 to 2019, horizontal axis Held-out year) and one row per class, the rows titled Land cells: All (filled circle), Urban (open square), Intermediate (open triangle), Rural (open downward triangle); each tile prints the percent, darker for a higher share. Panel (a) Test days of each held-out year: 2015: All land cells 31.1 percent, Urban cells 61.3 percent, Intermediate cells 57.1 percent, Rural cells 30.1 percent; 2016: All land cells 7.6 percent, Urban cells 15.4 percent, Intermediate cells 17.8 percent, Rural cells 7.2 percent; 2017: All land cells 5.8 percent, Urban cells 13.0 percent, Intermediate cells 12.0 percent, Rural cells 5.6 percent; 2018: All land cells 23.1 percent, Urban cells 97.5 percent, Intermediate cells 86.1 percent, Rural cells 20.8 percent; 2019: All land cells 20.7 percent, Urban cells 23.6 percent, Intermediate cells 22.6 percent, Rural cells 20.6 percent. Panel (b) Held-back days, evaluated once: 2015: All land cells 34.9 percent, Urban cells 62.4 percent, Intermediate cells 59.3 percent, Rural cells 34.1 percent; 2016: All land cells 7.9 percent, Urban cells 15.0 percent, Intermediate cells 17.8 percent, Rural cells 7.6 percent; 2017: All land cells 5.9 percent, Urban cells 12.7 percent, Intermediate cells 11.2 percent, Rural cells 5.7 percent; 2018: All land cells 24.5 percent, Urban cells 97.5 percent, Intermediate cells 86.1 percent, Rural cells 22.2 percent; 2019: All land cells 32.9 percent, Urban cells 31.9 percent, Intermediate cells 34.3 percent, Rural cells 32.9 percent.
+
+## Figure A8: `fig_A_F8.png`
+
+Drawn by `report/build_fig_A_F8.py`.
+
+**Exploratory differences in RMSE against CMAQ (ppb) between pairs of models of daily mean surface NO<sub>2</sub>, contiguous US land cells of the 12 km grid, by held-out year (2015 to 2019).**
+
+Alternative text: Two-panel point-and-interval chart of 28 exploratory RMSE differences between pairs of models, read against a margin.
+
+Description: Thin light gray guide lines run across both panels at every row. A key above the panels: point and 95 percent interval (gray bar crossed by a black tick); margin, minus 0.05 to plus 0.05 ppb (shaded band with dashed edges); zero (solid line); range of panel (b) (a bracket); row beyond the range of (b) (a small gray triangle); then the fills of the reading squares: Y closer to CMAQ (dark gray), X closer to CMAQ (mid gray), Below zero (white with cross hatching), Within the margin (light gray), Across a margin edge (white with diagonal hatching). Left, under the title Comparison (X minus Y) and held-out year, rotated along the left edge: one row name on one line per comparison, the subtraction X minus Y, under six group headings; steps 1 to 3 were trained for 6,000 steps. Then the held-out year of each row, a tick at each. At the right of panel (b), a tick and a filled square at each row, under the title Reading of the interval, rotated along the right edge. Panel (a), full range, ticks minus 0.2, 0.0, 0.2, 0.4, 0.6; panel (b), magnified, ticks minus 0.05, 0.00, 0.05, showing only the 12 rows whose intervals lie between minus 0.06 and plus 0.12 ppb, with a small gray triangle at its edge for every other row, pointing toward it. A bracket above the top row of panel (a) spans minus 0.06 to plus 0.12 ppb, the range shown in panel (b). One axis title under both panels: difference in RMSE against CMAQ (ppb). Each square's fill gives the row's reading: the closer model, X or Y, where the interval lies beyond the margin, within the margin, across a margin edge, or below zero for the interaction; the rows below name the closer model. Rows from the top: group; pair; year: point (interval), reading. Steps from the reference to the residual U-Net; Reference U-Net minus step 1, 2016: minus 0.032 (minus 0.036 to minus 0.028), within the margin. Steps from the reference to the residual U-Net; Reference U-Net minus step 1, 2019: minus 0.047 (minus 0.052 to minus 0.043), across a margin edge. Steps from the reference to the residual U-Net; Step 1 minus step 2, 2016: minus 0.183 (minus 0.194 to minus 0.171), step 1 closer. Steps from the reference to the residual U-Net; Step 1 minus step 2, 2019: minus 0.140 (minus 0.150 to minus 0.130), step 1 closer. Steps from the reference to the residual U-Net; Step 2 minus step 3, 2016: 0.250 (0.234 to 0.266), step 3 closer. Steps from the reference to the residual U-Net; Step 2 minus step 3, 2019: 0.218 (0.207 to 0.229), step 3 closer. Steps from the reference to the residual U-Net; Step 3 minus residual U-Net, 2016: 0.035 (0.032 to 0.038), within the margin. Steps from the reference to the residual U-Net; Step 3 minus residual U-Net, 2019: 0.041 (0.038 to 0.044), within the margin. Inputs; Climatological minus own-date emissions, 2016: 0.053 (0.047 to 0.057), across a margin edge. Inputs; Climatological minus own-date emissions, 2018: 0.080 (0.066 to 0.091), own-date closer. Inputs; Climatological minus own-date emissions, 2019: 0.099 (0.090 to 0.106), own-date closer. Inputs; Without minus with the climatology input, 2016: 0.042 (0.037 to 0.045), within the margin. Spatial context and reference; Per-cell network minus residual U-Net, 2015: 0.304 (0.276 to 0.334), residual U-Net closer. Spatial context and reference; Per-cell network minus residual U-Net, 2016: 0.235 (0.212 to 0.257), residual U-Net closer. Spatial context and reference; Per-cell network minus residual U-Net, 2017: 0.221 (0.198 to 0.239), residual U-Net closer. Spatial context and reference; Per-cell network minus residual U-Net, 2018: 0.224 (0.198 to 0.243), residual U-Net closer. Spatial context and reference; Per-cell network minus residual U-Net, 2019: 0.225 (0.203 to 0.241), residual U-Net closer. Spatial context and reference; Emission-scaled climatology minus residual U-Net, 2015: 0.594 (0.541 to 0.645), residual U-Net closer. Spatial context and reference; Emission-scaled climatology minus residual U-Net, 2016: 0.522 (0.471 to 0.570), residual U-Net closer. Spatial context and reference; Emission-scaled climatology minus residual U-Net, 2017: 0.510 (0.457 to 0.557), residual U-Net closer. Spatial context and reference; Emission-scaled climatology minus residual U-Net, 2018: 0.483 (0.428 to 0.527), residual U-Net closer. Spatial context and reference; Emission-scaled climatology minus residual U-Net, 2019: 0.459 (0.419 to 0.494), residual U-Net closer. Target and training length; Step 2, 16,000 steps minus residual U-Net, 2019: 0.070 (0.066 to 0.074), residual U-Net closer. Target and training length; Target change at 16,000 minus at 6,000 steps, 2016: minus 0.188 (minus 0.202 to minus 0.176), below zero. Target and training length; Target change at 16,000 minus at 6,000 steps, 2019: minus 0.149 (minus 0.158 to minus 0.138), below zero. Block left out of the loss; Block left out minus block in the loss, 2016: 0.101 (0.088 to 0.115), block in the loss closer. Seeds and ensembles; Reference minus residual U-Net, 2016: 0.071 (0.066 to 0.076), residual U-Net closer. Seeds and ensembles; One seed minus the five-seed mean, 2016: 0.021 (0.019 to 0.023), within the margin.
+
+## Figure A9: `fig_A_F4.png`
+
+Drawn by `report/build_fig_A_F4.py`.
+
+**Spatial power of six networks' modeled daily mean surface NO<sub>2</sub> fields over that of CMAQ, by wavelength band, in four 768 km windows inside the contiguous US land cells of the 12 km grid, held-out years 2015 to 2019 (unitless).**
+
+Alternative text: Six networks' spatial power over CMAQ's: a profile across four wavelength bands, then one panel per band.
+
+Description: Panel (a) Profile across the wavelength bands: horizontal axis Wavelength band (km), bands fine to coarse and spaced by their order, 24 to 48 km, 48 to 96 km, 96 to 192 km, 192 to 768 km; vertical axis Power ratio, network over CMAQ, log scale, ticks 0.5, 0.7, 1.0; a black line at 1, named Equal power in the key. Lines with marks for Reference U-Net, Residual U-Net, Per-cell network (key in one line above (a), in that order), each mark on a pale bar over the range of years. Panels (b) to (e), one per band, share six rows labeled at the left under the vertical axis title Network, from the top: Reference U-Net; Step 1: loss; Step 2: network; Step 3: target; Residual U-Net; Per-cell network; shared horizontal axis title Power ratio, network over CMAQ, log scale as in (a), ticks 0.5, 0.7, 1.0; a black vertical line at 1 in each. Steps 1 to 3 are open hexagons. Panel (b) 24 to 48 km: Reference U-Net mean 0.85 (range 0.80 to 0.90); Step 1: loss mean 0.68 (range 0.65 to 0.70); Step 2: network mean 0.55 (range 0.50 to 0.60); Step 3: target mean 0.83 (range 0.78 to 0.88); Residual U-Net mean 0.80 (range 0.69 to 0.86); Per-cell network mean 1.08 (range 0.79 to 1.21). Panel (c) 48 to 96 km: Reference U-Net mean 0.93 (range 0.88 to 1.01); Step 1: loss mean 0.76 (range 0.75 to 0.77); Step 2: network mean 0.75 (range 0.64 to 0.85); Step 3: target mean 0.86 (range 0.81 to 0.91); Residual U-Net mean 0.84 (range 0.73 to 0.92); Per-cell network mean 0.86 (range 0.64 to 1.01). Panel (d) 96 to 192 km: Reference U-Net mean 1.00 (range 0.92 to 1.09); Step 1: loss mean 0.83 (range 0.80 to 0.87); Step 2: network mean 0.77 (range 0.66 to 0.88); Step 3: target mean 0.90 (range 0.86 to 0.94); Residual U-Net mean 0.88 (range 0.80 to 0.96); Per-cell network mean 0.78 (range 0.58 to 0.93). Panel (e) 192 to 768 km: Reference U-Net mean 0.99 (range 0.95 to 1.08); Step 1: loss mean 0.85 (range 0.84 to 0.85); Step 2: network mean 0.72 (range 0.64 to 0.81); Step 3: target mean 0.93 (range 0.90 to 0.95); Residual U-Net mean 0.89 (range 0.82 to 0.97); Per-cell network mean 0.75 (range 0.55 to 0.92).
+
+## Figure A10: `fig_ad3_city_rmse.png`
+
+Drawn by `report/build_fig_ad3_city_rmse.py`.
+
+**RMSE (ppb) of modeled daily mean surface NO<sub>2</sub> against CMAQ in 10 large US cities, reference and residual U-Nets, test days of 2016.**
+
+Alternative text: Dumbbell chart of the 2016 RMSE of the two U-Nets in ten US cities.
+
+Description: Rows: ten cities. Horizontal axis: RMSE against CMAQ (ppb), 0.5 to 2.0. Blue squares: reference U-Net; vermilion discs: residual U-Net; a gray line joins each pair. A dotted vermilion vertical line marks the residual U-Net's RMSE over all land cells, 0.491 ppb. Values, reference then residual: New York 2.228 and 1.892; Los Angeles 1.327 and 1.298; Chicago 1.898 and 1.810; Houston 1.469 and 1.348; Phoenix 1.055 and 0.879; Philadelphia 1.501 and 1.116; San Antonio 1.027 and 0.889; San Diego 0.998 and 0.999; Dallas 1.071 and 0.810; Austin 0.807 and 0.719. The land cells per city are in the appendix table of the ten cities.
+
+## Figure A11: `fig_ad3_strata.png`
+
+Drawn by `report/build_fig_ad3_strata.py`.
+
+**Mean error and RMSE (ppb) of four models against modeled CMAQ daily mean surface NO<sub>2</sub> by season (a) and by urban class (b), test days of the five held-out years, 2015 to 2019, contiguous US land cells.**
+
+Alternative text: Tiles of mean error and RMSE by season and urban class for four models.
+
+Description: Two blocks of tiles: (a) by season, rows winter (JFD, the held-out year's own January, February and December, the December of 2019 held back), spring (MAM, March to May), summer (JJA, June to August), fall (SON, September to November); (b) by urban class, rows urban, intermediate, rural. Columns: residual U-Net, reference U-Net, gradient-boosted trees, weekday climatology. Each tile's color and printed number give the mean error in ppb; an open square's area gives the RMSE. Values, RMSE then mean error: Winter: Residual U-Net 0.605 and -0.027; Reference U-Net 0.691 and -0.011; Gradient-boosted trees 0.733 and -0.003; Weekday climatology 1.298 and -0.008. Spring: Residual U-Net 0.459 and -0.018; Reference U-Net 0.528 and -0.012; Gradient-boosted trees 0.540 and -0.003; Weekday climatology 0.913 and 0.016. Summer: Residual U-Net 0.426 and -0.002; Reference U-Net 0.488 and 0.009; Gradient-boosted trees 0.500 and 0.002; Weekday climatology 0.764 and 0.000. Fall: Residual U-Net 0.503 and -0.002; Reference U-Net 0.582 and -0.002; Gradient-boosted trees 0.616 and -0.002; Weekday climatology 1.092 and 0.004. Urban: Residual U-Net 1.304 and -0.142; Reference U-Net 1.548 and 0.345; Gradient-boosted trees 1.711 and 0.070; Weekday climatology 3.471 and -0.015. Intermediate: Residual U-Net 0.928 and -0.079; Reference U-Net 1.085 and 0.161; Gradient-boosted trees 1.153 and 0.014; Weekday climatology 2.277 and -0.003. Rural: Residual U-Net 0.470 and -0.010; Reference U-Net 0.536 and -0.012; Gradient-boosted trees 0.557 and -0.003; Weekday climatology 0.918 and 0.002.
+
+## Figure A12: `fig_ad5_performance.png`
+
+Drawn by `report/build_fig_ad5_performance.py`.
+
+**Exceedance skill of four models against modeled CMAQ daily mean surface NO<sub>2</sub> above 13.30 ppb (a) and 26.60 ppb (b), test days of the five held-out years, 2015 to 2019, contiguous US land cells.**
+
+Alternative text: Two performance diagrams of four models' detection and success ratio per held-out year, above 13.30 and 26.60 ppb.
+
+Description: Two square panels, (a) above 13.30 ppb and (b) above 26.60 ppb; horizontal axis success ratio (1 minus the false-alarm ratio, FAR), vertical axis probability of detection (POD), both 0 to 1. Gray curves of equal critical success index (CSI), labeled 0.1 to 0.9 and higher toward the upper right; dotted rays from the origin of frequency bias 0.5, 1, 1.5 and 2, labeled at the frame. Markers, one per model and held-out year at its success ratio and POD: residual U-Net, vermilion discs; reference U-Net, blue squares; gradient-boosted trees, dark gray triangles; weekday climatology, light gray crosses. Their POD, FAR and CSI ranges over the years, per model: Above 13.30 ppb, Residual U-Net: POD 0.63 to 0.71; FAR 0.12 to 0.22; CSI 0.58 to 0.60. Above 13.30 ppb, Reference U-Net: POD 0.72 to 0.77; FAR 0.24 to 0.34; CSI 0.55 to 0.59. Above 13.30 ppb, Reference U-Net: the 2015 and 2016 markers nearly coincide; the 2015 marker is drawn larger behind. Above 13.30 ppb, Gradient-boosted trees: POD 0.53 to 0.67; FAR 0.14 to 0.31; CSI 0.49 to 0.54. Above 13.30 ppb, Weekday climatology: POD 0.13 to 0.30; FAR 0.27 to 0.48; CSI 0.12 to 0.23. Above 26.60 ppb, Residual U-Net: POD 0.44 to 0.57; FAR 0.14 to 0.23; CSI 0.41 to 0.50. Above 26.60 ppb, Residual U-Net: the 2016 and 2019 markers nearly coincide; the 2016 marker is drawn larger behind. Above 26.60 ppb, Reference U-Net: POD 0.48 to 0.79; FAR 0.28 to 0.57; CSI 0.38 to 0.51. Above 26.60 ppb, Gradient-boosted trees: POD 0.30 to 0.60; FAR 0.25 to 0.47; CSI 0.27 to 0.43. Above 26.60 ppb, Weekday climatology: POD rounded to 0.00, not drawn.
+
+## Figure A13: `fig_ad6_persistence.png`
+
+Drawn by `report/build_fig_ad6_persistence.py`.
+
+**Number of held-out years (2015 to 2019) in which the residual U-Net's modeled test-day mean surface NO<sub>2</sub> lay below CMAQ's, per land cell of the contiguous US (12 km grid).**
+
+Alternative text: Map of the contiguous US: in how many of five years the residual U-Net's mean lay below CMAQ's, per cell.
+
+Description: A map of the contiguous US on the 12 km grid, each land cell colored by the number of held-out years, 0 to 5, in which the residual U-Net's test-day mean NO2 lay below CMAQ's: purple for 3 to 5 years (darker for more), green for 0 to 2 (darker for fewer). Cells within 0.2 ppb of CMAQ in all five years lie under a light screen of white lines (41,629 cells, 77.7 percent). Dots mark the cells below CMAQ in three or more years. Hatching marks US land not evaluated; state boundaries are drawn. Below, a bar divided by the share of cells in each class, from 5 years down to 0: 5 years 6.5 percent, 4 years 16.3 percent, 3 years 25.7 percent, 2 years 29.2 percent, 1 year 17.8 percent, 0 years 4.4 percent; black ticks mark the shares expected if the years were independent, with even odds. Above the bar its title, Years below CMAQ, over the class numbers; under it the shares and the title Share of land cells; two rows under the key name the screen, the dots, the hatch and the even-odds tick.
+
+## Figure A14: `fig_ad7_density.png`
+
+Drawn by `report/build_fig_ad7_density.py`.
+
+**Difference of each U-Net's 2016 test-day mean modeled surface NO<sub>2</sub> from CMAQ's (ppb) against CMAQ's 2016 test-day mean (ppb, log scale), per land cell of the contiguous US, reference U-Net (a) and residual U-Net (b).**
+
+Alternative text: Two density panels: each U-Net's 2016 mean minus CMAQ's against CMAQ's mean per land cell, with running medians.
+
+Description: Two side-by-side panels, (a) reference U-Net and (b) residual U-Net. Horizontal axis: CMAQ's 2016 test-day mean NO2 per land cell, 0.07 to 25 ppb on a log scale; vertical axis: the U-Net's mean minus CMAQ's, minus 1 to 1 ppb. Gray shading shows how many land cells fall in each bin, densest near zero difference between about 0.5 and 3 ppb. A black line marks zero; short ticks inside the top edge mark the level class bounds 1, 2, 4, 8 and 16 ppb. The reference U-Net's running median (blue, dashed, squares) lies a little below zero at low CMAQ levels and rises above zero at the highest; the residual U-Net's (vermilion, solid, discs) stays near zero and falls below it at the highest levels. Open marks show medians from fewer than 50 cells. A key above names the marks and the zero line; a key below gives the gray classes, with bounds at 1, 3, 10, 30, 100 and 300 cells. The range of plus or minus 1 ppb leaves out 65 cells for the reference U-Net and 68 for the residual U-Net.
+
+## Figure A15: `fig_ad7_classes.png`
+
+Drawn by `report/build_fig_ad7_classes.py`.
+
+**Distribution over land cells of each U-Net's 2016 test-day mean modeled surface NO<sub>2</sub> minus CMAQ's (ppb), by CMAQ's 2016 level class (ppb), contiguous US.**
+
+Alternative text: Mirrored histograms of each U-Net's 2016 mean minus CMAQ's per land cell in six CMAQ level classes.
+
+Description: One panel with six CMAQ level classes along the horizontal axis (under 1, 1 to 2, 2 to 4, 4 to 8, 8 to 16, and 16 ppb and over), holding 22,056, 17,876, 11,141, 2,242, 266 and 13 land cells. Vertical axis: the U-Net's 2016 test-day mean minus CMAQ's, minus 1 to 1 ppb, with a black dashed line at zero. In each class a histogram of the reference U-Net (blue, left) mirrors one of the residual U-Net (vermilion, right); black ticks mark each median and the 5th and 95th percentiles, and a thin dark gray line divides each class's halves. Where a bin holds very few cells its width is near zero and its outline shows as a thin colored stroke along the divider. The spreads widen from the lowest to the higher classes. The highest class shows one square or disc per cell. A key above names the halves, the ticks and the zero line. The range of plus or minus 1 ppb leaves out 65 cells for the reference U-Net and 68 for the residual U-Net.
+
+## Figure A16: `fig_ad8_tail.png`
+
+Drawn by `report/build_fig_ad8_tail.py`.
+
+**Modeled surface NO<sub>2</sub> of each U-Net minus CMAQ (ppb) by CMAQ's daily value (a) and by the U-Net's own daily value (b), land cell-days of the test days of the five held-out years (2015 to 2019) pooled.**
+
+Alternative text: Two panels of each U-Net minus CMAQ by CMAQ's daily value and by the U-Net's own value, with medians and percentile lines.
+
+Description: Two side-by-side panels, each with its own vertical ticks on one scale, U-Net minus CMAQ in ppb, from minus 10 to 8, titled once at the far left. Panel (a) bins the cell-days by CMAQ's daily value, 0 to 30 ppb; panel (b) by the U-Net's own daily value. In each panel the residual U-Net (vermilion, solid, discs) and the reference U-Net (blue, dashed, squares) have a thick median line and two thin lines at the 5th and 95th percentiles; open marks show medians of bins with few cell-days; a black line marks zero and a hatched band covers the bins near the 30 ppb cut. In (a) the medians fall below zero as CMAQ's value rises; in (b) the reference U-Net's median rises above zero with the U-Net's own value while the residual U-Net's stays near zero up to the hatched band. Under each panel two gray strips give the cell-days per bin for the residual (upper) and reference (lower) U-Net, from over ten million in the lowest bins to a few hundred or fewer near 30 ppb; a key below gives the gray classes by powers of ten.
+
+## Figure A17: `fig_ad4_cascade.png`
+
+Drawn by `report/build_fig_ad4_cascade.py`.
+
+**RMSE (ppb) of modeled daily mean surface NO<sub>2</sub> against CMAQ for each network on the steps from the reference to the residual U-Net, with 2016 (a) and 2019 (b) held out, contiguous US land cells.**
+
+Alternative text: Sideways cascade of RMSE across four steps between the two U-Nets, 2016 and 2019.
+
+Description: Two panels, 2016 and 2019 held out. Rows: Reference U-Net; Step 1: loss; Step 2: network; Step 3: target; Residual U-Net; Step 2, 16,000 steps. Vertical axis title: Network. A key above the panels names the bar fills Later network closer (dark gray), Earlier network closer (mid gray), Within the margin (light gray) and Across a margin edge (hatched), a black tick (RMSE of the network), a thin gray line (Earlier network's RMSE), an open circle (Step 2, 16,000 steps), a black line (Zero difference) and a dashed gray line (Margin, 0.05 ppb). Horizontal axis: RMSE against CMAQ (ppb). At the right of each panel, a strip with the horizontal axis Drop (ppb) shows each step's change as a dot, filled as its bar, with a black line at 0 and dashed gray lines at -0.05 and 0.05 (the margin). RMSE by network and the change at each step (earlier minus later, ppb): 2016: Reference U-Net 0.561; Step 1: loss 0.593; Step 2: network 0.776; Step 3: target 0.526; Residual U-Net 0.491; Step 2, 16,000 steps 0.552. 2016 steps: Reference U-Net to Step 1: loss -0.032 (within the margin); Step 1: loss to Step 2: network -0.183 (earlier network closer); Step 2: network to Step 3: target 0.250 (later network closer); Step 3: target to Residual U-Net 0.035 (within the margin). 2019: Reference U-Net 0.522; Step 1: loss 0.569; Step 2: network 0.709; Step 3: target 0.491; Residual U-Net 0.450; Step 2, 16,000 steps 0.519. 2019 steps: Reference U-Net to Step 1: loss -0.047 (across a margin edge); Step 1: loss to Step 2: network -0.140 (earlier network closer); Step 2: network to Step 3: target 0.218 (later network closer); Step 3: target to Residual U-Net 0.041 (within the margin).
+
+## Figure A18: `fig_ad4_square.png`
+
+Drawn by `report/build_fig_ad4_square.py`.
+
+**RMSE (ppb) of modeled daily mean surface NO<sub>2</sub> against CMAQ of four networks in a two-by-two design of target (direct, or the departure from the weekday climatology) and training length (6,000 or 16,000 steps), 2016 (a) and 2019 (b) held out, contiguous US land cells.**
+
+Alternative text: Two-by-two diagrams of target and training length with the RMSE of four networks, 2016 and 2019.
+
+Description: Two square panels, 2016 and 2019 held out. Horizontal: training length, 6,000 and 16,000 steps; vertical: target, direct and departure from climatology. 2016: step 2 0.776, step 3 0.526, step 2 at 16,000 steps 0.552, residual U-Net 0.491 ppb; interaction minus 0.188 ppb (95 percent interval minus 0.202 to minus 0.176). 2019: step 2 0.709, step 3 0.491, step 2 at 16,000 steps 0.519, residual U-Net 0.450 ppb; interaction minus 0.149 ppb (95 percent interval minus 0.158 to minus 0.138).
