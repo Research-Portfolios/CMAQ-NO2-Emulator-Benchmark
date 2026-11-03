@@ -1,0 +1,99 @@
+{
+ "answer_kind": "gzip>netcdf3",
+ "concurrency": 2,
+ "daily_mean_kind": "utc",
+ "describe_sha256": {
+  "cmaq.equates.conus.aconc.NO2": "c3270f2f645c78072f7bd3f9fe1cee08b3b9b76f0d2354459f4c04268a3a8253",
+  "cmaq.equates.conus.aconc.PBLH": "c410556710ad38f1d6ab9e3c60f832130ae1b18999f3f7198882a41a37489bf4",
+  "cmaq.equates.conus.aconc.SFC_TMP": "4bd9088dc149c2b491f3430d000f1212fa91e08c723ac44f357cbd3c25f1b66a",
+  "cmaq.equates.conus.aconc.SOL_RAD": "c508dce5cd8da1e4ed27d034d4340afa7d1ec722b630eeff67731665e107e5cc",
+  "cmaq.equates.conus.aconc.WDIR10": "92f4a420a11103901a4d1f7a98c2050148482513635c7f2d36f788eccd6b0280",
+  "cmaq.equates.conus.aconc.WSPD10": "8b0c1a5aaa1a181c3a3f17236e08d034a055c171693019bc09b9e8e93eaf9288",
+  "cmaq.equates.conus.aconc.precip": "0a0e8cd5e9b76d2d8b3c43a58ecc48daa6fad3e4952a0c4e41e9239fca0f4247",
+  "cmaq.equates.conus.lstaconc.DAILY_NO2": "6b3ee96689dc9c544d3d9bd10548eb6aa1dde31722b1ef1caeb90788d4121e39",
+  "cmaq.equates.conus.metcro3d.PRES": "098b28e269426cfa048b7d898ffef6a4243c665ca27e6e9979e719afe2af9a1e",
+  "cmaq.equates.conus.metcro3d.QV": "383799fca7ce06a1c12c2868678251e779c61d0c4f99341e7a37034133552e0f",
+  "cmaq.equates.conus.metdot3d.UWIND": "d2bbb20574e25e62ddf4ca132306bd0be482b28914c37c447fb3b785237a17e3",
+  "cmaq.equates.conus.metdot3d.VWIND": "4ac62cbe98f8a0e8fe41c6b088adf1c3fefeb1db3a73a9cf0a9a1dd33485960d"
+ },
+ "disk": {
+  "bytes_per_day_measured": {
+   "M1_metcro3d_PRES_L1_DM": [
+    1754678,
+    2196273
+   ],
+   "M4_metdot3d_UWIND_L1_DM": [
+    1835103,
+    2208417
+   ],
+   "M8_aconc_PBLH_DM": [
+    1809665,
+    2196273
+   ],
+   "T1_aconc_NO2_DM": [
+    1824880,
+    2196273
+   ],
+   "T2_lstaconc_DAILY_NO2": [
+    1347882,
+    2196273
+   ],
+   "X6_aconc_PBLH_DMAX": [
+    1813411,
+    2196273
+   ]
+  },
+  "free_gb_now": 112.53,
+  "i4_free_needed_gb": 117.84,
+  "i4_ok_for_s2b": false,
+  "items_by_median_estimate": 363,
+  "median_bytes_per_day": [
+   1811538,
+   2196273
+  ],
+  "note": "GB = 1e9 bytes; RSIG from the test answers' bytes per day [ESTIMATE for series with no monthly test]; S3 from the disk rule [ESTIMATE]",
+  "rsig_raw_gb_remaining": 36.42,
+  "rsig_work_gb_remaining": 44.41,
+  "s2b_need_gb": 87.84,
+  "s3_need_gb_design_i4": 7.0
+ },
+ "dot_grid": [
+  300,
+  460
+ ],
+ "extra_tries_s2a": 1,
+ "held_items": 0,
+ "held_series": [],
+ "m3_held": false,
+ "made": "2026-10-18 03:56:54 CDT",
+ "max_s": 122.9,
+ "median_monthly_s": 114.0,
+ "projected_hours": 10.59,
+ "projected_hours_at_2": 10.59,
+ "queue_items": 677,
+ "request_seconds": {
+  "M1_metcro3d_PRES_L1_DM_201607": 114.4,
+  "M4_metdot3d_UWIND_L1_DM_201607": 97.7,
+  "M4_metdot3d_UWIND_L1_DM_201607_try2": 83.3,
+  "M8_aconc_PBLH_DM_201607": 113.6,
+  "T1_aconc_NO2_DM_201607": 114.5,
+  "T2_lstaconc_DAILY_NO2_201607": 55.5,
+  "TEST_M2_aconc_SFC_TMP_DM_20160701": 4.6,
+  "TEST_M3_aconc_WSPD10_DM_20160701": 3.4,
+  "TEST_M5_metdot3d_VWIND_L1_DM_20160701": 4.1,
+  "TEST_M6_aconc_SOL_RAD_DM_20160701": 3.5,
+  "TEST_M7_metcro3d_QV_L1_DM_20160701": 3.9,
+  "TEST_M9_aconc_precip_DM_20160701": 4.3,
+  "TEST_aconc_NO2_H_20160701": 35.4,
+  "TEST_aconc_PBLH_H_20160701": 72.5,
+  "TEST_aconc_WDIR10_H_20160701": 65.6,
+  "TEST_aconc_WSPD10_H_20160701": 100.3,
+  "TEST_aconc_WSPD10_H_20160701_try2": 72.0,
+  "X6_aconc_PBLH_DMAX_201607": 122.9
+ },
+ "requests_done_s2a": 20,
+ "requests_remaining": 669,
+ "requests_total": 689,
+ "test_only_requests": 11,
+ "user_agent": "emul EQUATES research download; python-requests/2.34.2"
+}
