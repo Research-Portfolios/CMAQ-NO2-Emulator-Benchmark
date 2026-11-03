@@ -1,0 +1,39 @@
+cff-version: 1.2.0
+message: "If you use these results, please cite the report; if you use the code, please cite this repository."
+title: "Deep-learning emulators of CMAQ daily mean surface NO2 over the contiguous United States, 2015 to 2019"
+type: software
+version: "1.0.0"
+authors:
+  - family-names: Nikfarjam
+    given-names: Ehsan
+    affiliation: "Independent Researcher"
+    orcid: "https://orcid.org/0009-0002-7423-2819"
+  - family-names: Nikfarjam
+    given-names: Mohsen
+    affiliation: "Independent Researcher"
+    orcid: "https://orcid.org/0009-0003-8753-3773"
+repository-code: "https://github.com/Research-Portfolios/CMAQ-NO2-Emulator-Benchmark"
+license:
+  - MIT
+  - CC-BY-4.0
+keywords:
+  - emulator
+  - CMAQ
+  - nitrogen dioxide
+  - deep learning
+  - U-Net
+  - EQUATES
+preferred-citation:
+  type: report
+  title: "Deep-learning emulators of CMAQ daily mean surface NO2 over the contiguous United States, 2015 to 2019"
+  authors:
+    - family-names: Nikfarjam
+      given-names: Ehsan
+      affiliation: "Independent Researcher"
+      orcid: "https://orcid.org/0009-0002-7423-2819"
+    - family-names: Nikfarjam
+      given-names: Mohsen
+      affiliation: "Independent Researcher"
+      orcid: "https://orcid.org/0009-0003-8753-3773"
+  year: 2026
+  month: 11

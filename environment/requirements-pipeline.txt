@@ -1,0 +1,28 @@
+# The package versions pinned for the pipeline's code (Python 3.13.5). The
+# report records Python 3.13.5, PyTorch 2.14.1, NumPy 2.4.2, SciPy 1.18.1 and
+# scikit-learn 1.9.1 for the pipeline; the other versions are the pins of the
+# installation the code was prepared on, and the Colab runtimes' own versions
+# of those packages were not recorded. The networks were trained on NVIDIA A100
+# GPUs in Google Colab; the other stages ran on Colab's CPU runtimes. Stage 3
+# (pipeline/3_drive_extraction) pinned scipy 1.17.0.
+# pipeline/6_shared/session_probe.py writes a GPU runtime's versions of Python,
+# PyTorch, CUDA, cuDNN and NumPy, and its GPU and memory, to a JSON file; no
+# driver of the pipeline imports it, and no such file is part of this
+# repository.
+numpy==2.4.2
+scipy==1.18.1
+pandas==3.0.5
+xarray==2026.7.0
+netCDF4==1.7.4
+cftime==1.6.5
+h5netcdf==1.8.1
+h5py==3.15.1
+pyproj==3.7.2
+shapely==2.1.2
+Cartopy==0.25.0
+matplotlib==3.11.1
+scikit-learn==1.9.1
+psutil==7.2.2
+requests==2.34.2
+s3fs==2026.7.0
+torch==2.14.1
