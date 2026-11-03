@@ -1,0 +1,60 @@
+PUBLISHED VALUES SET BESIDE THIS STUDY'S IN THE REPORT'S TABLE OF
+THE EARLIER EMULATOR (read by report/build_tables.py)
+Source: Payami, M., Choi, Y., Kayastha, S. G., Park, J. (2025).
+Emulating CMAQ using deep learning: A comparative study on
+simulating surface NO2, O3, and PM2.5 over the CONUS using the
+EQUATES dataset. Science of the Total Environment 1000, 180467,
+https://doi.org/10.1016/j.scitotenv.2025.180467, with its
+supplementary material. Values as printed there (NO2, ppb for MAE,
+ME and RMSE), with the page of each. The columns after the
+published ones are this study's residual U-Net (seed 0) as the
+deposited evaluation outputs hold them.
+
+R-1 YEARLY NO2, POOLED OVER A YEAR'S CELL-DAYS
+  year  published (Fig. 3, p. 4)     residual U-Net
+        IOA  R    MAE  ME    RMSE      IOA   R     MAE   ME     RMSE
+  2015  0.94 0.91 0.34 -0.16 0.70      0.975 0.957 0.322 -0.099 0.588
+  2016  0.95 0.91 0.30 -0.06 0.59      0.979 0.959 0.279 -0.002 0.491
+  2017  0.94 0.89 0.32 -0.14 0.63      0.976 0.955 0.273 -0.001 0.486
+  2018  0.94 0.90 0.31  0.01 0.59      0.975 0.952 0.276 -0.002 0.490
+  2019  0.95 0.91 0.28 -0.04 0.55      0.977 0.955 0.264  0.040 0.450
+
+R-3 BY TEST YEAR AND SEASON (published: Table 1, p. 7)
+  year season  pub. IOA R MAE RMSE ME      U-Net IOA R MAE RMSE ME
+  2015 winter  0.94 0.90 0.43 0.90 -0.25    0.975 0.957 0.403 0.719 -0.152
+  2015 spring  0.95 0.91 0.28 0.58 -0.12    0.973 0.954 0.286 0.524 -0.088
+  2015 summer  0.95 0.91 0.28 0.54 -0.07    0.972 0.951 0.262 0.482 -0.058
+  2015 fall    0.95 0.91 0.36 0.72 -0.18    0.978 0.961 0.329 0.587 -0.094
+  2016 winter  0.94 0.90 0.36 0.74 -0.10    0.978 0.959 0.335 0.593 -0.027
+  2016 spring  0.95 0.91 0.26 0.50 -0.04    0.973 0.950 0.254 0.456 -0.013
+  2016 summer  0.95 0.91 0.26 0.47 -0.03    0.978 0.957 0.240 0.407  0.011
+  2016 fall    0.95 0.92 0.32 0.62 -0.07    0.982 0.965 0.289 0.493  0.022
+  2017 winter  0.94 0.90 0.37 0.74 -0.15    0.977 0.957 0.333 0.583 -0.018
+  2017 spring  0.94 0.89 0.27 0.53 -0.12    0.973 0.949 0.238 0.421 -0.002
+  2017 summer  0.93 0.88 0.30 0.56 -0.13    0.972 0.947 0.243 0.430  0.024
+  2017 fall    0.94 0.90 0.34 0.66 -0.15    0.979 0.960 0.282 0.502 -0.014
+  2018 winter  0.94 0.90 0.37 0.72 -0.03    0.977 0.955 0.332 0.579 -0.023
+  2018 spring  0.94 0.89 0.27 0.51  0.03    0.970 0.944 0.251 0.455 -0.007
+  2018 summer  0.93 0.88 0.29 0.52  0.02    0.969 0.942 0.237 0.431 -0.004
+  2018 fall    0.95 0.91 0.32 0.59  0.03    0.978 0.958 0.285 0.482  0.023
+  2019 winter  0.94 0.90 0.34 0.70 -0.07    0.976 0.954 0.325 0.549  0.084
+  2019 spring  0.94 0.90 0.24 0.48 -0.03    0.971 0.945 0.249 0.439  0.021
+  2019 summer  0.95 0.91 0.26 0.45 -0.03    0.975 0.952 0.229 0.382  0.017
+  2019 fall    0.95 0.92 0.29 0.54 -0.04    0.980 0.962 0.274 0.453  0.053
+
+R-4 THE TEN CITIES, 2016 (published: Fig. 5, p. 6)
+  city          pub. R  IOA    resid. R IOA   ref. R IOA
+  New York City  0.93   0.95     0.959  0.976    0.944  0.969
+  Los Angeles    0.95   0.95     0.963  0.979    0.958  0.978
+  Chicago        0.90   0.94     0.952  0.972    0.943  0.969
+  Houston        0.90   0.92     0.940  0.968    0.934  0.964
+  Phoenix        0.96   0.97     0.970  0.984    0.957  0.978
+  Philadelphia   0.94   0.96     0.966  0.980    0.947  0.968
+  San Antonio    0.93   0.95     0.954  0.974    0.939  0.966
+  San Diego      0.92   0.92     0.949  0.973    0.950  0.975
+  Dallas         0.91   0.95     0.965  0.981    0.942  0.969
+  Austin         0.90   0.93     0.949  0.970    0.935  0.965
+
+R-5 HIGH VALUES: CMAQ NO2 ABOVE 30 PPB
+  published (supplementary Table S6, NO2, above 30 ppb): pixel count 601, R
+      -0.2957, IOA 0.1958

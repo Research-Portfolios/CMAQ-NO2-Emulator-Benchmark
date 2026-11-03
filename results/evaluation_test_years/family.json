@@ -1,0 +1,785 @@
+{
+ "S6": "not read (2019 or the lockbox missing)",
+ "c3_seeds_2016": {
+  "mean_difference": 0.07550392093615882,
+  "n_seeds_M": 5,
+  "n_seeds_P": 5,
+  "rule": "mean over seeds of RMSE(P) - mean over seeds of RMSE(M); each model's seed SD (ddof 1) with its 95 percent chi-square interval",
+  "sd_M": {
+   "hi": 0.007846836528980328,
+   "level": 0.95,
+   "lo": 0.0016360566491654212,
+   "n_seeds": 5,
+   "sd": 0.002730706319349699
+  },
+  "sd_P": {
+   "hi": 0.013514178842441004,
+   "level": 0.95,
+   "lo": 0.002817691189504031,
+   "n_seeds": 5,
+   "sd": 0.004702946649848346
+  }
+ },
+ "covers": "the sampling of test days given the trained models and the fixed inputs; not training randomness (the seed rule reads it), input error, or CMAQ's error against the atmosphere (outside the claims)",
+ "definitions": {
+  "C-1": "SS of M against CLIM-WD (1 - MSE_M / MSE_CLIM-WD)",
+  "C-2": "RMSE(GBT) - RMSE(M), ppb",
+  "C-3": "RMSE(P) - RMSE(M), ppb",
+  "C-4": "MAPRMSE(CLIM-WD) - MAPRMSE(M), ppb"
+ },
+ "five_fold": {
+  "by_year": {
+   "2015": {
+    "C-1": 0.7713577987301873,
+    "C-2": 0.11808595151585766,
+    "C-3": 0.05820780835761874,
+    "C-4": 0.2307920860462444
+   },
+   "2016": {
+    "C-1": 0.7620283228044847,
+    "C-2": 0.09897874939498769,
+    "C-3": 0.07038369662406235,
+    "C-4": 0.0666312389232275
+   },
+   "2017": {
+    "C-1": 0.7597611004718142,
+    "C-2": 0.09378750247560019,
+    "C-3": 0.0874463395209033,
+    "C-4": 0.06045824337403928
+   },
+   "2018": {
+    "C-1": 0.7531437927757246,
+    "C-2": 0.10232458460289096,
+    "C-3": 0.08154692511110717,
+    "C-4": 0.12448615292070814
+   },
+   "2019": {
+    "C-1": 0.7691344377389181,
+    "C-2": 0.08813996063038126,
+    "C-3": 0.07177214768978907,
+    "C-4": 0.16398194788305587
+   }
+  },
+  "count_of_intervals_read": 8,
+  "draws": [
+   {
+    "block": 7,
+    "block_used": 7,
+    "blocks_per_resample": 49,
+    "n_days": 338,
+    "n_resamples": 10000,
+    "seed": 20261016,
+    "stream": "PCG64(SeedSequence([20261016, 2015, 7, 10000, 0]))",
+    "year": 2015
+   },
+   {
+    "block": 7,
+    "block_used": 7,
+    "blocks_per_resample": 49,
+    "n_days": 339,
+    "n_resamples": 10000,
+    "seed": 20261016,
+    "stream": "PCG64(SeedSequence([20261016, 2016, 7, 10000, 0]))",
+    "year": 2016
+   },
+   {
+    "block": 7,
+    "block_used": 7,
+    "blocks_per_resample": 49,
+    "n_days": 338,
+    "n_resamples": 10000,
+    "seed": 20261016,
+    "stream": "PCG64(SeedSequence([20261016, 2017, 7, 10000, 0]))",
+    "year": 2017
+   },
+   {
+    "block": 7,
+    "block_used": 7,
+    "blocks_per_resample": 49,
+    "n_days": 338,
+    "n_resamples": 10000,
+    "seed": 20261016,
+    "stream": "PCG64(SeedSequence([20261016, 2018, 7, 10000, 0]))",
+    "year": 2018
+   },
+   {
+    "block": 7,
+    "block_used": 7,
+    "blocks_per_resample": 48,
+    "n_days": 334,
+    "n_resamples": 10000,
+    "seed": 20261016,
+    "stream": "PCG64(SeedSequence([20261016, 2019, 7, 10000, 0]))",
+    "year": 2019
+   }
+  ],
+  "draws_14": [
+   {
+    "block": 14,
+    "block_used": 14,
+    "blocks_per_resample": 25,
+    "n_days": 338,
+    "n_resamples": 10000,
+    "seed": 20261016,
+    "stream": "PCG64(SeedSequence([20261016, 2015, 14, 10000, 0]))",
+    "year": 2015
+   },
+   {
+    "block": 14,
+    "block_used": 14,
+    "blocks_per_resample": 25,
+    "n_days": 339,
+    "n_resamples": 10000,
+    "seed": 20261016,
+    "stream": "PCG64(SeedSequence([20261016, 2016, 14, 10000, 0]))",
+    "year": 2016
+   },
+   {
+    "block": 14,
+    "block_used": 14,
+    "blocks_per_resample": 25,
+    "n_days": 338,
+    "n_resamples": 10000,
+    "seed": 20261016,
+    "stream": "PCG64(SeedSequence([20261016, 2017, 14, 10000, 0]))",
+    "year": 2017
+   },
+   {
+    "block": 14,
+    "block_used": 14,
+    "blocks_per_resample": 25,
+    "n_days": 338,
+    "n_resamples": 10000,
+    "seed": 20261016,
+    "stream": "PCG64(SeedSequence([20261016, 2018, 14, 10000, 0]))",
+    "year": 2018
+   },
+   {
+    "block": 14,
+    "block_used": 14,
+    "blocks_per_resample": 24,
+    "n_days": 334,
+    "n_resamples": 10000,
+    "seed": 20261016,
+    "stream": "PCG64(SeedSequence([20261016, 2019, 14, 10000, 0]))",
+    "year": 2019
+   }
+  ],
+  "rows": {
+   "C-1": {
+    "acc_median_five_fold": 0.8132753657234517,
+    "block_14": {
+     "hi": 0.7723015002993097,
+     "level": 0.9875,
+     "lo": 0.7487802300497051,
+     "passes_holm_step": true,
+     "reading": "M closer to CMAQ"
+    },
+    "block_length": "same reading",
+    "contrast": "C-1",
+    "definition": "SS of M against CLIM-WD (1 - MSE_M / MSE_CLIM-WD)",
+    "half_width": 0.009571840770165319,
+    "hi": 0.7714589996078506,
+    "holds": true,
+    "holm_rank": 1,
+    "level": 0.9875,
+    "lo": 0.75231531806752,
+    "margin": 0.0,
+    "n_resamples": 10000,
+    "p_beyond": 0.0,
+    "passes_holm_step": true,
+    "point": 0.7630850905042259,
+    "reading": "M closer to CMAQ",
+    "seed_2016_ranges_quoted": {
+     "M": {
+      "max": 0.7653670285492382,
+      "min": 0.7585621398378927,
+      "n_seeds": 5,
+      "range": 0.006804888711345547
+     }
+    }
+   },
+   "C-2": {
+    "block_14": {
+     "hi": 0.10513541328663359,
+     "level": 0.9833333333333333,
+     "lo": 0.0926367702943998,
+     "passes_holm_step": true,
+     "reading": "M closer to CMAQ"
+    },
+    "block_length": "same reading",
+    "contrast": "C-2",
+    "definition": "RMSE(GBT) - RMSE(M), ppb",
+    "half_width": 0.005054802126146327,
+    "hi": 0.10495848702595469,
+    "holm_rank": 2,
+    "level": 0.9833333333333333,
+    "lo": 0.09484888277366203,
+    "margin": 0.05,
+    "n_resamples": 10000,
+    "p_beyond": 0.0,
+    "passes_holm_step": true,
+    "point": 0.10026334972394355,
+    "reading": "M closer to CMAQ",
+    "resolution": "resolves the margin",
+    "seed_2016_ranges_quoted": {
+     "M": {
+      "max": 0.4943212702288828,
+      "min": 0.48730529662513405,
+      "n_seeds": 5,
+      "range": 0.007015973603748726
+     }
+    }
+   },
+   "C-3": {
+    "block_14": {
+     "hi": 0.07671786451732238,
+     "level": 0.975,
+     "lo": 0.06995953118190258,
+     "passes_holm_step": true,
+     "reading": "M closer to CMAQ"
+    },
+    "block_length": "same reading",
+    "contrast": "C-3",
+    "definition": "RMSE(P) - RMSE(M), ppb",
+    "half_width": 0.0028392070823988064,
+    "hi": 0.07644351284482995,
+    "holm_rank": 3,
+    "level": 0.975,
+    "lo": 0.07076509868003233,
+    "margin": 0.05,
+    "n_resamples": 10000,
+    "p_beyond": 0.0,
+    "passes_holm_step": true,
+    "point": 0.07387138346069613,
+    "reading": "M closer to CMAQ",
+    "resolution": "resolves the margin",
+    "seed_2016_ranges_quoted": {
+     "M": {
+      "max": 0.4943212702288828,
+      "min": 0.48730529662513405,
+      "n_seeds": 5,
+      "range": 0.007015973603748726
+     },
+     "P": {
+      "max": 0.5728114128550506,
+      "min": 0.561143797719344,
+      "n_seeds": 5,
+      "range": 0.011667615135706577
+     }
+    }
+   },
+   "C-4": {
+    "block_14": {
+     "hi": 0.15454284470664148,
+     "level": 0.95,
+     "lo": 0.11693718032791915,
+     "passes_holm_step": true,
+     "reading": "M closer to CMAQ"
+    },
+    "block_length": "same reading",
+    "contrast": "C-4",
+    "definition": "MAPRMSE(CLIM-WD) - MAPRMSE(M), ppb",
+    "half_width": 0.01756303346850279,
+    "hi": 0.15249395740484678,
+    "holm_rank": 4,
+    "level": 0.95,
+    "lo": 0.1173678904678412,
+    "margin": 0.05,
+    "n_resamples": 10000,
+    "p_beyond": 0.0,
+    "passes_holm_step": true,
+    "point": 0.12926993382945504,
+    "reading": "M closer to CMAQ",
+    "resolution": "resolves the margin",
+    "seed_2016_ranges_quoted": {
+     "M": {
+      "max": 0.11378247786529806,
+      "min": 0.10759665449796475,
+      "n_seeds": 5,
+      "range": 0.00618582336733331
+     }
+    }
+   }
+  },
+  "status": "RUN"
+ },
+ "folds": [
+  2015,
+  2016,
+  2017,
+  2018,
+  2019
+ ],
+ "forward_2019": {
+  "count_of_intervals_read": 4,
+  "draws": [
+   {
+    "block": 7,
+    "block_used": 7,
+    "blocks_per_resample": 48,
+    "n_days": 334,
+    "n_resamples": 2000,
+    "seed": 20261016,
+    "stream": "PCG64(SeedSequence([20261016, 2019, 7, 2000, 0]))",
+    "year": 2019
+   }
+  ],
+  "rows": {
+   "C-1": {
+    "contrast": "C-1",
+    "hi": 0.7799302600796448,
+    "label": "exploratory (2019 alone)",
+    "level": 0.95,
+    "lo": 0.7516986691381291,
+    "n_resamples": 2000,
+    "point": 0.7691344377389181,
+    "seed_rule": {
+     "point": 0.7691344377389181,
+     "ranges": {
+      "M": {
+       "max": 0.7706368172978951,
+       "min": 0.7613317133056338,
+       "n_seeds": 5,
+       "range": 0.009305103992261365
+      }
+     },
+     "reading": "separated from training randomness",
+     "rule": "|point| <= max - min of either model's seed values on the fold (READING of PROP)",
+     "status": "RUN"
+    },
+    "word": "replicated"
+   },
+   "C-2": {
+    "contrast": "C-2",
+    "hi": 0.09419754034614648,
+    "label": "exploratory (2019 alone)",
+    "level": 0.95,
+    "lo": 0.08033089504943523,
+    "n_resamples": 2000,
+    "point": 0.08813996063038126,
+    "seed_rule": {
+     "point": 0.08813996063038126,
+     "ranges": {
+      "M": {
+       "max": 0.4573768628629158,
+       "min": 0.44837220947461026,
+       "n_seeds": 5,
+       "range": 0.009004653388305528
+      }
+     },
+     "reading": "separated from training randomness",
+     "rule": "|point| <= max - min of either model's seed values on the fold (READING of PROP)",
+     "status": "RUN"
+    },
+    "word": "replicated"
+   },
+   "C-3": {
+    "contrast": "C-3",
+    "hi": 0.0778524182753471,
+    "label": "exploratory (2019 alone)",
+    "level": 0.95,
+    "lo": 0.06515632917366114,
+    "n_resamples": 2000,
+    "point": 0.07177214768978907,
+    "seed_rule": {
+     "point": 0.07177214768978907,
+     "ranges": {
+      "M": {
+       "max": 0.4573768628629158,
+       "min": 0.44837220947461026,
+       "n_seeds": 5,
+       "range": 0.009004653388305528
+      },
+      "P": {
+       "max": 0.5319729733036204,
+       "min": 0.5112852524250103,
+       "n_seeds": 3,
+       "range": 0.02068772087861004
+      }
+     },
+     "reading": "separated from training randomness",
+     "rule": "|point| <= max - min of either model's seed values on the fold (READING of PROP)",
+     "status": "RUN"
+    },
+    "word": "replicated"
+   },
+   "C-4": {
+    "contrast": "C-4",
+    "hi": 0.19525441415679978,
+    "label": "exploratory (2019 alone)",
+    "level": 0.95,
+    "lo": 0.12939767708136957,
+    "n_resamples": 2000,
+    "point": 0.16398194788305587,
+    "seed_rule": {
+     "point": 0.16398194788305587,
+     "ranges": {
+      "M": {
+       "max": 0.13921669698824696,
+       "min": 0.11769818022981718,
+       "n_seeds": 5,
+       "range": 0.02151851675842978
+      }
+     },
+     "reading": "separated from training randomness",
+     "rule": "|point| <= max - min of either model's seed values on the fold (READING of PROP)",
+     "status": "RUN"
+    },
+    "word": "replicated"
+   }
+  }
+ },
+ "lockbox": {
+  "reason": "no opening record (the lockbox stays sealed)",
+  "status": "NOT READ"
+ },
+ "m": 4,
+ "margins": {
+  "C-1": 0.0,
+  "C-2": 0.05,
+  "C-3": 0.05,
+  "C-4": 0.05
+ },
+ "per_fold": [
+  {
+   "contrast": "C-1",
+   "fold": 2015,
+   "point": 0.7713577987301873,
+   "seed_2016_ranges_quoted": {
+    "M": {
+     "max": 0.7653670285492382,
+     "min": 0.7585621398378927,
+     "n_seeds": 5,
+     "range": 0.006804888711345547
+    }
+   }
+  },
+  {
+   "contrast": "C-2",
+   "fold": 2015,
+   "point": 0.11808595151585766,
+   "seed_2016_ranges_quoted": {
+    "M": {
+     "max": 0.4943212702288828,
+     "min": 0.48730529662513405,
+     "n_seeds": 5,
+     "range": 0.007015973603748726
+    }
+   }
+  },
+  {
+   "contrast": "C-3",
+   "fold": 2015,
+   "point": 0.05820780835761874,
+   "seed_2016_ranges_quoted": {
+    "M": {
+     "max": 0.4943212702288828,
+     "min": 0.48730529662513405,
+     "n_seeds": 5,
+     "range": 0.007015973603748726
+    },
+    "P": {
+     "max": 0.5728114128550506,
+     "min": 0.561143797719344,
+     "n_seeds": 5,
+     "range": 0.011667615135706577
+    }
+   }
+  },
+  {
+   "contrast": "C-4",
+   "fold": 2015,
+   "point": 0.2307920860462444,
+   "seed_2016_ranges_quoted": {
+    "M": {
+     "max": 0.11378247786529806,
+     "min": 0.10759665449796475,
+     "n_seeds": 5,
+     "range": 0.00618582336733331
+    }
+   }
+  },
+  {
+   "contrast": "C-1",
+   "fold": 2016,
+   "point": 0.7620283228044847,
+   "seed_rule": {
+    "point": 0.7620283228044847,
+    "ranges": {
+     "M": {
+      "max": 0.7653670285492382,
+      "min": 0.7585621398378927,
+      "n_seeds": 5,
+      "range": 0.006804888711345547
+     }
+    },
+    "reading": "separated from training randomness",
+    "rule": "|point| <= max - min of either model's seed values on the fold (READING of PROP)",
+    "status": "RUN"
+   }
+  },
+  {
+   "contrast": "C-2",
+   "fold": 2016,
+   "point": 0.09897874939498769,
+   "seed_rule": {
+    "point": 0.09897874939498769,
+    "ranges": {
+     "M": {
+      "max": 0.4943212702288828,
+      "min": 0.48730529662513405,
+      "n_seeds": 5,
+      "range": 0.007015973603748726
+     }
+    },
+    "reading": "separated from training randomness",
+    "rule": "|point| <= max - min of either model's seed values on the fold (READING of PROP)",
+    "status": "RUN"
+   }
+  },
+  {
+   "contrast": "C-3",
+   "fold": 2016,
+   "point": 0.07038369662406235,
+   "seed_rule": {
+    "point": 0.07038369662406235,
+    "ranges": {
+     "M": {
+      "max": 0.4943212702288828,
+      "min": 0.48730529662513405,
+      "n_seeds": 5,
+      "range": 0.007015973603748726
+     },
+     "P": {
+      "max": 0.5728114128550506,
+      "min": 0.561143797719344,
+      "n_seeds": 5,
+      "range": 0.011667615135706577
+     }
+    },
+    "reading": "separated from training randomness",
+    "rule": "|point| <= max - min of either model's seed values on the fold (READING of PROP)",
+    "status": "RUN"
+   }
+  },
+  {
+   "contrast": "C-4",
+   "fold": 2016,
+   "point": 0.0666312389232275,
+   "seed_rule": {
+    "point": 0.0666312389232275,
+    "ranges": {
+     "M": {
+      "max": 0.11378247786529806,
+      "min": 0.10759665449796475,
+      "n_seeds": 5,
+      "range": 0.00618582336733331
+     }
+    },
+    "reading": "separated from training randomness",
+    "rule": "|point| <= max - min of either model's seed values on the fold (READING of PROP)",
+    "status": "RUN"
+   }
+  },
+  {
+   "contrast": "C-1",
+   "fold": 2017,
+   "point": 0.7597611004718142,
+   "seed_2016_ranges_quoted": {
+    "M": {
+     "max": 0.7653670285492382,
+     "min": 0.7585621398378927,
+     "n_seeds": 5,
+     "range": 0.006804888711345547
+    }
+   }
+  },
+  {
+   "contrast": "C-2",
+   "fold": 2017,
+   "point": 0.09378750247560019,
+   "seed_2016_ranges_quoted": {
+    "M": {
+     "max": 0.4943212702288828,
+     "min": 0.48730529662513405,
+     "n_seeds": 5,
+     "range": 0.007015973603748726
+    }
+   }
+  },
+  {
+   "contrast": "C-3",
+   "fold": 2017,
+   "point": 0.0874463395209033,
+   "seed_2016_ranges_quoted": {
+    "M": {
+     "max": 0.4943212702288828,
+     "min": 0.48730529662513405,
+     "n_seeds": 5,
+     "range": 0.007015973603748726
+    },
+    "P": {
+     "max": 0.5728114128550506,
+     "min": 0.561143797719344,
+     "n_seeds": 5,
+     "range": 0.011667615135706577
+    }
+   }
+  },
+  {
+   "contrast": "C-4",
+   "fold": 2017,
+   "point": 0.06045824337403928,
+   "seed_2016_ranges_quoted": {
+    "M": {
+     "max": 0.11378247786529806,
+     "min": 0.10759665449796475,
+     "n_seeds": 5,
+     "range": 0.00618582336733331
+    }
+   }
+  },
+  {
+   "contrast": "C-1",
+   "fold": 2018,
+   "point": 0.7531437927757246,
+   "seed_2016_ranges_quoted": {
+    "M": {
+     "max": 0.7653670285492382,
+     "min": 0.7585621398378927,
+     "n_seeds": 5,
+     "range": 0.006804888711345547
+    }
+   }
+  },
+  {
+   "contrast": "C-2",
+   "fold": 2018,
+   "point": 0.10232458460289096,
+   "seed_2016_ranges_quoted": {
+    "M": {
+     "max": 0.4943212702288828,
+     "min": 0.48730529662513405,
+     "n_seeds": 5,
+     "range": 0.007015973603748726
+    }
+   }
+  },
+  {
+   "contrast": "C-3",
+   "fold": 2018,
+   "point": 0.08154692511110717,
+   "seed_2016_ranges_quoted": {
+    "M": {
+     "max": 0.4943212702288828,
+     "min": 0.48730529662513405,
+     "n_seeds": 5,
+     "range": 0.007015973603748726
+    },
+    "P": {
+     "max": 0.5728114128550506,
+     "min": 0.561143797719344,
+     "n_seeds": 5,
+     "range": 0.011667615135706577
+    }
+   }
+  },
+  {
+   "contrast": "C-4",
+   "fold": 2018,
+   "point": 0.12448615292070814,
+   "seed_2016_ranges_quoted": {
+    "M": {
+     "max": 0.11378247786529806,
+     "min": 0.10759665449796475,
+     "n_seeds": 5,
+     "range": 0.00618582336733331
+    }
+   }
+  },
+  {
+   "contrast": "C-1",
+   "fold": 2019,
+   "point": 0.7691344377389181,
+   "seed_rule": {
+    "point": 0.7691344377389181,
+    "ranges": {
+     "M": {
+      "max": 0.7706368172978951,
+      "min": 0.7613317133056338,
+      "n_seeds": 5,
+      "range": 0.009305103992261365
+     }
+    },
+    "reading": "separated from training randomness",
+    "rule": "|point| <= max - min of either model's seed values on the fold (READING of PROP)",
+    "status": "RUN"
+   }
+  },
+  {
+   "contrast": "C-2",
+   "fold": 2019,
+   "point": 0.08813996063038126,
+   "seed_rule": {
+    "point": 0.08813996063038126,
+    "ranges": {
+     "M": {
+      "max": 0.4573768628629158,
+      "min": 0.44837220947461026,
+      "n_seeds": 5,
+      "range": 0.009004653388305528
+     }
+    },
+    "reading": "separated from training randomness",
+    "rule": "|point| <= max - min of either model's seed values on the fold (READING of PROP)",
+    "status": "RUN"
+   }
+  },
+  {
+   "contrast": "C-3",
+   "fold": 2019,
+   "point": 0.07177214768978907,
+   "seed_rule": {
+    "point": 0.07177214768978907,
+    "ranges": {
+     "M": {
+      "max": 0.4573768628629158,
+      "min": 0.44837220947461026,
+      "n_seeds": 5,
+      "range": 0.009004653388305528
+     },
+     "P": {
+      "max": 0.5319729733036204,
+      "min": 0.5112852524250103,
+      "n_seeds": 3,
+      "range": 0.02068772087861004
+     }
+    },
+    "reading": "separated from training randomness",
+    "rule": "|point| <= max - min of either model's seed values on the fold (READING of PROP)",
+    "status": "RUN"
+   }
+  },
+  {
+   "contrast": "C-4",
+   "fold": 2019,
+   "point": 0.16398194788305587,
+   "seed_rule": {
+    "point": 0.16398194788305587,
+    "ranges": {
+     "M": {
+      "max": 0.13921669698824696,
+      "min": 0.11769818022981718,
+      "n_seeds": 5,
+      "range": 0.02151851675842978
+     }
+    },
+    "reading": "separated from training randomness",
+    "rule": "|point| <= max - min of either model's seed values on the fold (READING of PROP)",
+    "status": "RUN"
+   }
+  }
+ ],
+ "seed": 20261016
+}

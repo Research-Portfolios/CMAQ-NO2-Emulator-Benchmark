@@ -1,0 +1,58 @@
+{
+ "rows": [
+  {
+   "an02_share": 0.07570570738172051,
+   "f12_slope": 0.8959890557129835,
+   "fold": 2016,
+   "n_cell_days": 18168366,
+   "row": "M",
+   "status": "RUN",
+   "words": "possibly carried by CLIM-WD's weekday factor (CLIM-WD their offset and C channel); one emission-driven variation among several"
+  },
+  {
+   "an02_share": 0.0,
+   "f12_slope": 0.7528905572289304,
+   "fold": 2016,
+   "n_cell_days": 18168366,
+   "row": "M-C7",
+   "status": "RUN",
+   "words": "possibly carried by CLIM-WD's weekday factor (CLIM-WD their offset and C channel); one emission-driven variation among several"
+  },
+  {
+   "an02_share": 0.07570570738172051,
+   "f12_slope": 0.1430984984840531,
+   "fold": 2016,
+   "n_cell_days": 18168366,
+   "row": "M less M-C7",
+   "status": "RUN"
+  },
+  {
+   "an02_share": 0.2309262297091015,
+   "f12_slope": 0.9145104665857354,
+   "fold": 2018,
+   "n_cell_days": 18114772,
+   "row": "M",
+   "status": "RUN",
+   "words": "possibly carried by CLIM-WD's weekday factor (CLIM-WD their offset and C channel); one emission-driven variation among several"
+  },
+  {
+   "an02_share": 0.0,
+   "f12_slope": 0.9280966358118005,
+   "fold": 2018,
+   "n_cell_days": 18114772,
+   "row": "M-C7",
+   "status": "RUN",
+   "words": "possibly carried by CLIM-WD's weekday factor (CLIM-WD their offset and C channel); one emission-driven variation among several"
+  },
+  {
+   "an02_share": 0.2309262297091015,
+   "f12_slope": -0.013586169226065037,
+   "fold": 2018,
+   "n_cell_days": 18114772,
+   "row": "M less M-C7",
+   "status": "RUN"
+  }
+ ],
+ "source": "the study design",
+ "threshold": "none (descriptive, exploratory)"
+}

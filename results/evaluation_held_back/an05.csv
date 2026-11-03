@@ -1,0 +1,7 @@
+fold,row,status,n_cell_days,an02_share,f12_slope,reason,words
+2016,M,RUN,18168366,0.07570570738172051,0.8959890557129835,,possibly carried by CLIM-WD's weekday factor (CLIM-WD their offset and C channel); one emission-driven variation among several
+2016,M-C7,RUN,18168366,0.0,0.7528905572289304,,possibly carried by CLIM-WD's weekday factor (CLIM-WD their offset and C channel); one emission-driven variation among several
+2016,M less M-C7,RUN,18168366,0.07570570738172051,0.1430984984840531,,
+2018,M,RUN,18114772,0.2309262297091015,0.9145104665857354,,possibly carried by CLIM-WD's weekday factor (CLIM-WD their offset and C channel); one emission-driven variation among several
+2018,M-C7,RUN,18114772,0.0,0.9280966358118005,,possibly carried by CLIM-WD's weekday factor (CLIM-WD their offset and C channel); one emission-driven variation among several
+2018,M less M-C7,RUN,18114772,0.2309262297091015,-0.013586169226065037,,

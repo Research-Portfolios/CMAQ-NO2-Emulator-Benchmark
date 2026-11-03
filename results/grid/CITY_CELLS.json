@@ -1,0 +1,1036 @@
+{
+ "run": "emul",
+ "stage": "the second pass, the city cells",
+ "made": "2026-10-25 16:41:11",
+ "design": "the study design's city rule (POP_MAX); Natural Earth populated places",
+ "source": "work/natural_earth/zips_p2/extracted/ne_10m_populated_places/ne_10m_populated_places.shp",
+ "rule": "names matched in the US (ADM0_A3 USA or ADM0NAME United States of America); where names repeat, the largest POP_MAX; the cell holding the record's point (Lambert conformal, sphere 6370000 m, GRIDCRO2D's attributes); the series is the mean over the masked cells of the 3 x 3 block centred on it",
+ "order": "PAPER Fig. 5: New York City, Los Angeles; Chicago, Houston; Phoenix, Philadelphia; San Antonio, San Diego; Dallas, Austin",
+ "mask": {
+  "path": "work/arrays_p2/mask_conus_land.npy",
+  "bytes": 137369,
+  "sha256": "ff3d553eaee09ac62fcddf52ab592055617f6dcb1a292f8fc2f5b23df5e466a1"
+ },
+ "row_col": "0-based [row, col] of the 299 x 459 arrays (row 0 the south edge, as the arrays are stored)",
+ "proj4": "+proj=lcc +lat_1=33.0 +lat_2=45.0 +lat_0=40.0 +lon_0=-97.0 +x_0=0 +y_0=0 +a=6370000 +b=6370000 +units=m +no_defs",
+ "cities": [
+  {
+   "city": "New York",
+   "paper_name": "New York City",
+   "ne_record": 7261,
+   "ne_name": "New York",
+   "ne_adm1": "New York",
+   "pop_max": 19040000,
+   "records_with_name_in_us": 1,
+   "pop_max_of_others": [],
+   "lon": -73.99571754361698,
+   "lat": 40.72156174972766,
+   "point_equals_attributes": false,
+   "attr_lon_minus_point": 0.013754543616983028,
+   "attr_lat_minus_point": 0.03036325027233744,
+   "attr_point_cell": [
+    171,
+    372
+   ],
+   "x_m": 1907980.1553804795,
+   "y_m": 322590.14262931905,
+   "row": 170,
+   "col": 371,
+   "nearest_centre_row_col": [
+    170,
+    372
+   ],
+   "cell_masked": true,
+   "block_3x3": [
+    [
+     169,
+     370
+    ],
+    [
+     169,
+     371
+    ],
+    [
+     169,
+     372
+    ],
+    [
+     170,
+     370
+    ],
+    [
+     170,
+     371
+    ],
+    [
+     170,
+     372
+    ],
+    [
+     171,
+     370
+    ],
+    [
+     171,
+     371
+    ],
+    [
+     171,
+     372
+    ]
+   ],
+   "block_masked": [
+    [
+     169,
+     370
+    ],
+    [
+     169,
+     371
+    ],
+    [
+     170,
+     370
+    ],
+    [
+     170,
+     371
+    ],
+    [
+     170,
+     372
+    ],
+    [
+     171,
+     370
+    ],
+    [
+     171,
+     371
+    ],
+    [
+     171,
+     372
+    ]
+   ],
+   "n_block_masked": 8
+  },
+  {
+   "city": "Los Angeles",
+   "paper_name": "Los Angeles",
+   "ne_record": 7259,
+   "ne_name": "Los Angeles",
+   "ne_adm1": "California",
+   "pop_max": 12500000,
+   "records_with_name_in_us": 1,
+   "pop_max_of_others": [],
+   "lon": -118.23198647223317,
+   "lat": 34.049219260337075,
+   "point_equals_attributes": false,
+   "attr_lon_minus_point": 0.05006047223317012,
+   "attr_lat_minus_point": -0.05729526033707799,
+   "attr_point_cell": [
+    107,
+    52
+   ],
+   "x_m": -1934753.9284403666,
+   "y_m": -431629.1984650074,
+   "row": 108,
+   "col": 51,
+   "nearest_centre_row_col": [
+    108,
+    51
+   ],
+   "cell_masked": true,
+   "block_3x3": [
+    [
+     107,
+     50
+    ],
+    [
+     107,
+     51
+    ],
+    [
+     107,
+     52
+    ],
+    [
+     108,
+     50
+    ],
+    [
+     108,
+     51
+    ],
+    [
+     108,
+     52
+    ],
+    [
+     109,
+     50
+    ],
+    [
+     109,
+     51
+    ],
+    [
+     109,
+     52
+    ]
+   ],
+   "block_masked": [
+    [
+     107,
+     50
+    ],
+    [
+     107,
+     51
+    ],
+    [
+     107,
+     52
+    ],
+    [
+     108,
+     50
+    ],
+    [
+     108,
+     51
+    ],
+    [
+     108,
+     52
+    ],
+    [
+     109,
+     50
+    ],
+    [
+     109,
+     51
+    ],
+    [
+     109,
+     52
+    ]
+   ],
+   "n_block_masked": 9
+  },
+  {
+   "city": "Chicago",
+   "paper_name": "Chicago",
+   "ne_record": 7224,
+   "ne_name": "Chicago",
+   "ne_adm1": "Illinois",
+   "pop_max": 8990000,
+   "records_with_name_in_us": 1,
+   "pop_max_of_others": [],
+   "lon": -87.63523655322338,
+   "lat": 41.847961283364114,
+   "point_equals_attributes": false,
+   "attr_lon_minus_point": -0.116764446776628,
+   "attr_lat_minus_point": -0.01602428336411066,
+   "attr_point_cell": [
+    164,
+    276
+   ],
+   "x_m": 770863.1639297036,
+   "y_m": 244194.11076970588,
+   "row": 164,
+   "col": 277,
+   "nearest_centre_row_col": [
+    164,
+    277
+   ],
+   "cell_masked": false,
+   "block_3x3": [
+    [
+     163,
+     276
+    ],
+    [
+     163,
+     277
+    ],
+    [
+     163,
+     278
+    ],
+    [
+     164,
+     276
+    ],
+    [
+     164,
+     277
+    ],
+    [
+     164,
+     278
+    ],
+    [
+     165,
+     276
+    ],
+    [
+     165,
+     277
+    ],
+    [
+     165,
+     278
+    ]
+   ],
+   "block_masked": [
+    [
+     163,
+     276
+    ],
+    [
+     163,
+     277
+    ],
+    [
+     164,
+     276
+    ],
+    [
+     165,
+     276
+    ]
+   ],
+   "n_block_masked": 4
+  },
+  {
+   "city": "Houston",
+   "paper_name": "Houston",
+   "ne_record": 7221,
+   "ne_name": "Houston",
+   "ne_adm1": "Texas",
+   "pop_max": 4459000,
+   "records_with_name_in_us": 1,
+   "pop_max_of_others": [],
+   "lon": -95.34843625672217,
+   "lat": 29.741272831862542,
+   "point_equals_attributes": false,
+   "attr_lon_minus_point": 0.006511256722163239,
+   "attr_lat_minus_point": 0.08064716813745676,
+   "attr_point_cell": [
+    49,
+    226
+   ],
+   "x_m": 160591.84193456333,
+   "y_m": -1137298.6648542536,
+   "row": 49,
+   "col": 226,
+   "nearest_centre_row_col": [
+    49,
+    226
+   ],
+   "cell_masked": true,
+   "block_3x3": [
+    [
+     48,
+     225
+    ],
+    [
+     48,
+     226
+    ],
+    [
+     48,
+     227
+    ],
+    [
+     49,
+     225
+    ],
+    [
+     49,
+     226
+    ],
+    [
+     49,
+     227
+    ],
+    [
+     50,
+     225
+    ],
+    [
+     50,
+     226
+    ],
+    [
+     50,
+     227
+    ]
+   ],
+   "block_masked": [
+    [
+     48,
+     225
+    ],
+    [
+     48,
+     226
+    ],
+    [
+     48,
+     227
+    ],
+    [
+     49,
+     225
+    ],
+    [
+     49,
+     226
+    ],
+    [
+     49,
+     227
+    ],
+    [
+     50,
+     225
+    ],
+    [
+     50,
+     226
+    ],
+    [
+     50,
+     227
+    ]
+   ],
+   "n_block_masked": 9
+  },
+  {
+   "city": "Phoenix",
+   "paper_name": "Phoenix",
+   "ne_record": 7106,
+   "ne_name": "Phoenix",
+   "ne_adm1": "Arizona",
+   "pop_max": 3551000,
+   "records_with_name_in_us": 1,
+   "pop_max_of_others": [],
+   "lon": -112.06736527766587,
+   "lat": 33.44832240381263,
+   "point_equals_attributes": false,
+   "attr_lon_minus_point": -0.00457272233413164,
+   "attr_lat_minus_point": 0.09360359618736425,
+   "attr_point_cell": [
+    94,
+    97
+   ],
+   "x_m": -1390249.4886845376,
+   "y_m": -609882.0642111328,
+   "row": 93,
+   "col": 97,
+   "nearest_centre_row_col": [
+    93,
+    97
+   ],
+   "cell_masked": true,
+   "block_3x3": [
+    [
+     92,
+     96
+    ],
+    [
+     92,
+     97
+    ],
+    [
+     92,
+     98
+    ],
+    [
+     93,
+     96
+    ],
+    [
+     93,
+     97
+    ],
+    [
+     93,
+     98
+    ],
+    [
+     94,
+     96
+    ],
+    [
+     94,
+     97
+    ],
+    [
+     94,
+     98
+    ]
+   ],
+   "block_masked": [
+    [
+     92,
+     96
+    ],
+    [
+     92,
+     97
+    ],
+    [
+     92,
+     98
+    ],
+    [
+     93,
+     96
+    ],
+    [
+     93,
+     97
+    ],
+    [
+     93,
+     98
+    ],
+    [
+     94,
+     96
+    ],
+    [
+     94,
+     97
+    ],
+    [
+     94,
+     98
+    ]
+   ],
+   "n_block_masked": 9
+  },
+  {
+   "city": "Philadelphia",
+   "paper_name": "Philadelphia",
+   "ne_record": 7114,
+   "ne_name": "Philadelphia",
+   "ne_adm1": "Pennsylvania",
+   "pop_max": 5492000,
+   "records_with_name_in_us": 1,
+   "pop_max_of_others": [],
+   "lon": -75.1798412402816,
+   "lat": 39.94594243742075,
+   "point_equals_attributes": false,
+   "attr_lon_minus_point": 0.007899240281602715,
+   "attr_lat_minus_point": 0.05597656257925365,
+   "attr_point_cell": [
+    162,
+    365
+   ],
+   "x_m": 1832115.195990507,
+   "y_m": 215037.01880420928,
+   "row": 161,
+   "col": 365,
+   "nearest_centre_row_col": [
+    161,
+    365
+   ],
+   "cell_masked": true,
+   "block_3x3": [
+    [
+     160,
+     364
+    ],
+    [
+     160,
+     365
+    ],
+    [
+     160,
+     366
+    ],
+    [
+     161,
+     364
+    ],
+    [
+     161,
+     365
+    ],
+    [
+     161,
+     366
+    ],
+    [
+     162,
+     364
+    ],
+    [
+     162,
+     365
+    ],
+    [
+     162,
+     366
+    ]
+   ],
+   "block_masked": [
+    [
+     160,
+     365
+    ],
+    [
+     160,
+     366
+    ],
+    [
+     161,
+     364
+    ],
+    [
+     161,
+     365
+    ],
+    [
+     161,
+     366
+    ],
+    [
+     162,
+     364
+    ],
+    [
+     162,
+     365
+    ],
+    [
+     162,
+     366
+    ]
+   ],
+   "n_block_masked": 8
+  },
+  {
+   "city": "San Antonio",
+   "paper_name": "San Antonio",
+   "ne_record": 6785,
+   "ne_name": "San Antonio",
+   "ne_adm1": "Texas",
+   "pop_max": 1473000,
+   "records_with_name_in_us": 1,
+   "pop_max_of_others": [],
+   "lon": -98.4926929920987,
+   "lat": 29.419848478603353,
+   "point_equals_attributes": false,
+   "attr_lon_minus_point": -0.01655800790130968,
+   "attr_lat_minus_point": 0.0694305213966473,
+   "attr_point_cell": [
+    46,
+    200
+   ],
+   "x_m": -145736.82192115264,
+   "y_m": -1173574.4808564645,
+   "row": 46,
+   "col": 200,
+   "nearest_centre_row_col": [
+    46,
+    200
+   ],
+   "cell_masked": true,
+   "block_3x3": [
+    [
+     45,
+     199
+    ],
+    [
+     45,
+     200
+    ],
+    [
+     45,
+     201
+    ],
+    [
+     46,
+     199
+    ],
+    [
+     46,
+     200
+    ],
+    [
+     46,
+     201
+    ],
+    [
+     47,
+     199
+    ],
+    [
+     47,
+     200
+    ],
+    [
+     47,
+     201
+    ]
+   ],
+   "block_masked": [
+    [
+     45,
+     199
+    ],
+    [
+     45,
+     200
+    ],
+    [
+     45,
+     201
+    ],
+    [
+     46,
+     199
+    ],
+    [
+     46,
+     200
+    ],
+    [
+     46,
+     201
+    ],
+    [
+     47,
+     199
+    ],
+    [
+     47,
+     200
+    ],
+    [
+     47,
+     201
+    ]
+   ],
+   "n_block_masked": 9
+  },
+  {
+   "city": "San Diego",
+   "paper_name": "San Diego",
+   "ne_record": 7107,
+   "ne_name": "San Diego",
+   "ne_adm1": "California",
+   "pop_max": 2916000,
+   "records_with_name_in_us": 1,
+   "pop_max_of_others": [],
+   "lon": -117.15088145402623,
+   "lat": 32.71891385421138,
+   "point_equals_attributes": false,
+   "attr_lon_minus_point": -0.031054545973759673,
+   "attr_lat_minus_point": 0.10305614578862077,
+   "attr_point_cell": [
+    95,
+    57
+   ],
+   "x_m": -1870409.3155442723,
+   "y_m": -598255.986146783,
+   "row": 94,
+   "col": 57,
+   "nearest_centre_row_col": [
+    94,
+    57
+   ],
+   "cell_masked": true,
+   "block_3x3": [
+    [
+     93,
+     56
+    ],
+    [
+     93,
+     57
+    ],
+    [
+     93,
+     58
+    ],
+    [
+     94,
+     56
+    ],
+    [
+     94,
+     57
+    ],
+    [
+     94,
+     58
+    ],
+    [
+     95,
+     56
+    ],
+    [
+     95,
+     57
+    ],
+    [
+     95,
+     58
+    ]
+   ],
+   "block_masked": [
+    [
+     93,
+     57
+    ],
+    [
+     93,
+     58
+    ],
+    [
+     94,
+     56
+    ],
+    [
+     94,
+     57
+    ],
+    [
+     94,
+     58
+    ],
+    [
+     95,
+     56
+    ],
+    [
+     95,
+     57
+    ],
+    [
+     95,
+     58
+    ]
+   ],
+   "n_block_masked": 8
+  },
+  {
+   "city": "Dallas",
+   "paper_name": "Dallas",
+   "ne_record": 7110,
+   "ne_name": "Dallas",
+   "ne_adm1": "Texas",
+   "pop_max": 4798000,
+   "records_with_name_in_us": 1,
+   "pop_max_of_others": [],
+   "lon": -96.79468722529398,
+   "lat": 32.771958135439206,
+   "point_equals_attributes": false,
+   "attr_lon_minus_point": -0.047275774706022844,
+   "attr_lat_minus_point": 0.050011864560794095,
+   "attr_point_cell": [
+    77,
+    214
+   ],
+   "x_m": 19200.899176238425,
+   "y_m": -800558.9925298262,
+   "row": 77,
+   "col": 214,
+   "nearest_centre_row_col": [
+    77,
+    214
+   ],
+   "cell_masked": true,
+   "block_3x3": [
+    [
+     76,
+     213
+    ],
+    [
+     76,
+     214
+    ],
+    [
+     76,
+     215
+    ],
+    [
+     77,
+     213
+    ],
+    [
+     77,
+     214
+    ],
+    [
+     77,
+     215
+    ],
+    [
+     78,
+     213
+    ],
+    [
+     78,
+     214
+    ],
+    [
+     78,
+     215
+    ]
+   ],
+   "block_masked": [
+    [
+     76,
+     213
+    ],
+    [
+     76,
+     214
+    ],
+    [
+     76,
+     215
+    ],
+    [
+     77,
+     213
+    ],
+    [
+     77,
+     214
+    ],
+    [
+     77,
+     215
+    ],
+    [
+     78,
+     213
+    ],
+    [
+     78,
+     214
+    ],
+    [
+     78,
+     215
+    ]
+   ],
+   "n_block_masked": 9
+  },
+  {
+   "city": "Austin",
+   "paper_name": "Austin",
+   "ne_record": 6233,
+   "ne_name": "Austin",
+   "ne_adm1": "Texas",
+   "pop_max": 1161000,
+   "records_with_name_in_us": 1,
+   "pop_max_of_others": [],
+   "lon": -97.7447242,
+   "lat": 30.2688955,
+   "point_equals_attributes": true,
+   "attr_lon_minus_point": 1.9999998812636477e-07,
+   "attr_lat_minus_point": 5.00000002290335e-07,
+   "attr_point_cell": [
+    54,
+    207
+   ],
+   "x_m": -71933.45753509524,
+   "y_m": -1079413.9487288417,
+   "row": 54,
+   "col": 207,
+   "nearest_centre_row_col": [
+    54,
+    207
+   ],
+   "cell_masked": true,
+   "block_3x3": [
+    [
+     53,
+     206
+    ],
+    [
+     53,
+     207
+    ],
+    [
+     53,
+     208
+    ],
+    [
+     54,
+     206
+    ],
+    [
+     54,
+     207
+    ],
+    [
+     54,
+     208
+    ],
+    [
+     55,
+     206
+    ],
+    [
+     55,
+     207
+    ],
+    [
+     55,
+     208
+    ]
+   ],
+   "block_masked": [
+    [
+     53,
+     206
+    ],
+    [
+     53,
+     207
+    ],
+    [
+     53,
+     208
+    ],
+    [
+     54,
+     206
+    ],
+    [
+     54,
+     207
+    ],
+    [
+     54,
+     208
+    ],
+    [
+     55,
+     206
+    ],
+    [
+     55,
+     207
+    ],
+    [
+     55,
+     208
+    ]
+   ],
+   "n_block_masked": 9
+  }
+ ]
+}

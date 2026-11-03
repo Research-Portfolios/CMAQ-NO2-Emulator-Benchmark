@@ -1,0 +1,79 @@
+{
+ "rows": [
+  {
+   "c2_model": "GBT",
+   "curve_sha256": "e184be243ad387db326d6754d309d551b894e79fe3c3a0393178ab58148f3359",
+   "fold": 2015,
+   "min_rmse": 0.56003507944493,
+   "min_round": 500,
+   "min_round_recorded": 500,
+   "n_iter": 500,
+   "printed": false,
+   "round": 500,
+   "round500_rmse": 0.56003507944493,
+   "rule": "GBT-ES is printed beside GBT only if the validation RMSE at round 500 is more than 1 percent worse than the curve's minimum",
+   "status": "RUN",
+   "worse_fraction": 0.0
+  },
+  {
+   "c2_model": "GBT",
+   "curve_sha256": "04548b2ca502301241be590907cabd661b2247f1db0840dac5488fcd7056abe1",
+   "fold": 2016,
+   "min_rmse": 0.6018796472870913,
+   "min_round": 500,
+   "min_round_recorded": 500,
+   "n_iter": 500,
+   "printed": false,
+   "round": 500,
+   "round500_rmse": 0.6018796472870913,
+   "rule": "GBT-ES is printed beside GBT only if the validation RMSE at round 500 is more than 1 percent worse than the curve's minimum",
+   "status": "RUN",
+   "worse_fraction": 0.0
+  },
+  {
+   "c2_model": "GBT",
+   "curve_sha256": "8e300a257a4240ffa31cca14c191b313131116722b2caa888d933cb5dc8f76ae",
+   "fold": 2017,
+   "min_rmse": 0.5987534958140828,
+   "min_round": 500,
+   "min_round_recorded": 500,
+   "n_iter": 500,
+   "printed": false,
+   "round": 500,
+   "round500_rmse": 0.5987534958140828,
+   "rule": "GBT-ES is printed beside GBT only if the validation RMSE at round 500 is more than 1 percent worse than the curve's minimum",
+   "status": "RUN",
+   "worse_fraction": 0.0
+  },
+  {
+   "c2_model": "GBT",
+   "curve_sha256": "0c3026944b0ae7fb1815f8cc85dc7fca09d433eafcea4c41f7e138916174cb02",
+   "fold": 2018,
+   "min_rmse": 0.6002807525990642,
+   "min_round": 500,
+   "min_round_recorded": 500,
+   "n_iter": 500,
+   "printed": false,
+   "round": 500,
+   "round500_rmse": 0.6002807525990642,
+   "rule": "GBT-ES is printed beside GBT only if the validation RMSE at round 500 is more than 1 percent worse than the curve's minimum",
+   "status": "RUN",
+   "worse_fraction": 0.0
+  },
+  {
+   "c2_model": "GBT",
+   "curve_sha256": "51c994c155188f0e204884e41b79fc480dcb85191e08351220c88afeb6bb4fd2",
+   "fold": 2019,
+   "min_rmse": 0.6132778272050039,
+   "min_round": 500,
+   "min_round_recorded": 500,
+   "n_iter": 500,
+   "printed": false,
+   "round": 500,
+   "round500_rmse": 0.6132778272050039,
+   "rule": "GBT-ES is printed beside GBT only if the validation RMSE at round 500 is more than 1 percent worse than the curve's minimum",
+   "status": "RUN",
+   "worse_fraction": 0.0
+  }
+ ]
+}

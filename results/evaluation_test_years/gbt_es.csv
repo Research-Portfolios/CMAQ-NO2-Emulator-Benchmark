@@ -1,0 +1,6 @@
+fold,status,printed,worse_fraction,min_round,round,c2_model,reason
+2015,RUN,false,0.0,500,500,GBT,
+2016,RUN,false,0.0,500,500,GBT,
+2017,RUN,false,0.0,500,500,GBT,
+2018,RUN,false,0.0,500,500,GBT,
+2019,RUN,false,0.0,500,500,GBT,

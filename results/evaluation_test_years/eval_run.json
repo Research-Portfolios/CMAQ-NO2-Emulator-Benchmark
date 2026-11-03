@@ -1,0 +1,3833 @@
+{
+ "c7a_applies": true,
+ "classes": [
+  {
+   "coast_edge_cells": {
+    "border": 5502,
+    "class_border": 4151,
+    "class_coast": 1855,
+    "class_edge": 710,
+    "class_interior": 46878,
+    "coast": 2018,
+    "edge": 710
+   },
+   "fold": 2015,
+   "rule": "class_<name>: the exclusive classes (edge, coast, border, interior, the first that applies; READING); edge, coast, border: the cells meeting each test on its own (a cell may be in more than one)",
+   "urban_cells": {
+    "intermediate": 1237,
+    "rural": 51790,
+    "urban": 567
+   }
+  },
+  {
+   "coast_edge_cells": {
+    "border": 5502,
+    "class_border": 4151,
+    "class_coast": 1855,
+    "class_edge": 710,
+    "class_interior": 46878,
+    "coast": 2018,
+    "edge": 710
+   },
+   "fold": 2016,
+   "rule": "class_<name>: the exclusive classes (edge, coast, border, interior, the first that applies; READING); edge, coast, border: the cells meeting each test on its own (a cell may be in more than one)",
+   "urban_cells": {
+    "intermediate": 1237,
+    "rural": 51790,
+    "urban": 567
+   }
+  },
+  {
+   "coast_edge_cells": {
+    "border": 5502,
+    "class_border": 4151,
+    "class_coast": 1855,
+    "class_edge": 710,
+    "class_interior": 46878,
+    "coast": 2018,
+    "edge": 710
+   },
+   "fold": 2017,
+   "rule": "class_<name>: the exclusive classes (edge, coast, border, interior, the first that applies; READING); edge, coast, border: the cells meeting each test on its own (a cell may be in more than one)",
+   "urban_cells": {
+    "intermediate": 1237,
+    "rural": 51790,
+    "urban": 567
+   }
+  },
+  {
+   "coast_edge_cells": {
+    "border": 5502,
+    "class_border": 4151,
+    "class_coast": 1855,
+    "class_edge": 710,
+    "class_interior": 46878,
+    "coast": 2018,
+    "edge": 710
+   },
+   "fold": 2018,
+   "rule": "class_<name>: the exclusive classes (edge, coast, border, interior, the first that applies; READING); edge, coast, border: the cells meeting each test on its own (a cell may be in more than one)",
+   "urban_cells": {
+    "intermediate": 1237,
+    "rural": 51790,
+    "urban": 567
+   }
+  },
+  {
+   "coast_edge_cells": {
+    "border": 5502,
+    "class_border": 4151,
+    "class_coast": 1855,
+    "class_edge": 710,
+    "class_interior": 46878,
+    "coast": 2018,
+    "edge": 710
+   },
+   "fold": 2019,
+   "rule": "class_<name>: the exclusive classes (edge, coast, border, interior, the first that applies; READING); edge, coast, border: the cells meeting each test on its own (a cell may be in more than one)",
+   "urban_cells": {
+    "intermediate": 1237,
+    "rural": 51790,
+    "urban": 567
+   }
+  }
+ ],
+ "configs_sha256": {
+  "CITY_CELLS.json": "e26891d94b595261d0f7754287526f7ad40e47e64c6495c283c200ce7c87ff25",
+  "LOCKBOX_DAYS.json": "48d93356f313475be82c58dc8a3dbeebd5c38a26e56c22699385c222d9b92718",
+  "S3_ARRAYS.json": "f541250143d3c5a4f4a862ac3b9884565a27815378e9359f082c67cc4ddfc554",
+  "S3_CHANNELS.json": "def8e5b4e0cbf62d4356f7fa702222b55fe2e369d1a4626b475e27284e52f795",
+  "SPLITS.json": "e142f8af242bdeaf76c28ddf7ed5f68fb6bac20cbb78d398e5b24af06e919787"
+ },
+ "design": "STUDY_DESIGN",
+ "design_sha256": "be15c75df78d24ae51ed994fccb38018c8b14bc3ac93cf84ac6a9c74d839489d",
+ "exploratory_margin_ppb": 0.05,
+ "files_read": [
+  {
+   "bytes": 72459216,
+   "clipped_masked_total": 0,
+   "file": "pred_masked.npy",
+   "fold": 2015,
+   "gbt_fit": null,
+   "kind": "baseline",
+   "n_days": 338,
+   "name": "CLIM-WD",
+   "sha256": "053d30234e6413f80b40a9f795b6e40fbaebf4b1b2bfe9b3b9f47f5c7cfe631e"
+  },
+  {
+   "bytes": 72459216,
+   "clipped_masked_total": 0,
+   "file": "pred_masked.npy",
+   "fold": 2015,
+   "gbt_fit": null,
+   "kind": "baseline",
+   "n_days": 338,
+   "name": "CLIM-C",
+   "sha256": "a43ea754c77adb34a93c41a83667c90d8eb70cb043fab8025c241b38b2a96217"
+  },
+  {
+   "bytes": 72459216,
+   "clipped_masked_total": 0,
+   "file": "pred_masked.npy",
+   "fold": 2015,
+   "gbt_fit": null,
+   "kind": "baseline",
+   "n_days": 338,
+   "name": "CLIM-EM",
+   "sha256": "cdf7d64c4b26000df8deb0551e089eb6eec94d665315e74e354ab4eb6a7ade3d"
+  },
+  {
+   "bytes": 72459216,
+   "clipped_masked_total": 12466,
+   "file": "pred_masked.npy",
+   "fold": 2015,
+   "gbt_fit": {
+    "n_iter": 500,
+    "val_day": "20160201",
+    "val_day_output_sha256": "7993443f0756f464cf2508ad461af43e9fddf05f4ced5617f600da03c379e9cb"
+   },
+   "kind": "baseline",
+   "n_days": 338,
+   "name": "GBT",
+   "sha256": "20b5c6651ed5cdbe69055b9c1a394d3b47d27ef5146a52c3321448986beccad1"
+  },
+  {
+   "bytes": 72459216,
+   "clipped_masked_total": 955126,
+   "file": "pred_masked.npy",
+   "fold": 2015,
+   "gbt_fit": {
+    "n_iter": 500,
+    "val_day": "20160201",
+    "val_day_output_sha256": "7993443f0756f464cf2508ad461af43e9fddf05f4ced5617f600da03c379e9cb"
+   },
+   "kind": "baseline",
+   "n_days": 338,
+   "name": "GBT-RIDGE",
+   "sha256": "4413fb62febf4e41b3dfd0309ab22014122d8f5f94e50d5b786062b43e1c8124"
+  },
+  {
+   "bytes": 72459216,
+   "clipped_masked_total": 22783,
+   "file": "pred_masked.npy",
+   "fold": 2015,
+   "inference": {
+    "infer_batch": 32,
+    "n_days": 338,
+    "seconds_day_sets": {},
+    "seconds_test_cv": 41.2,
+    "seconds_total": 41.2,
+    "windows_per_day": 126
+   },
+   "kind": "network",
+   "labels": {
+    "fold": 2015,
+    "model_id": 20,
+    "network": "advanced",
+    "seed_offset": 0
+   },
+   "n_days": 338,
+   "name": "fold2015_M",
+   "pred_info": {
+    "bytes": 19405,
+    "done_sha256": null,
+    "file": "pred_info.json",
+    "sha256": "64660e50fc9446145eb3e7d4412aa786c16f50db53541e317b13f86d230a3025"
+   },
+   "result": {
+    "best_step": 15250,
+    "early_stopped": false,
+    "last_step": 16000,
+    "steps_planned": 16000,
+    "steps_run": 16000
+   },
+   "sha256": "7b96b0d92a6dec0be614077118f1125327ff7b84a238eb19f00bdd9a0645af18",
+   "train_log": {
+    "bytes": 49453,
+    "done_sha256": null,
+    "file": "fold2015_M.json",
+    "n_evaluations": 64,
+    "note": "DONE.json names the log by path only (no sha256)",
+    "place": "TRAIN/logs/tier_a2/lane2/train",
+    "places": [
+     "TRAIN/logs/train",
+     "TRAIN/logs/tier_a2/lane1/train",
+     "TRAIN/logs/tier_a2/lane2/train"
+    ],
+    "sha256": "d1a542e92f67994a190e0cd7763c5e8ed3532d6c1337bae671ac5271e3818eea",
+    "status": "READ"
+   }
+  },
+  {
+   "bytes": 72459216,
+   "clipped_masked_total": 605,
+   "file": "pred_masked.npy",
+   "fold": 2015,
+   "gbt_fit": null,
+   "kind": "baseline",
+   "n_days": 338,
+   "name": "MET-REG",
+   "sha256": "47c1f110f47ed8ce4c1ad4922c74f2e37acac5666f0806dace9add07ad6da124"
+  },
+  {
+   "bytes": 72459216,
+   "clipped_masked_total": 60248,
+   "file": "pred_masked.npy",
+   "fold": 2015,
+   "inference": {
+    "infer_batch": 32,
+    "n_days": 338,
+    "seconds_day_sets": {
+     "TRAIN-S": 40.5,
+     "VAL": 39.1
+    },
+    "seconds_test_cv": 49.3,
+    "seconds_total": 128.9,
+    "windows_per_day": 126
+   },
+   "kind": "network",
+   "labels": {
+    "fold": 2015,
+    "model_id": 0,
+    "network": "baseline",
+    "seed_offset": 0
+   },
+   "n_days": 338,
+   "name": "fold2015_baseline",
+   "pred_info": {
+    "bytes": 29099,
+    "done_sha256": null,
+    "file": "pred_info.json",
+    "sha256": "d950ced63d58dc2d5b64572930b8b5a1c5f630c482090469b8049cf914f4de6c"
+   },
+   "result": {
+    "best_step": 6000,
+    "early_stopped": false,
+    "last_step": 6000,
+    "steps_planned": 6000,
+    "steps_run": 6000
+   },
+   "sha256": "5e4094ef10b3c32fcf1303624d1fa612bc461afe817b0245557a33751a4d96e1",
+   "train_log": {
+    "bytes": 23748,
+    "done_sha256": null,
+    "file": "fold2015_baseline.json",
+    "n_evaluations": 24,
+    "note": "DONE.json names the log by path only (no sha256)",
+    "place": "TRAIN/logs/train",
+    "places": [
+     "TRAIN/logs/train",
+     "TRAIN/logs/tier_a2/lane1/train",
+     "TRAIN/logs/tier_a2/lane2/train"
+    ],
+    "sha256": "3ea35b73e09839d3605a43368024782e3f2d71d1cf5ae23a4eedb08e2bdede85",
+    "status": "READ"
+   }
+  },
+  {
+   "bytes": 72459216,
+   "clipped_masked_total": 33560,
+   "file": "pred_masked.npy",
+   "fold": 2015,
+   "inference": {
+    "infer_batch": 32,
+    "n_days": 338,
+    "seconds_day_sets": {},
+    "seconds_test_cv": 19.3,
+    "seconds_total": 19.3,
+    "windows_per_day": 126
+   },
+   "kind": "network",
+   "labels": {
+    "fold": 2015,
+    "model_id": 27,
+    "network": "pixr",
+    "seed_offset": 0
+   },
+   "n_days": 338,
+   "name": "fold2015_PIXR",
+   "pred_info": {
+    "bytes": 19469,
+    "done_sha256": null,
+    "file": "pred_info.json",
+    "sha256": "d51fdb836aecd77901452f6d8f05b4972e0754cf544faa6a48c1cd2a246d6471"
+   },
+   "result": {
+    "best_step": 5750,
+    "early_stopped": false,
+    "last_step": 6000,
+    "steps_planned": 6000,
+    "steps_run": 6000
+   },
+   "sha256": "3ad62144150b03690c1350790844f4c2c893cf64b78bc0e8214e9f82666b3b30",
+   "train_log": {
+    "bytes": 24959,
+    "done_sha256": null,
+    "file": "fold2015_PIXR.json",
+    "n_evaluations": 24,
+    "note": "DONE.json names the log by path only (no sha256)",
+    "place": "TRAIN/logs/tier_a2/lane2/train",
+    "places": [
+     "TRAIN/logs/train",
+     "TRAIN/logs/tier_a2/lane1/train",
+     "TRAIN/logs/tier_a2/lane2/train"
+    ],
+    "sha256": "cb5cb1d8031f8573eeec887592f4e7d4c0d248c96485c1f12eec7110dd3f542a",
+    "status": "READ"
+   }
+  },
+  {
+   "bytes": 72673592,
+   "clipped_masked_total": 0,
+   "file": "pred_masked.npy",
+   "fold": 2016,
+   "gbt_fit": null,
+   "kind": "baseline",
+   "n_days": 339,
+   "name": "CLIM-WD",
+   "sha256": "178abbed1ceed67ac705f87fa892d44792b2bdb32b4d9c05aaa3cab4de275f1e"
+  },
+  {
+   "bytes": 72673592,
+   "clipped_masked_total": 24795,
+   "file": "pred_masked.npy",
+   "fold": 2016,
+   "inference": {
+    "infer_batch": 32,
+    "n_days": 339,
+    "seconds_day_sets": {},
+    "seconds_test_cv": 49.7,
+    "seconds_total": 49.7,
+    "windows_per_day": 126
+   },
+   "kind": "network",
+   "labels": {
+    "fold": 2016,
+    "model_id": 21,
+    "network": "baseline",
+    "seed_offset": 0
+   },
+   "n_days": 339,
+   "name": "fold2016_A1",
+   "pred_info": {
+    "bytes": 19388,
+    "done_sha256": null,
+    "file": "pred_info.json",
+    "sha256": "4fbf509651e5524e56fbd22f38d265d95cb1ac728d7603fa10c751f9d02b0114"
+   },
+   "result": {
+    "best_step": 6000,
+    "early_stopped": false,
+    "last_step": 6000,
+    "steps_planned": 6000,
+    "steps_run": 6000
+   },
+   "sha256": "301f050fbd2959061905830bcf46aa27a7979aafd2b44a42fefca08659dc8085",
+   "train_log": {
+    "bytes": 25729,
+    "done_sha256": null,
+    "file": "fold2016_A1.json",
+    "n_evaluations": 24,
+    "note": "DONE.json names the log by path only (no sha256)",
+    "place": "TRAIN/logs/tier_a2/lane1/train",
+    "places": [
+     "TRAIN/logs/train",
+     "TRAIN/logs/tier_a2/lane1/train",
+     "TRAIN/logs/tier_a2/lane2/train"
+    ],
+    "sha256": "01153c9a0b8308cb01eafcb96114d1fd1a2c18bf03352db14b8d9bf84158c25c",
+    "status": "READ"
+   }
+  },
+  {
+   "bytes": 72673592,
+   "clipped_masked_total": 80759,
+   "file": "pred_masked.npy",
+   "fold": 2016,
+   "inference": {
+    "infer_batch": 32,
+    "n_days": 339,
+    "seconds_day_sets": {},
+    "seconds_test_cv": 39.5,
+    "seconds_total": 39.5,
+    "windows_per_day": 126
+   },
+   "kind": "network",
+   "labels": {
+    "fold": 2016,
+    "model_id": 22,
+    "network": "advanced",
+    "seed_offset": 0
+   },
+   "n_days": 339,
+   "name": "fold2016_A2",
+   "pred_info": {
+    "bytes": 20073,
+    "done_sha256": null,
+    "file": "pred_info.json",
+    "sha256": "d61597a502ed9d33f2efde5a736656da0812a6e6406ada8150200a7ff028f99d"
+   },
+   "result": {
+    "best_step": 6000,
+    "early_stopped": false,
+    "last_step": 6000,
+    "steps_planned": 6000,
+    "steps_run": 6000
+   },
+   "sha256": "35cac4132e51584887003b9b0cf0217449e8e19c679b32d74e9530dd59ee98d8",
+   "train_log": {
+    "bytes": 29052,
+    "done_sha256": null,
+    "file": "fold2016_A2.json",
+    "n_evaluations": 24,
+    "note": "DONE.json names the log by path only (no sha256)",
+    "place": "TRAIN/logs/tier_a2/lane1/train",
+    "places": [
+     "TRAIN/logs/train",
+     "TRAIN/logs/tier_a2/lane1/train",
+     "TRAIN/logs/tier_a2/lane2/train"
+    ],
+    "sha256": "8da7fb848625dbf0d4486673cd47f2484841668cb435b31609d884367991e7d3",
+    "status": "READ"
+   }
+  },
+  {
+   "bytes": 72673592,
+   "clipped_masked_total": 51024,
+   "file": "pred_masked.npy",
+   "fold": 2016,
+   "inference": {
+    "infer_batch": 32,
+    "n_days": 339,
+    "seconds_day_sets": {},
+    "seconds_test_cv": 41.4,
+    "seconds_total": 41.4,
+    "windows_per_day": 126
+   },
+   "kind": "network",
+   "labels": {
+    "fold": 2016,
+    "model_id": 23,
+    "network": "advanced",
+    "seed_offset": 0
+   },
+   "n_days": 339,
+   "name": "fold2016_A3",
+   "pred_info": {
+    "bytes": 19932,
+    "done_sha256": null,
+    "file": "pred_info.json",
+    "sha256": "31f4e4a0a188c9b57379e795f4dfd0f9898f587724362142c23ec7a215038d45"
+   },
+   "result": {
+    "best_step": 6000,
+    "early_stopped": false,
+    "last_step": 6000,
+    "steps_planned": 6000,
+    "steps_run": 6000
+   },
+   "sha256": "25d5c91d3c777874cf636080f6cc93a29763f79788b1f2e2c50688384be2d73d",
+   "train_log": {
+    "bytes": 30342,
+    "done_sha256": null,
+    "file": "fold2016_A3.json",
+    "n_evaluations": 24,
+    "note": "DONE.json names the log by path only (no sha256)",
+    "place": "TRAIN/logs/tier_a2/lane1/train",
+    "places": [
+     "TRAIN/logs/train",
+     "TRAIN/logs/tier_a2/lane1/train",
+     "TRAIN/logs/tier_a2/lane2/train"
+    ],
+    "sha256": "1f743403e77b74382a90053987c576f2eb3f2e5434522506139ead38d1681e1d",
+    "status": "READ"
+   }
+  },
+  {
+   "bytes": 72673592,
+   "clipped_masked_total": 61833,
+   "file": "pred_masked.npy",
+   "fold": 2016,
+   "inference": {
+    "infer_batch": 32,
+    "n_days": 339,
+    "seconds_day_sets": {},
+    "seconds_test_cv": 41.3,
+    "seconds_total": 41.3,
+    "windows_per_day": 126
+   },
+   "kind": "network",
+   "labels": {
+    "fold": 2016,
+    "model_id": 26,
+    "network": "advanced",
+    "seed_offset": 0
+   },
+   "n_days": 339,
+   "name": "fold2016_A3BL",
+   "pred_info": {
+    "bytes": 19950,
+    "done_sha256": null,
+    "file": "pred_info.json",
+    "sha256": "15c5fa17fadfb5e26edc32c8c723ca2f90fe9a5e350df97d99567c908d7c427e"
+   },
+   "result": {
+    "best_step": 5750,
+    "early_stopped": false,
+    "last_step": 6000,
+    "steps_planned": 6000,
+    "steps_run": 6000
+   },
+   "sha256": "2c534c531da54ff62c146bd8208b9596f91ec3138b289f3594a2d80eb2801d96",
+   "train_log": {
+    "bytes": 30865,
+    "done_sha256": null,
+    "file": "fold2016_A3BL.json",
+    "n_evaluations": 24,
+    "note": "DONE.json names the log by path only (no sha256)",
+    "place": "TRAIN/logs/tier_a2/lane1/train",
+    "places": [
+     "TRAIN/logs/train",
+     "TRAIN/logs/tier_a2/lane1/train",
+     "TRAIN/logs/tier_a2/lane2/train"
+    ],
+    "sha256": "bbeb6e09d96896cb1521bd7cb47fbfd234903a273de6204860333d2f995d64c9",
+    "status": "READ"
+   }
+  },
+  {
+   "bytes": 72673592,
+   "clipped_masked_total": 128032,
+   "file": "pred_masked.npy",
+   "fold": 2016,
+   "inference": {
+    "infer_batch": 32,
+    "n_days": 339,
+    "seconds_day_sets": {},
+    "seconds_test_cv": 39.5,
+    "seconds_total": 39.5,
+    "windows_per_day": 126
+   },
+   "kind": "network",
+   "labels": {
+    "fold": 2016,
+    "model_id": 28,
+    "network": "advanced",
+    "seed_offset": 0
+   },
+   "n_days": 339,
+   "name": "fold2016_A3OFF",
+   "pred_info": {
+    "bytes": 20089,
+    "done_sha256": null,
+    "file": "pred_info.json",
+    "sha256": "0920199a6a02a6f73ef89f1caeb18643d7917496c9c0f79d4f654ec541681a30"
+   },
+   "result": {
+    "best_step": 6000,
+    "early_stopped": false,
+    "last_step": 6000,
+    "steps_planned": 6000,
+    "steps_run": 6000
+   },
+   "sha256": "bd15149807d231a4d8d0b6a00a08bb5c346a88d4ecdcd56cff6bb06180e43d14",
+   "train_log": {
+    "bytes": 30444,
+    "done_sha256": null,
+    "file": "fold2016_A3OFF.json",
+    "n_evaluations": 24,
+    "note": "DONE.json names the log by path only (no sha256)",
+    "place": "TRAIN/logs/tier_a2/lane1/train",
+    "places": [
+     "TRAIN/logs/train",
+     "TRAIN/logs/tier_a2/lane1/train",
+     "TRAIN/logs/tier_a2/lane2/train"
+    ],
+    "sha256": "3cdf03cd63c0f205e1588d6b67b18586f903eb5b8cc480a6360fbb0b98057515",
+    "status": "READ"
+   }
+  },
+  {
+   "bytes": 72673592,
+   "clipped_masked_total": 39889,
+   "file": "pred_masked.npy",
+   "fold": 2016,
+   "inference": {
+    "infer_batch": 32,
+    "n_days": 339,
+    "seconds_day_sets": {},
+    "seconds_test_cv": 40.1,
+    "seconds_total": 40.1,
+    "windows_per_day": 126
+   },
+   "kind": "network",
+   "labels": {
+    "fold": 2016,
+    "model_id": 23,
+    "network": "advanced",
+    "seed_offset": 0
+   },
+   "n_days": 339,
+   "name": "fold2016_A3_LR-3e-3",
+   "pred_info": {
+    "bytes": 19901,
+    "done_sha256": null,
+    "file": "pred_info.json",
+    "sha256": "d5810e77320398c090eba66283f3d685cf920157e30308cad249cb1d52f02490"
+   },
+   "result": {
+    "best_step": 6000,
+    "early_stopped": false,
+    "last_step": 6000,
+    "steps_planned": 6000,
+    "steps_run": 6000
+   },
+   "sha256": "837b15c5aca40cf729242ae52c8a5bcef11687553b9da743b002f3076b75c02a",
+   "train_log": {
+    "bytes": 30466,
+    "done_sha256": null,
+    "file": "fold2016_A3_LR-3e-3.json",
+    "n_evaluations": 24,
+    "note": "DONE.json names the log by path only (no sha256)",
+    "place": "TRAIN/logs/tier_a2/lane1/train",
+    "places": [
+     "TRAIN/logs/train",
+     "TRAIN/logs/tier_a2/lane1/train",
+     "TRAIN/logs/tier_a2/lane2/train"
+    ],
+    "sha256": "0736bca69f169f1f4c0590cd001d0631d43c2d079a14a232893efddf77ae1184",
+    "status": "READ"
+   }
+  },
+  {
+   "bytes": 72673592,
+   "clipped_masked_total": 71595,
+   "file": "pred_masked.npy",
+   "fold": 2016,
+   "inference": {
+    "infer_batch": 32,
+    "n_days": 339,
+    "seconds_day_sets": {},
+    "seconds_test_cv": 39.8,
+    "seconds_total": 39.8,
+    "windows_per_day": 126
+   },
+   "kind": "network",
+   "labels": {
+    "fold": 2016,
+    "model_id": 23,
+    "network": "advanced",
+    "seed_offset": 0
+   },
+   "n_days": 339,
+   "name": "fold2016_A3_LR-3e-4",
+   "pred_info": {
+    "bytes": 19993,
+    "done_sha256": null,
+    "file": "pred_info.json",
+    "sha256": "41efde043577375d0978c1f2378f9bcc663ebfb2368081f0ac8b16fc6e166d56"
+   },
+   "result": {
+    "best_step": 5750,
+    "early_stopped": false,
+    "last_step": 6000,
+    "steps_planned": 6000,
+    "steps_run": 6000
+   },
+   "sha256": "6652ef8a765bdc541a7c907b0261e9c5cd4db9da441f144b436810f3e1a85d48",
+   "train_log": {
+    "bytes": 30454,
+    "done_sha256": null,
+    "file": "fold2016_A3_LR-3e-4.json",
+    "n_evaluations": 24,
+    "note": "DONE.json names the log by path only (no sha256)",
+    "place": "TRAIN/logs/tier_a2/lane1/train",
+    "places": [
+     "TRAIN/logs/train",
+     "TRAIN/logs/tier_a2/lane1/train",
+     "TRAIN/logs/tier_a2/lane2/train"
+    ],
+    "sha256": "134a29f9a5b7dc90af10f1031a0e80087354be9654a0782d9d07a7329f59f8af",
+    "status": "READ"
+   }
+  },
+  {
+   "bytes": 72673592,
+   "clipped_masked_total": 29235,
+   "file": "pred_masked.npy",
+   "fold": 2016,
+   "inference": {
+    "infer_batch": 32,
+    "n_days": 339,
+    "seconds_day_sets": {},
+    "seconds_test_cv": 39.5,
+    "seconds_total": 39.5,
+    "windows_per_day": 126
+   },
+   "kind": "network",
+   "labels": {
+    "fold": 2016,
+    "model_id": 24,
+    "network": "advanced",
+    "seed_offset": 0
+   },
+   "n_days": 339,
+   "name": "fold2016_A4",
+   "pred_info": {
+    "bytes": 19888,
+    "done_sha256": null,
+    "file": "pred_info.json",
+    "sha256": "dbcc037c6eac993ede77966fc7d118fbf6624b4538040e5d75c8610551e9acbb"
+   },
+   "result": {
+    "best_step": 16000,
+    "early_stopped": false,
+    "last_step": 16000,
+    "steps_planned": 16000,
+    "steps_run": 16000
+   },
+   "sha256": "8cfc63c90ab3adc097267101a473cca371b55a76f35a2c79915718f66940e3eb",
+   "train_log": {
+    "bytes": 48940,
+    "done_sha256": null,
+    "file": "fold2016_A4.json",
+    "n_evaluations": 64,
+    "note": "DONE.json names the log by path only (no sha256)",
+    "place": "TRAIN/logs/tier_a2/lane1/train",
+    "places": [
+     "TRAIN/logs/train",
+     "TRAIN/logs/tier_a2/lane1/train",
+     "TRAIN/logs/tier_a2/lane2/train"
+    ],
+    "sha256": "a7721f3e19f4da016336ac32e2e9795fb6889c206639f1fb6ae3efcad0cbe83f",
+    "status": "READ"
+   }
+  },
+  {
+   "bytes": 72673592,
+   "clipped_masked_total": 0,
+   "file": "pred_masked.npy",
+   "fold": 2016,
+   "gbt_fit": null,
+   "kind": "baseline",
+   "n_days": 339,
+   "name": "CLIM-C",
+   "sha256": "f22a7decaf17953816b35b40a5b764916f22e2fcfcc24ddaeedbd15e39f34a13"
+  },
+  {
+   "bytes": 72673592,
+   "clipped_masked_total": 0,
+   "file": "pred_masked.npy",
+   "fold": 2016,
+   "gbt_fit": null,
+   "kind": "baseline",
+   "n_days": 339,
+   "name": "CLIM-EM",
+   "sha256": "01959f738b6a0640eec639ed4ce3fa899f7a8866f39602569418b5f437a882fc"
+  },
+  {
+   "bytes": 72673592,
+   "clipped_masked_total": 12141,
+   "file": "pred_masked.npy",
+   "fold": 2016,
+   "gbt_fit": {
+    "n_iter": 500,
+    "val_day": "20150126",
+    "val_day_output_sha256": "00998330f5104b980458c384fe3559ce5ed50da8cd5883622ff27e5762ee0147"
+   },
+   "kind": "baseline",
+   "n_days": 339,
+   "name": "GBT",
+   "sha256": "1191ee113202573a63c2b4fff5a3a434f23f56b26b4dad32bf849f8e8cb2fe42"
+  },
+  {
+   "bytes": 72673592,
+   "clipped_masked_total": 1137813,
+   "file": "pred_masked.npy",
+   "fold": 2016,
+   "gbt_fit": {
+    "n_iter": 500,
+    "val_day": "20150126",
+    "val_day_output_sha256": "00998330f5104b980458c384fe3559ce5ed50da8cd5883622ff27e5762ee0147"
+   },
+   "kind": "baseline",
+   "n_days": 339,
+   "name": "GBT-RIDGE",
+   "sha256": "1d3c7a94458863c1311933ceccd476a5603245e8a5b0892340034f5858b9a330"
+  },
+  {
+   "bytes": 72673592,
+   "clipped_masked_total": 30866,
+   "file": "pred_masked.npy",
+   "fold": 2016,
+   "inference": {
+    "infer_batch": 32,
+    "n_days": 339,
+    "seconds_day_sets": {},
+    "seconds_test_cv": 41.8,
+    "seconds_total": 41.8,
+    "windows_per_day": 126
+   },
+   "kind": "network",
+   "labels": {
+    "fold": 2016,
+    "model_id": 20,
+    "network": "advanced",
+    "seed_offset": 0
+   },
+   "n_days": 339,
+   "name": "fold2016_M",
+   "pred_info": {
+    "bytes": 19835,
+    "done_sha256": null,
+    "file": "pred_info.json",
+    "sha256": "e5798d3bab66c8567630766b4f587fed2e0dfc82094786dd5d0e544bb9fb469b"
+   },
+   "result": {
+    "best_step": 16000,
+    "early_stopped": false,
+    "last_step": 16000,
+    "steps_planned": 16000,
+    "steps_run": 16000
+   },
+   "sha256": "924e8fe8ca28883d97aaf4589bee2160f84c801663834c9766ddf122d2cb1f8d",
+   "train_log": {
+    "bytes": 50162,
+    "done_sha256": null,
+    "file": "fold2016_M.json",
+    "n_evaluations": 64,
+    "note": "DONE.json names the log by path only (no sha256)",
+    "place": "TRAIN/logs/tier_a2/lane1/train",
+    "places": [
+     "TRAIN/logs/train",
+     "TRAIN/logs/tier_a2/lane1/train",
+     "TRAIN/logs/tier_a2/lane2/train"
+    ],
+    "sha256": "4dee0de9befa9d2bb54e10ea438bf63eba59567994b8f36be89216ca71e21619",
+    "status": "READ"
+   }
+  },
+  {
+   "bytes": 72673592,
+   "clipped_masked_total": 24071,
+   "file": "pred_masked.npy",
+   "fold": 2016,
+   "inference": {
+    "infer_batch": 32,
+    "n_days": 339,
+    "seconds_day_sets": {},
+    "seconds_test_cv": 41.9,
+    "seconds_total": 41.9,
+    "windows_per_day": 126
+   },
+   "kind": "network",
+   "labels": {
+    "fold": 2016,
+    "model_id": 20,
+    "network": "advanced",
+    "seed_offset": 1000
+   },
+   "n_days": 339,
+   "name": "fold2016_M_seed1000",
+   "pred_info": {
+    "bytes": 19821,
+    "done_sha256": null,
+    "file": "pred_info.json",
+    "sha256": "61df830a734d81ca61941806a10f28cd02899640cd91eca141c81b73a99180b0"
+   },
+   "result": {
+    "best_step": 16000,
+    "early_stopped": false,
+    "last_step": 16000,
+    "steps_planned": 16000,
+    "steps_run": 16000
+   },
+   "sha256": "b97e4c13bad973812b9ec553f7e8eb853449d9a3b7be5a3f7f2b66f4bf57f98c",
+   "train_log": {
+    "bytes": 50098,
+    "done_sha256": null,
+    "file": "fold2016_M_seed1000.json",
+    "n_evaluations": 64,
+    "note": "DONE.json names the log by path only (no sha256)",
+    "place": "TRAIN/logs/tier_a2/lane1/train",
+    "places": [
+     "TRAIN/logs/train",
+     "TRAIN/logs/tier_a2/lane1/train",
+     "TRAIN/logs/tier_a2/lane2/train"
+    ],
+    "sha256": "8e0dbd954551b978a11f821f137d8162265fb3ff839be6b9ef8d306ff86e149c",
+    "status": "READ"
+   }
+  },
+  {
+   "bytes": 72673592,
+   "clipped_masked_total": 29100,
+   "file": "pred_masked.npy",
+   "fold": 2016,
+   "inference": {
+    "infer_batch": 32,
+    "n_days": 339,
+    "seconds_day_sets": {},
+    "seconds_test_cv": 41.8,
+    "seconds_total": 41.8,
+    "windows_per_day": 126
+   },
+   "kind": "network",
+   "labels": {
+    "fold": 2016,
+    "model_id": 20,
+    "network": "advanced",
+    "seed_offset": 2000
+   },
+   "n_days": 339,
+   "name": "fold2016_M_seed2000",
+   "pred_info": {
+    "bytes": 19847,
+    "done_sha256": null,
+    "file": "pred_info.json",
+    "sha256": "a02f31c7cb7c76484fc2ac2a725c9c24c485ce963514ceadbb835e00c6671919"
+   },
+   "result": {
+    "best_step": 15750,
+    "early_stopped": false,
+    "last_step": 16000,
+    "steps_planned": 16000,
+    "steps_run": 16000
+   },
+   "sha256": "a580b7d3a1760efdfd14b585d77b9ed4e27c2b558048ae50b440be4ef61b315c",
+   "train_log": {
+    "bytes": 50111,
+    "done_sha256": null,
+    "file": "fold2016_M_seed2000.json",
+    "n_evaluations": 64,
+    "note": "DONE.json names the log by path only (no sha256)",
+    "place": "TRAIN/logs/tier_a2/lane1/train",
+    "places": [
+     "TRAIN/logs/train",
+     "TRAIN/logs/tier_a2/lane1/train",
+     "TRAIN/logs/tier_a2/lane2/train"
+    ],
+    "sha256": "76e4a97d8a0a6ca8608eb313944da649e82a912c9d9e816d3c4d1181aa054510",
+    "status": "READ"
+   }
+  },
+  {
+   "bytes": 72673592,
+   "clipped_masked_total": 29739,
+   "file": "pred_masked.npy",
+   "fold": 2016,
+   "inference": {
+    "infer_batch": 32,
+    "n_days": 339,
+    "seconds_day_sets": {},
+    "seconds_test_cv": 41.2,
+    "seconds_total": 41.2,
+    "windows_per_day": 126
+   },
+   "kind": "network",
+   "labels": {
+    "fold": 2016,
+    "model_id": 20,
+    "network": "advanced",
+    "seed_offset": 3000
+   },
+   "n_days": 339,
+   "name": "fold2016_M_seed3000",
+   "pred_info": {
+    "bytes": 19854,
+    "done_sha256": null,
+    "file": "pred_info.json",
+    "sha256": "2afcfc29748f7b92998b3fc2e13f6a96c774bb837a7355f0682a55f6d7bc3667"
+   },
+   "result": {
+    "best_step": 16000,
+    "early_stopped": false,
+    "last_step": 16000,
+    "steps_planned": 16000,
+    "steps_run": 16000
+   },
+   "sha256": "b00351935b0009bf151cd46a6bc29f1eaa1cc07370b8eb20ab3702f905435341",
+   "train_log": {
+    "bytes": 50096,
+    "done_sha256": null,
+    "file": "fold2016_M_seed3000.json",
+    "n_evaluations": 64,
+    "note": "DONE.json names the log by path only (no sha256)",
+    "place": "TRAIN/logs/tier_a2/lane1/train",
+    "places": [
+     "TRAIN/logs/train",
+     "TRAIN/logs/tier_a2/lane1/train",
+     "TRAIN/logs/tier_a2/lane2/train"
+    ],
+    "sha256": "428b63fc872764f52de340c1f448c46fb566f7eea32b2ed5139754e8445ad3a7",
+    "status": "READ"
+   }
+  },
+  {
+   "bytes": 72673592,
+   "clipped_masked_total": 30832,
+   "file": "pred_masked.npy",
+   "fold": 2016,
+   "inference": {
+    "infer_batch": 32,
+    "n_days": 339,
+    "seconds_day_sets": {},
+    "seconds_test_cv": 41.1,
+    "seconds_total": 41.1,
+    "windows_per_day": 126
+   },
+   "kind": "network",
+   "labels": {
+    "fold": 2016,
+    "model_id": 20,
+    "network": "advanced",
+    "seed_offset": 4000
+   },
+   "n_days": 339,
+   "name": "fold2016_M_seed4000",
+   "pred_info": {
+    "bytes": 19870,
+    "done_sha256": null,
+    "file": "pred_info.json",
+    "sha256": "1f435e88e00d14978a2434279354fb61605b1c90f17952a2225b5047709c71ad"
+   },
+   "result": {
+    "best_step": 15750,
+    "early_stopped": false,
+    "last_step": 16000,
+    "steps_planned": 16000,
+    "steps_run": 16000
+   },
+   "sha256": "9caf2ec3ed3f040c3d70a1dff3f798211a83b09fe511243a17a3ef322ae503e5",
+   "train_log": {
+    "bytes": 50448,
+    "done_sha256": null,
+    "file": "fold2016_M_seed4000.json",
+    "n_evaluations": 64,
+    "note": "DONE.json names the log by path only (no sha256)",
+    "place": "TRAIN/logs/tier_a2/lane1/train",
+    "places": [
+     "TRAIN/logs/train",
+     "TRAIN/logs/tier_a2/lane1/train",
+     "TRAIN/logs/tier_a2/lane2/train"
+    ],
+    "sha256": "f55011b38553b1df45d38565aa27e4240b4f66b0ddeb20190f182855392e813e",
+    "status": "READ"
+   }
+  },
+  {
+   "bytes": 72673592,
+   "clipped_masked_total": 31496,
+   "file": "pred_masked.npy",
+   "fold": 2016,
+   "inference": {
+    "infer_batch": 32,
+    "n_days": 339,
+    "seconds_day_sets": {},
+    "seconds_test_cv": 41.3,
+    "seconds_total": 41.3,
+    "windows_per_day": 126
+   },
+   "kind": "network",
+   "labels": {
+    "fold": 2016,
+    "model_id": 25,
+    "network": "advanced",
+    "seed_offset": 0
+   },
+   "n_days": 339,
+   "name": "fold2016_MC7",
+   "pred_info": {
+    "bytes": 19842,
+    "done_sha256": null,
+    "file": "pred_info.json",
+    "sha256": "7491cbe9f46e626050672fe6c62bb97ef2c43e62ee71c51501e1ff1cfa1aba50"
+   },
+   "result": {
+    "best_step": 16000,
+    "early_stopped": false,
+    "last_step": 16000,
+    "steps_planned": 16000,
+    "steps_run": 16000
+   },
+   "sha256": "f08bd6186366f625c2671bb0317b10a705aa0e9f1c6597f190cb6adcd6c321b1",
+   "train_log": {
+    "bytes": 50128,
+    "done_sha256": null,
+    "file": "fold2016_MC7.json",
+    "n_evaluations": 64,
+    "note": "DONE.json names the log by path only (no sha256)",
+    "place": "TRAIN/logs/tier_a2/lane1/train",
+    "places": [
+     "TRAIN/logs/train",
+     "TRAIN/logs/tier_a2/lane1/train",
+     "TRAIN/logs/tier_a2/lane2/train"
+    ],
+    "sha256": "4e4948779fac8fa11855e760efa4e5107f212fb5093d1d356ee4a3232ab4b4d7",
+    "status": "READ"
+   }
+  },
+  {
+   "bytes": 72673592,
+   "clipped_masked_total": 1233,
+   "file": "pred_masked.npy",
+   "fold": 2016,
+   "gbt_fit": null,
+   "kind": "baseline",
+   "n_days": 339,
+   "name": "MET-REG",
+   "sha256": "38d2e170b032b265dba9c0308732d36b999f90c035c95cdf05ac51427d6a5372"
+  },
+  {
+   "bytes": 72673592,
+   "clipped_masked_total": 89280,
+   "file": "pred_masked.npy",
+   "fold": 2016,
+   "inference": {
+    "infer_batch": 32,
+    "n_days": 339,
+    "seconds_day_sets": {
+     "TRAIN-S": 41.0,
+     "VAL": 39.0
+    },
+    "seconds_test_cv": 50.5,
+    "seconds_total": 130.5,
+    "windows_per_day": 126
+   },
+   "kind": "network",
+   "labels": {
+    "fold": 2016,
+    "model_id": 0,
+    "network": "baseline",
+    "seed_offset": 0
+   },
+   "n_days": 339,
+   "name": "fold2016_baseline",
+   "pred_info": {
+    "bytes": 29455,
+    "done_sha256": null,
+    "file": "pred_info.json",
+    "sha256": "02bd1aa2c529129eaa2219cacc6dbdb373c5363958fcabf437432965acfe76b9"
+   },
+   "result": {
+    "best_step": 5750,
+    "early_stopped": false,
+    "last_step": 6000,
+    "steps_planned": 6000,
+    "steps_run": 6000
+   },
+   "sha256": "d50c5b53d520504afa0e6bfc48a855ed33d252930ce74a0d6dfcf40a726e494b",
+   "train_log": {
+    "bytes": 24047,
+    "done_sha256": null,
+    "file": "fold2016_baseline.json",
+    "n_evaluations": 24,
+    "note": "DONE.json names the log by path only (no sha256)",
+    "place": "TRAIN/logs/train",
+    "places": [
+     "TRAIN/logs/train",
+     "TRAIN/logs/tier_a2/lane1/train",
+     "TRAIN/logs/tier_a2/lane2/train"
+    ],
+    "sha256": "75c41e3fc2f391949719ee3cb8aafc6a1dfbff7d0effe9085b65e2429d6085cd",
+    "status": "READ"
+   }
+  },
+  {
+   "bytes": 72673592,
+   "clipped_masked_total": 97184,
+   "file": "pred_masked.npy",
+   "fold": 2016,
+   "inference": {
+    "infer_batch": 32,
+    "n_days": 339,
+    "seconds_day_sets": {},
+    "seconds_test_cv": 49.9,
+    "seconds_total": 49.9,
+    "windows_per_day": 126
+   },
+   "kind": "network",
+   "labels": {
+    "fold": 2016,
+    "model_id": 0,
+    "network": "baseline",
+    "seed_offset": 1000
+   },
+   "n_days": 339,
+   "name": "fold2016_baseline_seed1000",
+   "pred_info": {
+    "bytes": 19736,
+    "done_sha256": null,
+    "file": "pred_info.json",
+    "sha256": "d44b9efe6885b2e8d088c10f2e1e034e782db1ffd28f4c43e2812c9dfd706bb2"
+   },
+   "result": {
+    "best_step": 6000,
+    "early_stopped": false,
+    "last_step": 6000,
+    "steps_planned": 6000,
+    "steps_run": 6000
+   },
+   "sha256": "1d773dee0b71b0ddccc1c17fe70d837d38d4744b5cc3a1bf1def61b1f0d56164",
+   "train_log": {
+    "bytes": 23244,
+    "done_sha256": null,
+    "file": "fold2016_baseline_seed1000.json",
+    "n_evaluations": 24,
+    "note": "DONE.json names the log by path only (no sha256)",
+    "place": "TRAIN/logs/train",
+    "places": [
+     "TRAIN/logs/train",
+     "TRAIN/logs/tier_a2/lane1/train",
+     "TRAIN/logs/tier_a2/lane2/train"
+    ],
+    "sha256": "ce1850909b91e53b64555cd212eb321c7d630f9637fbaa2ed3b250c49f1a4012",
+    "status": "READ"
+   }
+  },
+  {
+   "bytes": 72673592,
+   "clipped_masked_total": 257161,
+   "file": "pred_masked.npy",
+   "fold": 2016,
+   "inference": {
+    "infer_batch": 32,
+    "n_days": 339,
+    "seconds_day_sets": {},
+    "seconds_test_cv": 49.8,
+    "seconds_total": 49.8,
+    "windows_per_day": 126
+   },
+   "kind": "network",
+   "labels": {
+    "fold": 2016,
+    "model_id": 0,
+    "network": "baseline",
+    "seed_offset": 2000
+   },
+   "n_days": 339,
+   "name": "fold2016_baseline_seed2000",
+   "pred_info": {
+    "bytes": 20238,
+    "done_sha256": null,
+    "file": "pred_info.json",
+    "sha256": "3fcf1d2d344fb02aa5e09dde78e5deea6d3d14de6452cf74772e05d9c72ee909"
+   },
+   "result": {
+    "best_step": 5750,
+    "early_stopped": false,
+    "last_step": 6000,
+    "steps_planned": 6000,
+    "steps_run": 6000
+   },
+   "sha256": "58e533017687a33aa93851fd5dff2dae88d596857360645659a7ef3b528f486a",
+   "train_log": {
+    "bytes": 23271,
+    "done_sha256": null,
+    "file": "fold2016_baseline_seed2000.json",
+    "n_evaluations": 24,
+    "note": "DONE.json names the log by path only (no sha256)",
+    "place": "TRAIN/logs/train",
+    "places": [
+     "TRAIN/logs/train",
+     "TRAIN/logs/tier_a2/lane1/train",
+     "TRAIN/logs/tier_a2/lane2/train"
+    ],
+    "sha256": "bbdfa8392d4ab5cb3e289322beb09c0917d1074b7448988d6592434dc575519b",
+    "status": "READ"
+   }
+  },
+  {
+   "bytes": 72673592,
+   "clipped_masked_total": 176679,
+   "file": "pred_masked.npy",
+   "fold": 2016,
+   "inference": {
+    "infer_batch": 32,
+    "n_days": 339,
+    "seconds_day_sets": {},
+    "seconds_test_cv": 49.9,
+    "seconds_total": 49.9,
+    "windows_per_day": 126
+   },
+   "kind": "network",
+   "labels": {
+    "fold": 2016,
+    "model_id": 0,
+    "network": "baseline",
+    "seed_offset": 3000
+   },
+   "n_days": 339,
+   "name": "fold2016_baseline_seed3000",
+   "pred_info": {
+    "bytes": 19858,
+    "done_sha256": null,
+    "file": "pred_info.json",
+    "sha256": "35e5b8675aac4bbe107beaced42f1c91f08d3279fbfdcc483bc279cf26d3db80"
+   },
+   "result": {
+    "best_step": 6000,
+    "early_stopped": false,
+    "last_step": 6000,
+    "steps_planned": 6000,
+    "steps_run": 6000
+   },
+   "sha256": "d346360902674cd51be49f25e820dbd00e40a000dd8d887a8d107ba0825cfff5",
+   "train_log": {
+    "bytes": 25748,
+    "done_sha256": null,
+    "file": "fold2016_baseline_seed3000.json",
+    "n_evaluations": 24,
+    "note": "DONE.json names the log by path only (no sha256)",
+    "place": "TRAIN/logs/tier_a2/lane1/train",
+    "places": [
+     "TRAIN/logs/train",
+     "TRAIN/logs/tier_a2/lane1/train",
+     "TRAIN/logs/tier_a2/lane2/train"
+    ],
+    "sha256": "a8e2098ef82955e2dfea487b44335485cce41cc38c95ad27a0b291815465cdf7",
+    "status": "READ"
+   }
+  },
+  {
+   "bytes": 72673592,
+   "clipped_masked_total": 92055,
+   "file": "pred_masked.npy",
+   "fold": 2016,
+   "inference": {
+    "infer_batch": 32,
+    "n_days": 339,
+    "seconds_day_sets": {},
+    "seconds_test_cv": 50.5,
+    "seconds_total": 50.5,
+    "windows_per_day": 126
+   },
+   "kind": "network",
+   "labels": {
+    "fold": 2016,
+    "model_id": 0,
+    "network": "baseline",
+    "seed_offset": 4000
+   },
+   "n_days": 339,
+   "name": "fold2016_baseline_seed4000",
+   "pred_info": {
+    "bytes": 19752,
+    "done_sha256": null,
+    "file": "pred_info.json",
+    "sha256": "a51bc67f914595c156dd9613e1b88174c78f711df813d989adca702ca92939c3"
+   },
+   "result": {
+    "best_step": 6000,
+    "early_stopped": false,
+    "last_step": 6000,
+    "steps_planned": 6000,
+    "steps_run": 6000
+   },
+   "sha256": "9947ad0f8836bdc71b30c0137d0a301fdf1fdc1cb2ff879e359b2c89902025d9",
+   "train_log": {
+    "bytes": 25741,
+    "done_sha256": null,
+    "file": "fold2016_baseline_seed4000.json",
+    "n_evaluations": 24,
+    "note": "DONE.json names the log by path only (no sha256)",
+    "place": "TRAIN/logs/tier_a2/lane1/train",
+    "places": [
+     "TRAIN/logs/train",
+     "TRAIN/logs/tier_a2/lane1/train",
+     "TRAIN/logs/tier_a2/lane2/train"
+    ],
+    "sha256": "5fd79d6b44ee8ed9917cffc6bb89ad8d9f32b6c66ffac69f6f4e7d8406852051",
+    "status": "READ"
+   }
+  },
+  {
+   "bytes": 72673592,
+   "clipped_masked_total": 70336,
+   "file": "pred_masked.npy",
+   "fold": 2016,
+   "inference": {
+    "infer_batch": 32,
+    "n_days": 339,
+    "seconds_day_sets": {},
+    "seconds_test_cv": 50.6,
+    "seconds_total": 50.6,
+    "windows_per_day": 126
+   },
+   "kind": "network",
+   "labels": {
+    "fold": 2016,
+    "model_id": 0,
+    "network": "s18",
+    "seed_offset": 0
+   },
+   "n_days": 339,
+   "name": "fold2016_P18",
+   "pred_info": {
+    "bytes": 19637,
+    "done_sha256": null,
+    "file": "pred_info.json",
+    "sha256": "cc77ff772b1a7589e7934788f5c7fc13b66248a9de40c3e7767574caab586545"
+   },
+   "result": {
+    "best_step": 6000,
+    "early_stopped": false,
+    "last_step": 6000,
+    "steps_planned": 6000,
+    "steps_run": 6000
+   },
+   "sha256": "720f08ccc237271d8f7e75ce4816b17484b47c95962c7696f85406c391ee1d27",
+   "train_log": {
+    "bytes": 25833,
+    "done_sha256": null,
+    "file": "fold2016_P18.json",
+    "n_evaluations": 24,
+    "note": "DONE.json names the log by path only (no sha256)",
+    "place": "TRAIN/logs/tier_a2/lane1/train",
+    "places": [
+     "TRAIN/logs/train",
+     "TRAIN/logs/tier_a2/lane1/train",
+     "TRAIN/logs/tier_a2/lane2/train"
+    ],
+    "sha256": "1001fa1f07c8684d74fbf550d2682bb5d9c57ad0b1c407761aad17b62a18b537",
+    "status": "READ"
+   }
+  },
+  {
+   "bytes": 72673592,
+   "clipped_masked_total": 50553,
+   "file": "pred_masked.npy",
+   "fold": 2016,
+   "inference": {
+    "infer_batch": 32,
+    "n_days": 339,
+    "seconds_day_sets": {},
+    "seconds_test_cv": 20.1,
+    "seconds_total": 20.1,
+    "windows_per_day": 126
+   },
+   "kind": "network",
+   "labels": {
+    "fold": 2016,
+    "model_id": 27,
+    "network": "pixr",
+    "seed_offset": 0
+   },
+   "n_days": 339,
+   "name": "fold2016_PIXR",
+   "pred_info": {
+    "bytes": 19913,
+    "done_sha256": null,
+    "file": "pred_info.json",
+    "sha256": "eff5730e816b66e078bb362ad7745c5232b671e6d6a6c31764d72e36ae33097e"
+   },
+   "result": {
+    "best_step": 5750,
+    "early_stopped": false,
+    "last_step": 6000,
+    "steps_planned": 6000,
+    "steps_run": 6000
+   },
+   "sha256": "52f3a1a7526396d6c17cc1238c8653c9b2220f291a98037e5bea09f142db983b",
+   "train_log": {
+    "bytes": 25611,
+    "done_sha256": null,
+    "file": "fold2016_PIXR.json",
+    "n_evaluations": 24,
+    "note": "DONE.json names the log by path only (no sha256)",
+    "place": "TRAIN/logs/tier_a2/lane1/train",
+    "places": [
+     "TRAIN/logs/train",
+     "TRAIN/logs/tier_a2/lane1/train",
+     "TRAIN/logs/tier_a2/lane2/train"
+    ],
+    "sha256": "a2f886bc7f977f1e84a564ee5b4991a4cde5b3aaf54c56600cde8c49287d4b2a",
+    "status": "READ"
+   }
+  },
+  {
+   "bytes": 72459216,
+   "clipped_masked_total": 0,
+   "file": "pred_masked.npy",
+   "fold": 2017,
+   "gbt_fit": null,
+   "kind": "baseline",
+   "n_days": 338,
+   "name": "CLIM-WD",
+   "sha256": "dbdf23fc3500ef5aa86aeae713f7b780c5e44804ca0430ae53c11464fd8b73f6"
+  },
+  {
+   "bytes": 72459216,
+   "clipped_masked_total": 46379,
+   "file": "pred_masked.npy",
+   "fold": 2017,
+   "inference": {
+    "infer_batch": 32,
+    "n_days": 338,
+    "seconds_day_sets": {},
+    "seconds_test_cv": 39.2,
+    "seconds_total": 39.2,
+    "windows_per_day": 126
+   },
+   "kind": "network",
+   "labels": {
+    "fold": 2017,
+    "model_id": 23,
+    "network": "advanced",
+    "seed_offset": 0
+   },
+   "n_days": 338,
+   "name": "t4_train2019_test2017_OTHER",
+   "pred_info": {
+    "bytes": 19572,
+    "done_sha256": null,
+    "file": "pred_info.json",
+    "sha256": "2cd0e0df047ac4c5c27df919e3a4640be6586fa831bf3c7d81a0c2df83efa3f5"
+   },
+   "result": {
+    "best_step": 5750,
+    "early_stopped": false,
+    "last_step": 6000,
+    "steps_planned": 6000,
+    "steps_run": 6000
+   },
+   "sha256": "e9d00993b31c082f247f1a5a36db636c06f71cb9f54ec62b1f76d36e477a3a49",
+   "train_log": {
+    "bytes": 29490,
+    "done_sha256": null,
+    "file": "t4_train2019_test2017_OTHER.json",
+    "n_evaluations": 24,
+    "note": "DONE.json names the log by path only (no sha256)",
+    "place": "TRAIN/logs/tier_a2/lane1/train",
+    "places": [
+     "TRAIN/logs/train",
+     "TRAIN/logs/tier_a2/lane1/train",
+     "TRAIN/logs/tier_a2/lane2/train"
+    ],
+    "sha256": "6b0bd505991633d5d1b998d9c500b533dde96a36c1bf641d3d8e5c924e73845d",
+    "status": "READ"
+   }
+  },
+  {
+   "bytes": 72459216,
+   "clipped_masked_total": 34484,
+   "file": "pred_masked.npy",
+   "fold": 2017,
+   "inference": {
+    "infer_batch": 32,
+    "n_days": 338,
+    "seconds_day_sets": {},
+    "seconds_test_cv": 40.1,
+    "seconds_total": 40.1,
+    "windows_per_day": 126
+   },
+   "kind": "network",
+   "labels": {
+    "fold": 2017,
+    "model_id": 23,
+    "network": "advanced",
+    "seed_offset": 0
+   },
+   "n_days": 338,
+   "name": "t4_train2019_test2017_OWN",
+   "pred_info": {
+    "bytes": 19519,
+    "done_sha256": null,
+    "file": "pred_info.json",
+    "sha256": "be4c7adbe4ea324f415b194b83ee22fb713703def35b3756bbe3abd826e0653e"
+   },
+   "result": {
+    "best_step": 5750,
+    "early_stopped": false,
+    "last_step": 6000,
+    "steps_planned": 6000,
+    "steps_run": 6000
+   },
+   "sha256": "2bc644cc4be87d3e95673837e997e7768ff326c9c9e2f9ae0425033e46681044",
+   "train_log": {
+    "bytes": 29494,
+    "done_sha256": null,
+    "file": "t4_train2019_test2017_OWN.json",
+    "n_evaluations": 24,
+    "note": "DONE.json names the log by path only (no sha256)",
+    "place": "TRAIN/logs/tier_a2/lane1/train",
+    "places": [
+     "TRAIN/logs/train",
+     "TRAIN/logs/tier_a2/lane1/train",
+     "TRAIN/logs/tier_a2/lane2/train"
+    ],
+    "sha256": "83ad4bfc68dc620d3a996c5c30ffcdac38f49324e93fdabffee1520cb1398e81",
+    "status": "READ"
+   }
+  },
+  {
+   "bytes": 72459216,
+   "clipped_masked_total": 37792,
+   "file": "pred_masked.npy",
+   "fold": 2017,
+   "inference": {
+    "infer_batch": 32,
+    "n_days": 338,
+    "seconds_day_sets": {},
+    "seconds_test_cv": 39.3,
+    "seconds_total": 39.3,
+    "windows_per_day": 126
+   },
+   "kind": "network",
+   "labels": {
+    "fold": 2017,
+    "model_id": 23,
+    "network": "advanced",
+    "seed_offset": 0
+   },
+   "n_days": 338,
+   "name": "t4_train2019_test2017_TRUE",
+   "pred_info": {
+    "bytes": 19542,
+    "done_sha256": null,
+    "file": "pred_info.json",
+    "sha256": "92b92f71ad44f3362bb013fdc7c5bf30d02b4f39d8ae7177fe7cd274e493c912"
+   },
+   "result": {
+    "best_step": 5750,
+    "early_stopped": false,
+    "last_step": 6000,
+    "steps_planned": 6000,
+    "steps_run": 6000
+   },
+   "sha256": "2697c645cafe41ac8b2b0666d75bf72358391905dd970c9ddf370ac7141df8ac",
+   "train_log": {
+    "bytes": 29506,
+    "done_sha256": null,
+    "file": "t4_train2019_test2017_TRUE.json",
+    "n_evaluations": 24,
+    "note": "DONE.json names the log by path only (no sha256)",
+    "place": "TRAIN/logs/tier_a2/lane1/train",
+    "places": [
+     "TRAIN/logs/train",
+     "TRAIN/logs/tier_a2/lane1/train",
+     "TRAIN/logs/tier_a2/lane2/train"
+    ],
+    "sha256": "21876788f42d4735cefd2b2b0d47aec7b4f280667963e047a068caad0ad079d5",
+    "status": "READ"
+   }
+  },
+  {
+   "bytes": 72459216,
+   "clipped_masked_total": 0,
+   "file": "pred_masked.npy",
+   "fold": 2017,
+   "gbt_fit": null,
+   "kind": "baseline",
+   "n_days": 338,
+   "name": "CLIM-C",
+   "sha256": "70f0235a6eb46102568c8023745cc22c1135bbf8bd558660abe27774e8cd5f38"
+  },
+  {
+   "bytes": 72459216,
+   "clipped_masked_total": 0,
+   "file": "pred_masked.npy",
+   "fold": 2017,
+   "gbt_fit": null,
+   "kind": "baseline",
+   "n_days": 338,
+   "name": "CLIM-EM",
+   "sha256": "db8e45442dab60a2e3e9ddf0116c0f420a7184ffdd00d2995473a0ad4a09379b"
+  },
+  {
+   "bytes": 72459216,
+   "clipped_masked_total": 13144,
+   "file": "pred_masked.npy",
+   "fold": 2017,
+   "gbt_fit": {
+    "n_iter": 500,
+    "val_day": "20150126",
+    "val_day_output_sha256": "2f4593055aa7d87c22cb60676bd3bb7e850766d6cc557d95fdf19a7eda55c97c"
+   },
+   "kind": "baseline",
+   "n_days": 338,
+   "name": "GBT",
+   "sha256": "eb5ab59d07f99e841f1c9d8eb8c859560d5d5ca18748053b93059d90dc0d4f54"
+  },
+  {
+   "bytes": 72459216,
+   "clipped_masked_total": 1197558,
+   "file": "pred_masked.npy",
+   "fold": 2017,
+   "gbt_fit": {
+    "n_iter": 500,
+    "val_day": "20150126",
+    "val_day_output_sha256": "2f4593055aa7d87c22cb60676bd3bb7e850766d6cc557d95fdf19a7eda55c97c"
+   },
+   "kind": "baseline",
+   "n_days": 338,
+   "name": "GBT-RIDGE",
+   "sha256": "e7c238bc9df795021ed47f8da1400780329d54bd71c26f9277526bae5b404001"
+  },
+  {
+   "bytes": 72459216,
+   "clipped_masked_total": 52647,
+   "file": "pred_masked.npy",
+   "fold": 2017,
+   "inference": {
+    "infer_batch": 32,
+    "n_days": 338,
+    "seconds_day_sets": {},
+    "seconds_test_cv": 40.4,
+    "seconds_total": 40.4,
+    "windows_per_day": 126
+   },
+   "kind": "network",
+   "labels": {
+    "fold": 2017,
+    "model_id": 20,
+    "network": "advanced",
+    "seed_offset": 0
+   },
+   "n_days": 338,
+   "name": "fold2017_M",
+   "pred_info": {
+    "bytes": 19542,
+    "done_sha256": null,
+    "file": "pred_info.json",
+    "sha256": "d15e03c600130c1b7e18a2ea4f708231510bcc383ac6150c0416f910f8d51574"
+   },
+   "result": {
+    "best_step": 14750,
+    "early_stopped": false,
+    "last_step": 16000,
+    "steps_planned": 16000,
+    "steps_run": 16000
+   },
+   "sha256": "64bc8ad1e7b991eed7467e7fa4a4fcc8eb24fa1c234981db6c580019b9a412d1",
+   "train_log": {
+    "bytes": 49475,
+    "done_sha256": null,
+    "file": "fold2017_M.json",
+    "n_evaluations": 64,
+    "note": "DONE.json names the log by path only (no sha256)",
+    "place": "TRAIN/logs/tier_a2/lane2/train",
+    "places": [
+     "TRAIN/logs/train",
+     "TRAIN/logs/tier_a2/lane1/train",
+     "TRAIN/logs/tier_a2/lane2/train"
+    ],
+    "sha256": "6cb6704a0e598bfdaf2b8a1258d1bbb9d46f3328d1d6f7f3e6075ef6b208e817",
+    "status": "READ"
+   }
+  },
+  {
+   "bytes": 72459216,
+   "clipped_masked_total": 1715,
+   "file": "pred_masked.npy",
+   "fold": 2017,
+   "gbt_fit": null,
+   "kind": "baseline",
+   "n_days": 338,
+   "name": "MET-REG",
+   "sha256": "96a83199698d687ae261a41b33566e29b8c6875da31266b7bdebfd2426efffe6"
+  },
+  {
+   "bytes": 72459216,
+   "clipped_masked_total": 142397,
+   "file": "pred_masked.npy",
+   "fold": 2017,
+   "inference": {
+    "infer_batch": 32,
+    "n_days": 338,
+    "seconds_day_sets": {
+     "TRAIN-S": 40.4,
+     "VAL": 38.9
+    },
+    "seconds_test_cv": 48.9,
+    "seconds_total": 128.2,
+    "windows_per_day": 126
+   },
+   "kind": "network",
+   "labels": {
+    "fold": 2017,
+    "model_id": 0,
+    "network": "baseline",
+    "seed_offset": 0
+   },
+   "n_days": 338,
+   "name": "fold2017_baseline",
+   "pred_info": {
+    "bytes": 29170,
+    "done_sha256": null,
+    "file": "pred_info.json",
+    "sha256": "9df4505ee3c7c1c624c0ab28172b1522b76c9dc8283df2f2d4fab307cdd7b891"
+   },
+   "result": {
+    "best_step": 5750,
+    "early_stopped": false,
+    "last_step": 6000,
+    "steps_planned": 6000,
+    "steps_run": 6000
+   },
+   "sha256": "9cfc3db697d8b7d925683ebc26090d935581189ece55186bd22dee2aa5e85ea9",
+   "train_log": {
+    "bytes": 23729,
+    "done_sha256": null,
+    "file": "fold2017_baseline.json",
+    "n_evaluations": 24,
+    "note": "DONE.json names the log by path only (no sha256)",
+    "place": "TRAIN/logs/train",
+    "places": [
+     "TRAIN/logs/train",
+     "TRAIN/logs/tier_a2/lane1/train",
+     "TRAIN/logs/tier_a2/lane2/train"
+    ],
+    "sha256": "c75528796271d555a03abc1ac960bed0fed7dfc28683d4790c79697a52ba1bc5",
+    "status": "READ"
+   }
+  },
+  {
+   "bytes": 72459216,
+   "clipped_masked_total": 40389,
+   "file": "pred_masked.npy",
+   "fold": 2017,
+   "inference": {
+    "infer_batch": 32,
+    "n_days": 338,
+    "seconds_day_sets": {},
+    "seconds_test_cv": 18.9,
+    "seconds_total": 18.9,
+    "windows_per_day": 126
+   },
+   "kind": "network",
+   "labels": {
+    "fold": 2017,
+    "model_id": 27,
+    "network": "pixr",
+    "seed_offset": 0
+   },
+   "n_days": 338,
+   "name": "fold2017_PIXR",
+   "pred_info": {
+    "bytes": 19494,
+    "done_sha256": null,
+    "file": "pred_info.json",
+    "sha256": "7832d1ea3b1f88d7fda0264d82927225cfb3beb261e0752ba334df13ba61f4b3"
+   },
+   "result": {
+    "best_step": 4750,
+    "early_stopped": false,
+    "last_step": 6000,
+    "steps_planned": 6000,
+    "steps_run": 6000
+   },
+   "sha256": "8cfae3d0d22101b42de65e187b5e10035f908273910beafc38766021cb55920a",
+   "train_log": {
+    "bytes": 24907,
+    "done_sha256": null,
+    "file": "fold2017_PIXR.json",
+    "n_evaluations": 24,
+    "note": "DONE.json names the log by path only (no sha256)",
+    "place": "TRAIN/logs/tier_a2/lane2/train",
+    "places": [
+     "TRAIN/logs/train",
+     "TRAIN/logs/tier_a2/lane1/train",
+     "TRAIN/logs/tier_a2/lane2/train"
+    ],
+    "sha256": "34650f0074d7fd95071dce7580071850aae9baef96c363e81c0771cc84e99ff8",
+    "status": "READ"
+   }
+  },
+  {
+   "bytes": 72459216,
+   "clipped_masked_total": 0,
+   "file": "pred_masked.npy",
+   "fold": 2018,
+   "gbt_fit": null,
+   "kind": "baseline",
+   "n_days": 338,
+   "name": "CLIM-WD",
+   "sha256": "b332f71ae46675506cad877e1965ee07ac6e25747899381bba5edecea7aba48f"
+  },
+  {
+   "bytes": 72459216,
+   "clipped_masked_total": 0,
+   "file": "pred_masked.npy",
+   "fold": 2018,
+   "gbt_fit": null,
+   "kind": "baseline",
+   "n_days": 338,
+   "name": "CLIM-C",
+   "sha256": "4ed4dad93b512635fdaa68915978b63041dfb1bc8f4814d632f2ec8338b2694c"
+  },
+  {
+   "bytes": 72459216,
+   "clipped_masked_total": 0,
+   "file": "pred_masked.npy",
+   "fold": 2018,
+   "gbt_fit": null,
+   "kind": "baseline",
+   "n_days": 338,
+   "name": "CLIM-EM",
+   "sha256": "9e5949693b8b5dde11104d1a3f93e2a6c4efc680b5a8b5df7dd04132cc9b63a6"
+  },
+  {
+   "bytes": 72459216,
+   "clipped_masked_total": 13464,
+   "file": "pred_masked.npy",
+   "fold": 2018,
+   "gbt_fit": {
+    "n_iter": 500,
+    "val_day": "20150126",
+    "val_day_output_sha256": "7092aa0a3811224d2e344f622842b94e43a5763620e489865a6bcb2bbc9f6a2d"
+   },
+   "kind": "baseline",
+   "n_days": 338,
+   "name": "GBT",
+   "sha256": "9b785323b3fbda72a7f3835f1931f45f1c5100770c6820d78b66850af056a286"
+  },
+  {
+   "bytes": 72459216,
+   "clipped_masked_total": 1105688,
+   "file": "pred_masked.npy",
+   "fold": 2018,
+   "gbt_fit": {
+    "n_iter": 500,
+    "val_day": "20150126",
+    "val_day_output_sha256": "7092aa0a3811224d2e344f622842b94e43a5763620e489865a6bcb2bbc9f6a2d"
+   },
+   "kind": "baseline",
+   "n_days": 338,
+   "name": "GBT-RIDGE",
+   "sha256": "d907903d13fc76427009ff6037059dce76fe3eead1b016e1f20cb48e641b20af"
+  },
+  {
+   "bytes": 72459216,
+   "clipped_masked_total": 24798,
+   "file": "pred_masked.npy",
+   "fold": 2018,
+   "inference": {
+    "infer_batch": 32,
+    "n_days": 338,
+    "seconds_day_sets": {},
+    "seconds_test_cv": 40.3,
+    "seconds_total": 40.3,
+    "windows_per_day": 126
+   },
+   "kind": "network",
+   "labels": {
+    "fold": 2018,
+    "model_id": 20,
+    "network": "advanced",
+    "seed_offset": 0
+   },
+   "n_days": 338,
+   "name": "fold2018_M",
+   "pred_info": {
+    "bytes": 19454,
+    "done_sha256": null,
+    "file": "pred_info.json",
+    "sha256": "25ac6216645e88a94797dcfdd2162e7d0c8e54fc36d275f0c9985e20e171059e"
+   },
+   "result": {
+    "best_step": 15500,
+    "early_stopped": false,
+    "last_step": 16000,
+    "steps_planned": 16000,
+    "steps_run": 16000
+   },
+   "sha256": "c6e2dcfe27459fdf6c435cc3f9186d25131f1d9deedcb21d11df29fab5974909",
+   "train_log": {
+    "bytes": 49417,
+    "done_sha256": null,
+    "file": "fold2018_M.json",
+    "n_evaluations": 64,
+    "note": "DONE.json names the log by path only (no sha256)",
+    "place": "TRAIN/logs/tier_a2/lane2/train",
+    "places": [
+     "TRAIN/logs/train",
+     "TRAIN/logs/tier_a2/lane1/train",
+     "TRAIN/logs/tier_a2/lane2/train"
+    ],
+    "sha256": "cb4027cfc9adbbcdfe2e575ff361e86d82fdb3da555f9bb83ba430b6da214c6d",
+    "status": "READ"
+   }
+  },
+  {
+   "bytes": 72459216,
+   "clipped_masked_total": 34215,
+   "file": "pred_masked.npy",
+   "fold": 2018,
+   "inference": {
+    "infer_batch": 32,
+    "n_days": 338,
+    "seconds_day_sets": {},
+    "seconds_test_cv": 40.6,
+    "seconds_total": 40.6,
+    "windows_per_day": 126
+   },
+   "kind": "network",
+   "labels": {
+    "fold": 2018,
+    "model_id": 25,
+    "network": "advanced",
+    "seed_offset": 0
+   },
+   "n_days": 338,
+   "name": "fold2018_MC7",
+   "pred_info": {
+    "bytes": 19488,
+    "done_sha256": null,
+    "file": "pred_info.json",
+    "sha256": "6641941a02c0a725ea3e86617870282110d646858bc916a93d42ab5b51baa11c"
+   },
+   "result": {
+    "best_step": 15500,
+    "early_stopped": false,
+    "last_step": 16000,
+    "steps_planned": 16000,
+    "steps_run": 16000
+   },
+   "sha256": "e9d74d5f0fbba040dea33f1cf89036dbf54d5d495effaf5fae58ed929f47d2a4",
+   "train_log": {
+    "bytes": 49517,
+    "done_sha256": null,
+    "file": "fold2018_MC7.json",
+    "n_evaluations": 64,
+    "note": "DONE.json names the log by path only (no sha256)",
+    "place": "TRAIN/logs/tier_a2/lane2/train",
+    "places": [
+     "TRAIN/logs/train",
+     "TRAIN/logs/tier_a2/lane1/train",
+     "TRAIN/logs/tier_a2/lane2/train"
+    ],
+    "sha256": "7b34f6f3fc9ee289b712c4d07d84ed78b228374b3767f4e2188746a04c77ee1a",
+    "status": "READ"
+   }
+  },
+  {
+   "bytes": 72459216,
+   "clipped_masked_total": 1056,
+   "file": "pred_masked.npy",
+   "fold": 2018,
+   "gbt_fit": null,
+   "kind": "baseline",
+   "n_days": 338,
+   "name": "MET-REG",
+   "sha256": "970b300dccc69eae6705cfc4a59b1dc9cfb8ed5966eeede9a1f0c3ac5dc04a79"
+  },
+  {
+   "bytes": 72459216,
+   "clipped_masked_total": 106674,
+   "file": "pred_masked.npy",
+   "fold": 2018,
+   "inference": {
+    "infer_batch": 32,
+    "n_days": 338,
+    "seconds_day_sets": {
+     "TRAIN-S": 39.8,
+     "VAL": 38.8
+    },
+    "seconds_test_cv": 48.8,
+    "seconds_total": 127.4,
+    "windows_per_day": 126
+   },
+   "kind": "network",
+   "labels": {
+    "fold": 2018,
+    "model_id": 0,
+    "network": "baseline",
+    "seed_offset": 0
+   },
+   "n_days": 338,
+   "name": "fold2018_baseline",
+   "pred_info": {
+    "bytes": 29301,
+    "done_sha256": null,
+    "file": "pred_info.json",
+    "sha256": "e75e9e9d867bab6e10e99b4de8d10e251e1dfa1afdad4fdfbd2f990e60861363"
+   },
+   "result": {
+    "best_step": 6000,
+    "early_stopped": false,
+    "last_step": 6000,
+    "steps_planned": 6000,
+    "steps_run": 6000
+   },
+   "sha256": "138b92a4b63a704856b87c1abf4925a7a4a01dd9737330b0ac159f9f5a52baff",
+   "train_log": {
+    "bytes": 23723,
+    "done_sha256": null,
+    "file": "fold2018_baseline.json",
+    "n_evaluations": 24,
+    "note": "DONE.json names the log by path only (no sha256)",
+    "place": "TRAIN/logs/train",
+    "places": [
+     "TRAIN/logs/train",
+     "TRAIN/logs/tier_a2/lane1/train",
+     "TRAIN/logs/tier_a2/lane2/train"
+    ],
+    "sha256": "be2ac2fbd911d261591f7f3f4fb0397ecc826c52cc60b5d9061840c0891e8d95",
+    "status": "READ"
+   }
+  },
+  {
+   "bytes": 72459216,
+   "clipped_masked_total": 49461,
+   "file": "pred_masked.npy",
+   "fold": 2018,
+   "inference": {
+    "infer_batch": 32,
+    "n_days": 338,
+    "seconds_day_sets": {},
+    "seconds_test_cv": 18.8,
+    "seconds_total": 18.8,
+    "windows_per_day": 126
+   },
+   "kind": "network",
+   "labels": {
+    "fold": 2018,
+    "model_id": 27,
+    "network": "pixr",
+    "seed_offset": 0
+   },
+   "n_days": 338,
+   "name": "fold2018_PIXR",
+   "pred_info": {
+    "bytes": 19509,
+    "done_sha256": null,
+    "file": "pred_info.json",
+    "sha256": "32238354f26997c894b53f355737d67caf6fe6e5171ed602e524f2db0372b0a9"
+   },
+   "result": {
+    "best_step": 5500,
+    "early_stopped": false,
+    "last_step": 6000,
+    "steps_planned": 6000,
+    "steps_run": 6000
+   },
+   "sha256": "6ffdd28a272e7f3d821dbdc55cdbf3e0b1c6911ea9e2b85823e85943398d0c72",
+   "train_log": {
+    "bytes": 24921,
+    "done_sha256": null,
+    "file": "fold2018_PIXR.json",
+    "n_evaluations": 24,
+    "note": "DONE.json names the log by path only (no sha256)",
+    "place": "TRAIN/logs/tier_a2/lane2/train",
+    "places": [
+     "TRAIN/logs/train",
+     "TRAIN/logs/tier_a2/lane1/train",
+     "TRAIN/logs/tier_a2/lane2/train"
+    ],
+    "sha256": "f05c6e9e335e8debfdb0cf09e6a117ff13f765c7c0a309142d08cf73e46f5ff3",
+    "status": "READ"
+   }
+  },
+  {
+   "bytes": 71601712,
+   "clipped_masked_total": 0,
+   "file": "pred_masked.npy",
+   "fold": 2019,
+   "gbt_fit": null,
+   "kind": "baseline",
+   "n_days": 334,
+   "name": "CLIM-WD",
+   "sha256": "bec719181de82ba038476cbfa1684eaf6c9c585f02270060d40654e6ff17bb86"
+  },
+  {
+   "bytes": 71601712,
+   "clipped_masked_total": 105829,
+   "file": "pred_masked.npy",
+   "fold": 2019,
+   "inference": {
+    "infer_batch": 32,
+    "n_days": 334,
+    "seconds_day_sets": {},
+    "seconds_test_cv": 47.3,
+    "seconds_total": 47.3,
+    "windows_per_day": 126
+   },
+   "kind": "network",
+   "labels": {
+    "fold": 2019,
+    "model_id": 21,
+    "network": "baseline",
+    "seed_offset": 0
+   },
+   "n_days": 334,
+   "name": "fold2019_A1",
+   "pred_info": {
+    "bytes": 19203,
+    "done_sha256": null,
+    "file": "pred_info.json",
+    "sha256": "96d3a14a6a68e11aa4c07bc7a1d702c1c124ce09b412fd7f732a52497486b15b"
+   },
+   "result": {
+    "best_step": 6000,
+    "early_stopped": false,
+    "last_step": 6000,
+    "steps_planned": 6000,
+    "steps_run": 6000
+   },
+   "sha256": "2e2192fbcaa320f243b00c0cea7fd53f9bc979f4488af7ccd120a9fe349b0a9d",
+   "train_log": {
+    "bytes": 25108,
+    "done_sha256": null,
+    "file": "fold2019_A1.json",
+    "n_evaluations": 24,
+    "note": "DONE.json names the log by path only (no sha256)",
+    "place": "TRAIN/logs/tier_a2/lane2/train",
+    "places": [
+     "TRAIN/logs/train",
+     "TRAIN/logs/tier_a2/lane1/train",
+     "TRAIN/logs/tier_a2/lane2/train"
+    ],
+    "sha256": "e5a1417d6591f90cfe3f2edb243e874a902209caed654ea72c26c0c6797d7fd4",
+    "status": "READ"
+   }
+  },
+  {
+   "bytes": 71601712,
+   "clipped_masked_total": 131977,
+   "file": "pred_masked.npy",
+   "fold": 2019,
+   "inference": {
+    "infer_batch": 32,
+    "n_days": 334,
+    "seconds_day_sets": {},
+    "seconds_test_cv": 37.1,
+    "seconds_total": 37.1,
+    "windows_per_day": 126
+   },
+   "kind": "network",
+   "labels": {
+    "fold": 2019,
+    "model_id": 22,
+    "network": "advanced",
+    "seed_offset": 0
+   },
+   "n_days": 334,
+   "name": "fold2019_A2",
+   "pred_info": {
+    "bytes": 19299,
+    "done_sha256": null,
+    "file": "pred_info.json",
+    "sha256": "7988be79c27db3d2fd333565cda7ca8156f16ef107318f0fb0196f64633c9fe3"
+   },
+   "result": {
+    "best_step": 5750,
+    "early_stopped": false,
+    "last_step": 6000,
+    "steps_planned": 6000,
+    "steps_run": 6000
+   },
+   "sha256": "100f1694605eedad5ae1f95373e9e1fe0c7dd85f2b1bb6d70e9e30b834896612",
+   "train_log": {
+    "bytes": 28441,
+    "done_sha256": null,
+    "file": "fold2019_A2.json",
+    "n_evaluations": 24,
+    "note": "DONE.json names the log by path only (no sha256)",
+    "place": "TRAIN/logs/tier_a2/lane2/train",
+    "places": [
+     "TRAIN/logs/train",
+     "TRAIN/logs/tier_a2/lane1/train",
+     "TRAIN/logs/tier_a2/lane2/train"
+    ],
+    "sha256": "43010d923ea377f6dc7e3a7aa159ea1e5bd001cda433eab7fd324604b923aea1",
+    "status": "READ"
+   }
+  },
+  {
+   "bytes": 71601712,
+   "clipped_masked_total": 61942,
+   "file": "pred_masked.npy",
+   "fold": 2019,
+   "inference": {
+    "infer_batch": 32,
+    "n_days": 334,
+    "seconds_day_sets": {},
+    "seconds_test_cv": 39.1,
+    "seconds_total": 39.1,
+    "windows_per_day": 126
+   },
+   "kind": "network",
+   "labels": {
+    "fold": 2019,
+    "model_id": 23,
+    "network": "advanced",
+    "seed_offset": 0
+   },
+   "n_days": 334,
+   "name": "fold2019_A3",
+   "pred_info": {
+    "bytes": 19365,
+    "done_sha256": null,
+    "file": "pred_info.json",
+    "sha256": "ec56d604618a05e1dde8102c97f12061ac7a5c1fbe28bd9c2f5d667ead334595"
+   },
+   "result": {
+    "best_step": 5750,
+    "early_stopped": false,
+    "last_step": 6000,
+    "steps_planned": 6000,
+    "steps_run": 6000
+   },
+   "sha256": "7885a60c7fdfb7755692a2dd158acab5259e704d8e963a1664c9a4999623c1b6",
+   "train_log": {
+    "bytes": 29741,
+    "done_sha256": null,
+    "file": "fold2019_A3.json",
+    "n_evaluations": 24,
+    "note": "DONE.json names the log by path only (no sha256)",
+    "place": "TRAIN/logs/tier_a2/lane2/train",
+    "places": [
+     "TRAIN/logs/train",
+     "TRAIN/logs/tier_a2/lane1/train",
+     "TRAIN/logs/tier_a2/lane2/train"
+    ],
+    "sha256": "cb13d1eaa3bb031e5f5726db52e1cb87d10c4bc632d63d2f678fa0ec54c7d5d7",
+    "status": "READ"
+   }
+  },
+  {
+   "bytes": 71601712,
+   "clipped_masked_total": 54867,
+   "file": "pred_masked.npy",
+   "fold": 2019,
+   "inference": {
+    "infer_batch": 32,
+    "n_days": 334,
+    "seconds_day_sets": {},
+    "seconds_test_cv": 39.6,
+    "seconds_total": 39.6,
+    "windows_per_day": 126
+   },
+   "kind": "network",
+   "labels": {
+    "fold": 2019,
+    "model_id": 23,
+    "network": "advanced",
+    "seed_offset": 0
+   },
+   "n_days": 334,
+   "name": "t4_train2017_test2019_OTHER",
+   "pred_info": {
+    "bytes": 19389,
+    "done_sha256": null,
+    "file": "pred_info.json",
+    "sha256": "495e215c2cae7b4dfc6014678e65ed862cf0f3e274c814a0e02ac98257acb8a5"
+   },
+   "result": {
+    "best_step": 5750,
+    "early_stopped": false,
+    "last_step": 6000,
+    "steps_planned": 6000,
+    "steps_run": 6000
+   },
+   "sha256": "f44f985264e473eaf6a902babdab031bb8e54b7a706266864159dc8278a28840",
+   "train_log": {
+    "bytes": 29494,
+    "done_sha256": null,
+    "file": "t4_train2017_test2019_OTHER.json",
+    "n_evaluations": 24,
+    "note": "DONE.json names the log by path only (no sha256)",
+    "place": "TRAIN/logs/tier_a2/lane1/train",
+    "places": [
+     "TRAIN/logs/train",
+     "TRAIN/logs/tier_a2/lane1/train",
+     "TRAIN/logs/tier_a2/lane2/train"
+    ],
+    "sha256": "232876879cc3807078d78704125fe662409141d873c486cd00f016e24a80e2aa",
+    "status": "READ"
+   }
+  },
+  {
+   "bytes": 71601712,
+   "clipped_masked_total": 31056,
+   "file": "pred_masked.npy",
+   "fold": 2019,
+   "inference": {
+    "infer_batch": 32,
+    "n_days": 334,
+    "seconds_day_sets": {},
+    "seconds_test_cv": 39.1,
+    "seconds_total": 39.1,
+    "windows_per_day": 126
+   },
+   "kind": "network",
+   "labels": {
+    "fold": 2019,
+    "model_id": 23,
+    "network": "advanced",
+    "seed_offset": 0
+   },
+   "n_days": 334,
+   "name": "t4_train2017_test2019_OWN",
+   "pred_info": {
+    "bytes": 19305,
+    "done_sha256": null,
+    "file": "pred_info.json",
+    "sha256": "16e4deac281048d6101ffb68bf562ed93aacf2e258ad55c987fa69a698dcd7f1"
+   },
+   "result": {
+    "best_step": 5500,
+    "early_stopped": false,
+    "last_step": 6000,
+    "steps_planned": 6000,
+    "steps_run": 6000
+   },
+   "sha256": "48c3ce8c16b541e66a1da21e4b03e3d78740447349f460984b17c76c3649bb8f",
+   "train_log": {
+    "bytes": 29484,
+    "done_sha256": null,
+    "file": "t4_train2017_test2019_OWN.json",
+    "n_evaluations": 24,
+    "note": "DONE.json names the log by path only (no sha256)",
+    "place": "TRAIN/logs/tier_a2/lane1/train",
+    "places": [
+     "TRAIN/logs/train",
+     "TRAIN/logs/tier_a2/lane1/train",
+     "TRAIN/logs/tier_a2/lane2/train"
+    ],
+    "sha256": "654cf46401dd0ff808bc67e8dbe19517eda4a9194cb4c0def74fca20368e7ec9",
+    "status": "READ"
+   }
+  },
+  {
+   "bytes": 71601712,
+   "clipped_masked_total": 27583,
+   "file": "pred_masked.npy",
+   "fold": 2019,
+   "inference": {
+    "infer_batch": 32,
+    "n_days": 334,
+    "seconds_day_sets": {},
+    "seconds_test_cv": 40.0,
+    "seconds_total": 40.0,
+    "windows_per_day": 126
+   },
+   "kind": "network",
+   "labels": {
+    "fold": 2019,
+    "model_id": 23,
+    "network": "advanced",
+    "seed_offset": 0
+   },
+   "n_days": 334,
+   "name": "t4_train2017_test2019_TRUE",
+   "pred_info": {
+    "bytes": 19293,
+    "done_sha256": null,
+    "file": "pred_info.json",
+    "sha256": "2a11f64777f805ce3a874762ff9e1a2a70bd2193ba5d3935c250020fd9ef087b"
+   },
+   "result": {
+    "best_step": 5750,
+    "early_stopped": false,
+    "last_step": 6000,
+    "steps_planned": 6000,
+    "steps_run": 6000
+   },
+   "sha256": "c4d2c32098998482e9ea709e601649d0341ac4da6369e206cddf997a932a2195",
+   "train_log": {
+    "bytes": 29505,
+    "done_sha256": null,
+    "file": "t4_train2017_test2019_TRUE.json",
+    "n_evaluations": 24,
+    "note": "DONE.json names the log by path only (no sha256)",
+    "place": "TRAIN/logs/tier_a2/lane1/train",
+    "places": [
+     "TRAIN/logs/train",
+     "TRAIN/logs/tier_a2/lane1/train",
+     "TRAIN/logs/tier_a2/lane2/train"
+    ],
+    "sha256": "5ee655635bbd3e523f07ffcf8f1c13e0788a28406ae11c80758c7cda86c366d7",
+    "status": "READ"
+   }
+  },
+  {
+   "bytes": 71601712,
+   "clipped_masked_total": 58281,
+   "file": "pred_masked.npy",
+   "fold": 2019,
+   "inference": {
+    "infer_batch": 32,
+    "n_days": 334,
+    "seconds_day_sets": {},
+    "seconds_test_cv": 37.6,
+    "seconds_total": 37.6,
+    "windows_per_day": 126
+   },
+   "kind": "network",
+   "labels": {
+    "fold": 2019,
+    "model_id": 24,
+    "network": "advanced",
+    "seed_offset": 0
+   },
+   "n_days": 334,
+   "name": "fold2019_A4",
+   "pred_info": {
+    "bytes": 19050,
+    "done_sha256": null,
+    "file": "pred_info.json",
+    "sha256": "17607f55c663e0ebfc62356191091d6e0c70e39d563797f8d7b80eb141380045"
+   },
+   "result": {
+    "best_step": 16000,
+    "early_stopped": false,
+    "last_step": 16000,
+    "steps_planned": 16000,
+    "steps_run": 16000
+   },
+   "sha256": "e8b904d82bd0d6bcfdf9b18a160483b49eb99d2e534c4ae188f4389730b360a7",
+   "train_log": {
+    "bytes": 48337,
+    "done_sha256": null,
+    "file": "fold2019_A4.json",
+    "n_evaluations": 64,
+    "note": "DONE.json names the log by path only (no sha256)",
+    "place": "TRAIN/logs/tier_a2/lane2/train",
+    "places": [
+     "TRAIN/logs/train",
+     "TRAIN/logs/tier_a2/lane1/train",
+     "TRAIN/logs/tier_a2/lane2/train"
+    ],
+    "sha256": "5f300dcff0c0085e7bd84c2ca6ec1194cfc6d19a4bad3a73704f848defbeb8d1",
+    "status": "READ"
+   }
+  },
+  {
+   "bytes": 71601712,
+   "clipped_masked_total": 0,
+   "file": "pred_masked.npy",
+   "fold": 2019,
+   "gbt_fit": null,
+   "kind": "baseline",
+   "n_days": 334,
+   "name": "CLIM-C",
+   "sha256": "9fab5e048841b3e3b5a8a1d9623245d5ae29a79a0ccfad13b73078509039c20a"
+  },
+  {
+   "bytes": 71601712,
+   "clipped_masked_total": 0,
+   "file": "pred_masked.npy",
+   "fold": 2019,
+   "gbt_fit": null,
+   "kind": "baseline",
+   "n_days": 334,
+   "name": "CLIM-EM",
+   "sha256": "ee453e018fe9f2c4d960165d2988561364c605dec0fb3f834a2441710b1b544f"
+  },
+  {
+   "bytes": 71601712,
+   "clipped_masked_total": 18303,
+   "file": "pred_masked.npy",
+   "fold": 2019,
+   "gbt_fit": {
+    "n_iter": 500,
+    "val_day": "20150126",
+    "val_day_output_sha256": "b20b3036acd5346818e8e82c6e3589072d84a4242b6eda66bb784e0d79fcf20d"
+   },
+   "kind": "baseline",
+   "n_days": 334,
+   "name": "GBT",
+   "sha256": "a599e9d27a65094d899a82d2e07c05ca6c19333651711b29547f11542b6dd882"
+  },
+  {
+   "bytes": 71601712,
+   "clipped_masked_total": 1222961,
+   "file": "pred_masked.npy",
+   "fold": 2019,
+   "gbt_fit": {
+    "n_iter": 500,
+    "val_day": "20150126",
+    "val_day_output_sha256": "b20b3036acd5346818e8e82c6e3589072d84a4242b6eda66bb784e0d79fcf20d"
+   },
+   "kind": "baseline",
+   "n_days": 334,
+   "name": "GBT-RIDGE",
+   "sha256": "7cd24b60ef37e83a1d2a8673971b4b0ff7ae1f55ff4eb26f29b5d220594322e0"
+  },
+  {
+   "bytes": 71601712,
+   "clipped_masked_total": 38457,
+   "file": "pred_masked.npy",
+   "fold": 2019,
+   "inference": {
+    "infer_batch": 32,
+    "n_days": 334,
+    "seconds_day_sets": {},
+    "seconds_test_cv": 39.8,
+    "seconds_total": 39.8,
+    "windows_per_day": 126
+   },
+   "kind": "network",
+   "labels": {
+    "fold": 2019,
+    "model_id": 20,
+    "network": "advanced",
+    "seed_offset": 0
+   },
+   "n_days": 334,
+   "name": "fold2019_M",
+   "pred_info": {
+    "bytes": 19301,
+    "done_sha256": null,
+    "file": "pred_info.json",
+    "sha256": "c3d24e1d8528738bf9786b6e7935c59272722431af9f8ca78f1326df8275f193"
+   },
+   "result": {
+    "best_step": 14000,
+    "early_stopped": false,
+    "last_step": 16000,
+    "steps_planned": 16000,
+    "steps_run": 16000
+   },
+   "sha256": "2b2894467be9394d33c38a1447c156420648a692dcff45d639ca82a014a6c2fa",
+   "train_log": {
+    "bytes": 49458,
+    "done_sha256": null,
+    "file": "fold2019_M.json",
+    "n_evaluations": 64,
+    "note": "DONE.json names the log by path only (no sha256)",
+    "place": "TRAIN/logs/tier_a2/lane2/train",
+    "places": [
+     "TRAIN/logs/train",
+     "TRAIN/logs/tier_a2/lane1/train",
+     "TRAIN/logs/tier_a2/lane2/train"
+    ],
+    "sha256": "40e0053dd1501d3e74356c46774ac66c7b86faa9d16a9efe7f1b64502d26d2c2",
+    "status": "READ"
+   }
+  },
+  {
+   "bytes": 71601712,
+   "clipped_masked_total": 35714,
+   "file": "pred_masked.npy",
+   "fold": 2019,
+   "inference": {
+    "infer_batch": 32,
+    "n_days": 334,
+    "seconds_day_sets": {},
+    "seconds_test_cv": 39.8,
+    "seconds_total": 39.8,
+    "windows_per_day": 126
+   },
+   "kind": "network",
+   "labels": {
+    "fold": 2019,
+    "model_id": 20,
+    "network": "advanced",
+    "seed_offset": 1000
+   },
+   "n_days": 334,
+   "name": "fold2019_M_seed1000",
+   "pred_info": {
+    "bytes": 19281,
+    "done_sha256": null,
+    "file": "pred_info.json",
+    "sha256": "881584fd389c094413e427c51b5615fda6998f61b48e74cee8d8c602425206f6"
+   },
+   "result": {
+    "best_step": 14750,
+    "early_stopped": false,
+    "last_step": 16000,
+    "steps_planned": 16000,
+    "steps_run": 16000
+   },
+   "sha256": "3e328da4d38bb35ad7de5682f578c42fc812b9da4872293dc201efc0dd35cfbc",
+   "train_log": {
+    "bytes": 49472,
+    "done_sha256": null,
+    "file": "fold2019_M_seed1000.json",
+    "n_evaluations": 64,
+    "note": "DONE.json names the log by path only (no sha256)",
+    "place": "TRAIN/logs/tier_a2/lane2/train",
+    "places": [
+     "TRAIN/logs/train",
+     "TRAIN/logs/tier_a2/lane1/train",
+     "TRAIN/logs/tier_a2/lane2/train"
+    ],
+    "sha256": "2322475c657e0a55ae6164e1b7d2d1a4f403cca5ffa3051597588177724d5ec6",
+    "status": "READ"
+   }
+  },
+  {
+   "bytes": 71601712,
+   "clipped_masked_total": 27044,
+   "file": "pred_masked.npy",
+   "fold": 2019,
+   "inference": {
+    "infer_batch": 32,
+    "n_days": 334,
+    "seconds_day_sets": {},
+    "seconds_test_cv": 39.5,
+    "seconds_total": 39.5,
+    "windows_per_day": 126
+   },
+   "kind": "network",
+   "labels": {
+    "fold": 2019,
+    "model_id": 20,
+    "network": "advanced",
+    "seed_offset": 2000
+   },
+   "n_days": 334,
+   "name": "fold2019_M_seed2000",
+   "pred_info": {
+    "bytes": 19274,
+    "done_sha256": null,
+    "file": "pred_info.json",
+    "sha256": "b142bc53957d898be864abb3264461f5d48ace87218d3cf55d0e55bca3f311ef"
+   },
+   "result": {
+    "best_step": 13500,
+    "early_stopped": false,
+    "last_step": 16000,
+    "steps_planned": 16000,
+    "steps_run": 16000
+   },
+   "sha256": "172881f1b15d404ea80002e372711d8f4345e26b38349d4e5a1ec57981973920",
+   "train_log": {
+    "bytes": 49452,
+    "done_sha256": null,
+    "file": "fold2019_M_seed2000.json",
+    "n_evaluations": 64,
+    "note": "DONE.json names the log by path only (no sha256)",
+    "place": "TRAIN/logs/tier_a2/lane2/train",
+    "places": [
+     "TRAIN/logs/train",
+     "TRAIN/logs/tier_a2/lane1/train",
+     "TRAIN/logs/tier_a2/lane2/train"
+    ],
+    "sha256": "4a3159418e9ebbc6dde3c543d571dd9be23fc1c7bf1a39727d85a6c5d78318a9",
+    "status": "READ"
+   }
+  },
+  {
+   "bytes": 71601712,
+   "clipped_masked_total": 41478,
+   "file": "pred_masked.npy",
+   "fold": 2019,
+   "inference": {
+    "infer_batch": 32,
+    "n_days": 334,
+    "seconds_day_sets": {},
+    "seconds_test_cv": 39.9,
+    "seconds_total": 39.9,
+    "windows_per_day": 126
+   },
+   "kind": "network",
+   "labels": {
+    "fold": 2019,
+    "model_id": 20,
+    "network": "advanced",
+    "seed_offset": 3000
+   },
+   "n_days": 334,
+   "name": "fold2019_M_seed3000",
+   "pred_info": {
+    "bytes": 19317,
+    "done_sha256": null,
+    "file": "pred_info.json",
+    "sha256": "71f5fad4233bfba07c77bc2dc78b94baf6819b5ce1adb2b6384df925fb6426fb"
+   },
+   "result": {
+    "best_step": 15750,
+    "early_stopped": false,
+    "last_step": 16000,
+    "steps_planned": 16000,
+    "steps_run": 16000
+   },
+   "sha256": "02a2cb168b7c5f69e662840bc40ccd28421f1b7c2a718de99b82bd0f798a1611",
+   "train_log": {
+    "bytes": 49492,
+    "done_sha256": null,
+    "file": "fold2019_M_seed3000.json",
+    "n_evaluations": 64,
+    "note": "DONE.json names the log by path only (no sha256)",
+    "place": "TRAIN/logs/tier_a2/lane2/train",
+    "places": [
+     "TRAIN/logs/train",
+     "TRAIN/logs/tier_a2/lane1/train",
+     "TRAIN/logs/tier_a2/lane2/train"
+    ],
+    "sha256": "15125530c4b5b74c6cd9c26db1f83bd47a90a87e54f6aa0dd2daba101ba9c43f",
+    "status": "READ"
+   }
+  },
+  {
+   "bytes": 71601712,
+   "clipped_masked_total": 23721,
+   "file": "pred_masked.npy",
+   "fold": 2019,
+   "inference": {
+    "infer_batch": 32,
+    "n_days": 334,
+    "seconds_day_sets": {},
+    "seconds_test_cv": 39.1,
+    "seconds_total": 39.1,
+    "windows_per_day": 126
+   },
+   "kind": "network",
+   "labels": {
+    "fold": 2019,
+    "model_id": 20,
+    "network": "advanced",
+    "seed_offset": 4000
+   },
+   "n_days": 334,
+   "name": "fold2019_M_seed4000",
+   "pred_info": {
+    "bytes": 19235,
+    "done_sha256": null,
+    "file": "pred_info.json",
+    "sha256": "31f606e797137d1edc99549cbf1919cae74e1820ae23be20a324fe80648f6ca9"
+   },
+   "result": {
+    "best_step": 16000,
+    "early_stopped": false,
+    "last_step": 16000,
+    "steps_planned": 16000,
+    "steps_run": 16000
+   },
+   "sha256": "1f908f199b246f7df98c11ae47fe0ea08262431739c48089cd827769b21f4cf5",
+   "train_log": {
+    "bytes": 49477,
+    "done_sha256": null,
+    "file": "fold2019_M_seed4000.json",
+    "n_evaluations": 64,
+    "note": "DONE.json names the log by path only (no sha256)",
+    "place": "TRAIN/logs/tier_a2/lane2/train",
+    "places": [
+     "TRAIN/logs/train",
+     "TRAIN/logs/tier_a2/lane1/train",
+     "TRAIN/logs/tier_a2/lane2/train"
+    ],
+    "sha256": "65a19d2e6ce32b1590c42399ceafaa6dfb91aac90e92801c8c4eeb02df0e604d",
+    "status": "READ"
+   }
+  },
+  {
+   "bytes": 71601712,
+   "clipped_masked_total": 38441,
+   "file": "pred_masked.npy",
+   "fold": 2019,
+   "inference": {
+    "infer_batch": 32,
+    "n_days": 334,
+    "seconds_day_sets": {},
+    "seconds_test_cv": 40.6,
+    "seconds_total": 40.6,
+    "windows_per_day": 126
+   },
+   "kind": "network",
+   "labels": {
+    "fold": 2019,
+    "model_id": 25,
+    "network": "advanced",
+    "seed_offset": 0
+   },
+   "n_days": 334,
+   "name": "fold2019_MC7",
+   "pred_info": {
+    "bytes": 19273,
+    "done_sha256": null,
+    "file": "pred_info.json",
+    "sha256": "0406f39a96390d70b18ff27890447d34844b8a4a9b776e2b8267f7376c2cd24d"
+   },
+   "result": {
+    "best_step": 16000,
+    "early_stopped": false,
+    "last_step": 16000,
+    "steps_planned": 16000,
+    "steps_run": 16000
+   },
+   "sha256": "e2058332f452e083a781b161d65988ca019cf488d913dead144c3c5ee4069752",
+   "train_log": {
+    "bytes": 49524,
+    "done_sha256": null,
+    "file": "fold2019_MC7.json",
+    "n_evaluations": 64,
+    "note": "DONE.json names the log by path only (no sha256)",
+    "place": "TRAIN/logs/tier_a2/lane2/train",
+    "places": [
+     "TRAIN/logs/train",
+     "TRAIN/logs/tier_a2/lane1/train",
+     "TRAIN/logs/tier_a2/lane2/train"
+    ],
+    "sha256": "64ad07e435ab1c0fcc5ce15c6d3b2f2f5aca81cbb2035a6dfe4e735f88dd9322",
+    "status": "READ"
+   }
+  },
+  {
+   "bytes": 71601712,
+   "clipped_masked_total": 952,
+   "file": "pred_masked.npy",
+   "fold": 2019,
+   "gbt_fit": null,
+   "kind": "baseline",
+   "n_days": 334,
+   "name": "MET-REG",
+   "sha256": "d6de4a2f2a38db4d8676f4b0769fa07ef5d25a250da2e5986366c0c6d8093f10"
+  },
+  {
+   "bytes": 71601712,
+   "clipped_masked_total": 160823,
+   "file": "pred_masked.npy",
+   "fold": 2019,
+   "inference": {
+    "infer_batch": 32,
+    "n_days": 334,
+    "seconds_day_sets": {
+     "TRAIN-S": 40.1,
+     "VAL": 39.5
+    },
+    "seconds_test_cv": 48.0,
+    "seconds_total": 127.6,
+    "windows_per_day": 126
+   },
+   "kind": "network",
+   "labels": {
+    "fold": 2019,
+    "model_id": 0,
+    "network": "baseline",
+    "seed_offset": 0
+   },
+   "n_days": 334,
+   "name": "fold2019_baseline",
+   "pred_info": {
+    "bytes": 29367,
+    "done_sha256": null,
+    "file": "pred_info.json",
+    "sha256": "ae669e5d84312baf3eaa45f310acf026bb31f4d22cad5897f56ed9d8b4983213"
+   },
+   "result": {
+    "best_step": 6000,
+    "early_stopped": false,
+    "last_step": 6000,
+    "steps_planned": 6000,
+    "steps_run": 6000
+   },
+   "sha256": "2a09b6795e453623fb39f3cefdd9a997d21e9ebe73926f70e2cc2e6cc0de0e4b",
+   "train_log": {
+    "bytes": 23753,
+    "done_sha256": null,
+    "file": "fold2019_baseline.json",
+    "n_evaluations": 24,
+    "note": "DONE.json names the log by path only (no sha256)",
+    "place": "TRAIN/logs/train",
+    "places": [
+     "TRAIN/logs/train",
+     "TRAIN/logs/tier_a2/lane1/train",
+     "TRAIN/logs/tier_a2/lane2/train"
+    ],
+    "sha256": "55642810d743dff54e60f2eb860c486a7f58f14ddf32f6b1a300362c7bffcf78",
+    "status": "READ"
+   }
+  },
+  {
+   "bytes": 71601712,
+   "clipped_masked_total": 120541,
+   "file": "pred_masked.npy",
+   "fold": 2019,
+   "inference": {
+    "infer_batch": 32,
+    "n_days": 334,
+    "seconds_day_sets": {},
+    "seconds_test_cv": 48.4,
+    "seconds_total": 48.4,
+    "windows_per_day": 126
+   },
+   "kind": "network",
+   "labels": {
+    "fold": 2019,
+    "model_id": 0,
+    "network": "baseline",
+    "seed_offset": 1000
+   },
+   "n_days": 334,
+   "name": "fold2019_baseline_seed1000",
+   "pred_info": {
+    "bytes": 19530,
+    "done_sha256": null,
+    "file": "pred_info.json",
+    "sha256": "7f48b1de479fa9776f1bc6b8674c79f0f4ba21ac953bdffe2edabe2f6ce78150"
+   },
+   "result": {
+    "best_step": 6000,
+    "early_stopped": false,
+    "last_step": 6000,
+    "steps_planned": 6000,
+    "steps_run": 6000
+   },
+   "sha256": "7f946000fa5f8fc37d1432d841d5fa6c70e76950daecf296c5a9e1e3fb380d39",
+   "train_log": {
+    "bytes": 22917,
+    "done_sha256": null,
+    "file": "fold2019_baseline_seed1000.json",
+    "n_evaluations": 24,
+    "note": "DONE.json names the log by path only (no sha256)",
+    "place": "TRAIN/logs/train",
+    "places": [
+     "TRAIN/logs/train",
+     "TRAIN/logs/tier_a2/lane1/train",
+     "TRAIN/logs/tier_a2/lane2/train"
+    ],
+    "sha256": "e966f66defda4f8af3ab7285527e84553bdb85734fa0772e40236402427bfb8d",
+    "status": "READ"
+   }
+  },
+  {
+   "bytes": 71601712,
+   "clipped_masked_total": 184694,
+   "file": "pred_masked.npy",
+   "fold": 2019,
+   "inference": {
+    "infer_batch": 32,
+    "n_days": 334,
+    "seconds_day_sets": {},
+    "seconds_test_cv": 47.3,
+    "seconds_total": 47.3,
+    "windows_per_day": 126
+   },
+   "kind": "network",
+   "labels": {
+    "fold": 2019,
+    "model_id": 0,
+    "network": "baseline",
+    "seed_offset": 2000
+   },
+   "n_days": 334,
+   "name": "fold2019_baseline_seed2000",
+   "pred_info": {
+    "bytes": 19587,
+    "done_sha256": null,
+    "file": "pred_info.json",
+    "sha256": "8672e6bd2851c7e32a8bfd730d8cdd400d4740dd8797232e252673cad538364c"
+   },
+   "result": {
+    "best_step": 6000,
+    "early_stopped": false,
+    "last_step": 6000,
+    "steps_planned": 6000,
+    "steps_run": 6000
+   },
+   "sha256": "f3a69ece31f3d0a713ded7f3060ea2f19d6b8e844e693390c79e80dbb1ae251e",
+   "train_log": {
+    "bytes": 25132,
+    "done_sha256": null,
+    "file": "fold2019_baseline_seed2000.json",
+    "n_evaluations": 24,
+    "note": "DONE.json names the log by path only (no sha256)",
+    "place": "TRAIN/logs/tier_a2/lane2/train",
+    "places": [
+     "TRAIN/logs/train",
+     "TRAIN/logs/tier_a2/lane1/train",
+     "TRAIN/logs/tier_a2/lane2/train"
+    ],
+    "sha256": "cc8e2d1e51a9f7aa687239113608bff39da81680f68be7d1f1cf4bc2261e327a",
+    "status": "READ"
+   }
+  },
+  {
+   "bytes": 71601712,
+   "clipped_masked_total": 49553,
+   "file": "pred_masked.npy",
+   "fold": 2019,
+   "inference": {
+    "infer_batch": 32,
+    "n_days": 334,
+    "seconds_day_sets": {},
+    "seconds_test_cv": 18.5,
+    "seconds_total": 18.5,
+    "windows_per_day": 126
+   },
+   "kind": "network",
+   "labels": {
+    "fold": 2019,
+    "model_id": 27,
+    "network": "pixr",
+    "seed_offset": 0
+   },
+   "n_days": 334,
+   "name": "fold2019_PIXR",
+   "pred_info": {
+    "bytes": 19293,
+    "done_sha256": null,
+    "file": "pred_info.json",
+    "sha256": "a824e34bc6047af75fe06a12c339c1499c24b512fd4894faea303625231d13af"
+   },
+   "result": {
+    "best_step": 6000,
+    "early_stopped": false,
+    "last_step": 6000,
+    "steps_planned": 6000,
+    "steps_run": 6000
+   },
+   "sha256": "ec9360cddc25a70969a050f487369fe8dc486e49ea603856a6994f640538e927",
+   "train_log": {
+    "bytes": 24914,
+    "done_sha256": null,
+    "file": "fold2019_PIXR.json",
+    "n_evaluations": 24,
+    "note": "DONE.json names the log by path only (no sha256)",
+    "place": "TRAIN/logs/tier_a2/lane2/train",
+    "places": [
+     "TRAIN/logs/train",
+     "TRAIN/logs/tier_a2/lane1/train",
+     "TRAIN/logs/tier_a2/lane2/train"
+    ],
+    "sha256": "6bed7b37be4e5dfa0f7750898df527c18a28022e557731ec780c4d8a663d78ed",
+    "status": "READ"
+   }
+  }
+ ],
+ "gbt_fit_checks": [],
+ "guard_py": {
+  "as_expected": true,
+  "expected_sha256": "9dfaad82efd0972cd6a5526bb765755bf9f828eae0b9d70d846dfd38e75e859d",
+  "file": "train/guard.py",
+  "sha256": "9dfaad82efd0972cd6a5526bb765755bf9f828eae0b9d70d846dfd38e75e859d"
+ },
+ "made_utc": "2026-10-27 20:15:49",
+ "mc7_checks": [
+  {
+   "fold": 2016,
+   "model": "M-C7",
+   "n_cell_days": 0,
+   "name": "fold2016_MC7",
+   "part": "TEST_CV",
+   "seed": 0,
+   "status": "PASS"
+  },
+  {
+   "fold": 2018,
+   "model": "M-C7",
+   "n_cell_days": 0,
+   "name": "fold2018_MC7",
+   "part": "TEST_CV",
+   "seed": 0,
+   "status": "PASS"
+  },
+  {
+   "fold": 2019,
+   "model": "M-C7",
+   "n_cell_days": 0,
+   "name": "fold2019_MC7",
+   "part": "TEST_CV",
+   "seed": 0,
+   "status": "PASS"
+  }
+ ],
+ "models": [
+  {
+   "fold": 2019,
+   "kind": "network",
+   "model": "M",
+   "name": "fold2019_M",
+   "seed": 0
+  },
+  {
+   "fold": 2019,
+   "kind": "network",
+   "model": "P",
+   "name": "fold2019_baseline",
+   "seed": 0
+  },
+  {
+   "fold": 2016,
+   "kind": "network",
+   "model": "M",
+   "name": "fold2016_M",
+   "seed": 0
+  },
+  {
+   "fold": 2016,
+   "kind": "network",
+   "model": "P",
+   "name": "fold2016_baseline",
+   "seed": 0
+  },
+  {
+   "fold": 2015,
+   "kind": "network",
+   "model": "M",
+   "name": "fold2015_M",
+   "seed": 0
+  },
+  {
+   "fold": 2015,
+   "kind": "network",
+   "model": "P",
+   "name": "fold2015_baseline",
+   "seed": 0
+  },
+  {
+   "fold": 2017,
+   "kind": "network",
+   "model": "M",
+   "name": "fold2017_M",
+   "seed": 0
+  },
+  {
+   "fold": 2017,
+   "kind": "network",
+   "model": "P",
+   "name": "fold2017_baseline",
+   "seed": 0
+  },
+  {
+   "fold": 2018,
+   "kind": "network",
+   "model": "M",
+   "name": "fold2018_M",
+   "seed": 0
+  },
+  {
+   "fold": 2018,
+   "kind": "network",
+   "model": "P",
+   "name": "fold2018_baseline",
+   "seed": 0
+  },
+  {
+   "fold": 2016,
+   "kind": "network",
+   "model": "M",
+   "name": "fold2016_M_seed1000",
+   "seed": 1
+  },
+  {
+   "fold": 2016,
+   "kind": "network",
+   "model": "M",
+   "name": "fold2016_M_seed2000",
+   "seed": 2
+  },
+  {
+   "fold": 2016,
+   "kind": "network",
+   "model": "M",
+   "name": "fold2016_M_seed3000",
+   "seed": 3
+  },
+  {
+   "fold": 2016,
+   "kind": "network",
+   "model": "M",
+   "name": "fold2016_M_seed4000",
+   "seed": 4
+  },
+  {
+   "fold": 2016,
+   "kind": "network",
+   "model": "P",
+   "name": "fold2016_baseline_seed1000",
+   "seed": 1
+  },
+  {
+   "fold": 2016,
+   "kind": "network",
+   "model": "P",
+   "name": "fold2016_baseline_seed2000",
+   "seed": 2
+  },
+  {
+   "fold": 2016,
+   "kind": "network",
+   "model": "P",
+   "name": "fold2016_baseline_seed3000",
+   "seed": 3
+  },
+  {
+   "fold": 2016,
+   "kind": "network",
+   "model": "P",
+   "name": "fold2016_baseline_seed4000",
+   "seed": 4
+  },
+  {
+   "fold": 2016,
+   "kind": "network",
+   "model": "A1",
+   "name": "fold2016_A1",
+   "seed": 0
+  },
+  {
+   "fold": 2016,
+   "kind": "network",
+   "model": "A2",
+   "name": "fold2016_A2",
+   "seed": 0
+  },
+  {
+   "fold": 2016,
+   "kind": "network",
+   "model": "A3",
+   "name": "fold2016_A3",
+   "seed": 0
+  },
+  {
+   "fold": 2016,
+   "kind": "network",
+   "model": "A4",
+   "name": "fold2016_A4",
+   "seed": 0
+  },
+  {
+   "fold": 2016,
+   "kind": "network",
+   "model": "M-C7",
+   "name": "fold2016_MC7",
+   "seed": 0
+  },
+  {
+   "fold": 2018,
+   "kind": "network",
+   "model": "M-C7",
+   "name": "fold2018_MC7",
+   "seed": 0
+  },
+  {
+   "fold": 2016,
+   "kind": "network",
+   "model": "A3BL",
+   "name": "fold2016_A3BL",
+   "seed": 0
+  },
+  {
+   "fold": 2016,
+   "kind": "network",
+   "model": "A3OFF",
+   "name": "fold2016_A3OFF",
+   "seed": 0
+  },
+  {
+   "fold": 2016,
+   "kind": "network",
+   "model": "PIX-R",
+   "name": "fold2016_PIXR",
+   "seed": 0
+  },
+  {
+   "fold": 2019,
+   "kind": "network",
+   "model": "M",
+   "name": "fold2019_M_seed1000",
+   "seed": 1
+  },
+  {
+   "fold": 2019,
+   "kind": "network",
+   "model": "M",
+   "name": "fold2019_M_seed2000",
+   "seed": 2
+  },
+  {
+   "fold": 2019,
+   "kind": "network",
+   "model": "P",
+   "name": "fold2019_baseline_seed1000",
+   "seed": 1
+  },
+  {
+   "fold": 2019,
+   "kind": "network",
+   "model": "A1",
+   "name": "fold2019_A1",
+   "seed": 0
+  },
+  {
+   "fold": 2019,
+   "kind": "network",
+   "model": "A2",
+   "name": "fold2019_A2",
+   "seed": 0
+  },
+  {
+   "fold": 2019,
+   "kind": "network",
+   "model": "A3",
+   "name": "fold2019_A3",
+   "seed": 0
+  },
+  {
+   "fold": 2019,
+   "kind": "network",
+   "model": "PIX-R",
+   "name": "fold2019_PIXR",
+   "seed": 0
+  },
+  {
+   "fold": 2019,
+   "kind": "network",
+   "model": "A4",
+   "name": "fold2019_A4",
+   "seed": 0
+  },
+  {
+   "fold": 2019,
+   "kind": "network",
+   "model": "M-C7",
+   "name": "fold2019_MC7",
+   "seed": 0
+  },
+  {
+   "fold": 2019,
+   "kind": "network",
+   "model": "M",
+   "name": "fold2019_M_seed3000",
+   "seed": 3
+  },
+  {
+   "fold": 2019,
+   "kind": "network",
+   "model": "M",
+   "name": "fold2019_M_seed4000",
+   "seed": 4
+  },
+  {
+   "fold": 2019,
+   "kind": "network",
+   "model": "P",
+   "name": "fold2019_baseline_seed2000",
+   "seed": 2
+  },
+  {
+   "fold": 2019,
+   "kind": "network",
+   "model": "A3_F-6_TRUE",
+   "name": "t4_train2017_test2019_TRUE",
+   "seed": 0
+  },
+  {
+   "fold": 2019,
+   "kind": "network",
+   "model": "A3_F-6_OTHER",
+   "name": "t4_train2017_test2019_OTHER",
+   "seed": 0
+  },
+  {
+   "fold": 2019,
+   "kind": "network",
+   "model": "A3_F-6_OWN",
+   "name": "t4_train2017_test2019_OWN",
+   "seed": 0
+  },
+  {
+   "fold": 2017,
+   "kind": "network",
+   "model": "A3_F-6_TRUE",
+   "name": "t4_train2019_test2017_TRUE",
+   "seed": 0
+  },
+  {
+   "fold": 2017,
+   "kind": "network",
+   "model": "A3_F-6_OTHER",
+   "name": "t4_train2019_test2017_OTHER",
+   "seed": 0
+  },
+  {
+   "fold": 2017,
+   "kind": "network",
+   "model": "A3_F-6_OWN",
+   "name": "t4_train2019_test2017_OWN",
+   "seed": 0
+  },
+  {
+   "fold": 2016,
+   "kind": "network",
+   "model": "A3_LR-3e-4",
+   "name": "fold2016_A3_LR-3e-4",
+   "seed": 0
+  },
+  {
+   "fold": 2016,
+   "kind": "network",
+   "model": "A3_LR-3e-3",
+   "name": "fold2016_A3_LR-3e-3",
+   "seed": 0
+  },
+  {
+   "fold": 2015,
+   "kind": "network",
+   "model": "PIX-R",
+   "name": "fold2015_PIXR",
+   "seed": 0
+  },
+  {
+   "fold": 2017,
+   "kind": "network",
+   "model": "PIX-R",
+   "name": "fold2017_PIXR",
+   "seed": 0
+  },
+  {
+   "fold": 2018,
+   "kind": "network",
+   "model": "PIX-R",
+   "name": "fold2018_PIXR",
+   "seed": 0
+  },
+  {
+   "fold": 2016,
+   "kind": "network",
+   "model": "P18",
+   "name": "fold2016_P18",
+   "seed": 0
+  },
+  {
+   "fold": 2016,
+   "kind": "baseline",
+   "model": "CLIM-C",
+   "name": "CLIM-C",
+   "seed": null
+  },
+  {
+   "fold": 2015,
+   "kind": "baseline",
+   "model": "CLIM-C",
+   "name": "CLIM-C",
+   "seed": null
+  },
+  {
+   "fold": 2017,
+   "kind": "baseline",
+   "model": "CLIM-C",
+   "name": "CLIM-C",
+   "seed": null
+  },
+  {
+   "fold": 2018,
+   "kind": "baseline",
+   "model": "CLIM-C",
+   "name": "CLIM-C",
+   "seed": null
+  },
+  {
+   "fold": 2019,
+   "kind": "baseline",
+   "model": "CLIM-C",
+   "name": "CLIM-C",
+   "seed": null
+  },
+  {
+   "fold": 2016,
+   "kind": "baseline",
+   "model": "CLIM-WD",
+   "name": "CLIM-WD",
+   "seed": null
+  },
+  {
+   "fold": 2015,
+   "kind": "baseline",
+   "model": "CLIM-WD",
+   "name": "CLIM-WD",
+   "seed": null
+  },
+  {
+   "fold": 2017,
+   "kind": "baseline",
+   "model": "CLIM-WD",
+   "name": "CLIM-WD",
+   "seed": null
+  },
+  {
+   "fold": 2018,
+   "kind": "baseline",
+   "model": "CLIM-WD",
+   "name": "CLIM-WD",
+   "seed": null
+  },
+  {
+   "fold": 2019,
+   "kind": "baseline",
+   "model": "CLIM-WD",
+   "name": "CLIM-WD",
+   "seed": null
+  },
+  {
+   "fold": 2016,
+   "kind": "baseline",
+   "model": "MET-REG",
+   "name": "MET-REG",
+   "seed": null
+  },
+  {
+   "fold": 2015,
+   "kind": "baseline",
+   "model": "MET-REG",
+   "name": "MET-REG",
+   "seed": null
+  },
+  {
+   "fold": 2017,
+   "kind": "baseline",
+   "model": "MET-REG",
+   "name": "MET-REG",
+   "seed": null
+  },
+  {
+   "fold": 2018,
+   "kind": "baseline",
+   "model": "MET-REG",
+   "name": "MET-REG",
+   "seed": null
+  },
+  {
+   "fold": 2019,
+   "kind": "baseline",
+   "model": "MET-REG",
+   "name": "MET-REG",
+   "seed": null
+  },
+  {
+   "fold": 2016,
+   "kind": "baseline",
+   "model": "GBT",
+   "name": "GBT",
+   "seed": null
+  },
+  {
+   "fold": 2015,
+   "kind": "baseline",
+   "model": "GBT",
+   "name": "GBT",
+   "seed": null
+  },
+  {
+   "fold": 2017,
+   "kind": "baseline",
+   "model": "GBT",
+   "name": "GBT",
+   "seed": null
+  },
+  {
+   "fold": 2018,
+   "kind": "baseline",
+   "model": "GBT",
+   "name": "GBT",
+   "seed": null
+  },
+  {
+   "fold": 2019,
+   "kind": "baseline",
+   "model": "GBT",
+   "name": "GBT",
+   "seed": null
+  },
+  {
+   "fold": 2016,
+   "kind": "baseline",
+   "model": "GBT-RIDGE",
+   "name": "GBT-RIDGE",
+   "seed": null
+  },
+  {
+   "fold": 2015,
+   "kind": "baseline",
+   "model": "GBT-RIDGE",
+   "name": "GBT-RIDGE",
+   "seed": null
+  },
+  {
+   "fold": 2017,
+   "kind": "baseline",
+   "model": "GBT-RIDGE",
+   "name": "GBT-RIDGE",
+   "seed": null
+  },
+  {
+   "fold": 2018,
+   "kind": "baseline",
+   "model": "GBT-RIDGE",
+   "name": "GBT-RIDGE",
+   "seed": null
+  },
+  {
+   "fold": 2019,
+   "kind": "baseline",
+   "model": "GBT-RIDGE",
+   "name": "GBT-RIDGE",
+   "seed": null
+  },
+  {
+   "fold": 2016,
+   "kind": "baseline",
+   "model": "GBT-ES",
+   "name": "GBT-ES",
+   "seed": null
+  },
+  {
+   "fold": 2015,
+   "kind": "baseline",
+   "model": "GBT-ES",
+   "name": "GBT-ES",
+   "seed": null
+  },
+  {
+   "fold": 2017,
+   "kind": "baseline",
+   "model": "GBT-ES",
+   "name": "GBT-ES",
+   "seed": null
+  },
+  {
+   "fold": 2018,
+   "kind": "baseline",
+   "model": "GBT-ES",
+   "name": "GBT-ES",
+   "seed": null
+  },
+  {
+   "fold": 2019,
+   "kind": "baseline",
+   "model": "GBT-ES",
+   "name": "GBT-ES",
+   "seed": null
+  },
+  {
+   "fold": 2016,
+   "kind": "baseline",
+   "model": "CLIM-EM",
+   "name": "CLIM-EM",
+   "seed": null
+  },
+  {
+   "fold": 2015,
+   "kind": "baseline",
+   "model": "CLIM-EM",
+   "name": "CLIM-EM",
+   "seed": null
+  },
+  {
+   "fold": 2017,
+   "kind": "baseline",
+   "model": "CLIM-EM",
+   "name": "CLIM-EM",
+   "seed": null
+  },
+  {
+   "fold": 2018,
+   "kind": "baseline",
+   "model": "CLIM-EM",
+   "name": "CLIM-EM",
+   "seed": null
+  },
+  {
+   "fold": 2019,
+   "kind": "baseline",
+   "model": "CLIM-EM",
+   "name": "CLIM-EM",
+   "seed": null
+  }
+ ],
+ "models_sha256": "b678a2528c3080fc5ef251f2db60d5c0ad1e3d57212e4607ca4e3718097d2e43",
+ "not_run": [
+  {
+   "item": "strata by climate region",
+   "reason": "NOT RUN: EPA's 12US1 region masks are not held"
+  },
+  {
+   "fold": 2015,
+   "item": "GBT-ES",
+   "reason": "not printed by its rule; not read"
+  },
+  {
+   "fold": 2016,
+   "item": "GBT-ES",
+   "reason": "not printed by its rule; not read"
+  },
+  {
+   "fold": 2017,
+   "item": "GBT-ES",
+   "reason": "not printed by its rule; not read"
+  },
+  {
+   "fold": 2018,
+   "item": "GBT-ES",
+   "reason": "not printed by its rule; not read"
+  },
+  {
+   "fold": 2019,
+   "item": "GBT-ES",
+   "reason": "not printed by its rule; not read"
+  }
+ ],
+ "opening": null,
+ "pd17": {
+  "file": "PD17_RECORD.json",
+  "sha256": "0f520db0016929b48770802d33d3d127a878a91a2327cea4146db0d59084f286",
+  "verdict": "PASS"
+ },
+ "resamples": {
+  "exploratory": 2000,
+  "family": 10000
+ },
+ "resampling_seed": 20261016,
+ "run_id": "eval_cv_20261027_193036",
+ "schema": "tier-a-eval-1",
+ "seal": "nothing printed but names, paths, sha256, counts and times",
+ "seconds": 2712.4,
+ "test_resamples": null
+}

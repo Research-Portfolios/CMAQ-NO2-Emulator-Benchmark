@@ -1,0 +1,607 @@
+{
+ "schema": "pe-models-1",
+ "rows": [
+  {
+   "model": "M",
+   "kind": "network",
+   "name": "fold2019_M",
+   "fold": 2019,
+   "seed": 0
+  },
+  {
+   "model": "P",
+   "kind": "network",
+   "name": "fold2019_baseline",
+   "fold": 2019,
+   "seed": 0
+  },
+  {
+   "model": "M",
+   "kind": "network",
+   "name": "fold2016_M",
+   "fold": 2016,
+   "seed": 0
+  },
+  {
+   "model": "P",
+   "kind": "network",
+   "name": "fold2016_baseline",
+   "fold": 2016,
+   "seed": 0
+  },
+  {
+   "model": "M",
+   "kind": "network",
+   "name": "fold2015_M",
+   "fold": 2015,
+   "seed": 0
+  },
+  {
+   "model": "P",
+   "kind": "network",
+   "name": "fold2015_baseline",
+   "fold": 2015,
+   "seed": 0
+  },
+  {
+   "model": "M",
+   "kind": "network",
+   "name": "fold2017_M",
+   "fold": 2017,
+   "seed": 0
+  },
+  {
+   "model": "P",
+   "kind": "network",
+   "name": "fold2017_baseline",
+   "fold": 2017,
+   "seed": 0
+  },
+  {
+   "model": "M",
+   "kind": "network",
+   "name": "fold2018_M",
+   "fold": 2018,
+   "seed": 0
+  },
+  {
+   "model": "P",
+   "kind": "network",
+   "name": "fold2018_baseline",
+   "fold": 2018,
+   "seed": 0
+  },
+  {
+   "model": "M",
+   "kind": "network",
+   "name": "fold2016_M_seed1000",
+   "fold": 2016,
+   "seed": 1
+  },
+  {
+   "model": "M",
+   "kind": "network",
+   "name": "fold2016_M_seed2000",
+   "fold": 2016,
+   "seed": 2
+  },
+  {
+   "model": "M",
+   "kind": "network",
+   "name": "fold2016_M_seed3000",
+   "fold": 2016,
+   "seed": 3
+  },
+  {
+   "model": "M",
+   "kind": "network",
+   "name": "fold2016_M_seed4000",
+   "fold": 2016,
+   "seed": 4
+  },
+  {
+   "model": "P",
+   "kind": "network",
+   "name": "fold2016_baseline_seed1000",
+   "fold": 2016,
+   "seed": 1
+  },
+  {
+   "model": "P",
+   "kind": "network",
+   "name": "fold2016_baseline_seed2000",
+   "fold": 2016,
+   "seed": 2
+  },
+  {
+   "model": "P",
+   "kind": "network",
+   "name": "fold2016_baseline_seed3000",
+   "fold": 2016,
+   "seed": 3
+  },
+  {
+   "model": "P",
+   "kind": "network",
+   "name": "fold2016_baseline_seed4000",
+   "fold": 2016,
+   "seed": 4
+  },
+  {
+   "model": "A1",
+   "kind": "network",
+   "name": "fold2016_A1",
+   "fold": 2016,
+   "seed": 0
+  },
+  {
+   "model": "A2",
+   "kind": "network",
+   "name": "fold2016_A2",
+   "fold": 2016,
+   "seed": 0
+  },
+  {
+   "model": "A3",
+   "kind": "network",
+   "name": "fold2016_A3",
+   "fold": 2016,
+   "seed": 0
+  },
+  {
+   "model": "A4",
+   "kind": "network",
+   "name": "fold2016_A4",
+   "fold": 2016,
+   "seed": 0
+  },
+  {
+   "model": "M-C7",
+   "kind": "network",
+   "name": "fold2016_MC7",
+   "fold": 2016,
+   "seed": 0
+  },
+  {
+   "model": "M-C7",
+   "kind": "network",
+   "name": "fold2018_MC7",
+   "fold": 2018,
+   "seed": 0
+  },
+  {
+   "model": "A3BL",
+   "kind": "network",
+   "name": "fold2016_A3BL",
+   "fold": 2016,
+   "seed": 0
+  },
+  {
+   "model": "A3OFF",
+   "kind": "network",
+   "name": "fold2016_A3OFF",
+   "fold": 2016,
+   "seed": 0
+  },
+  {
+   "model": "PIX-R",
+   "kind": "network",
+   "name": "fold2016_PIXR",
+   "fold": 2016,
+   "seed": 0
+  },
+  {
+   "model": "M",
+   "kind": "network",
+   "name": "fold2019_M_seed1000",
+   "fold": 2019,
+   "seed": 1
+  },
+  {
+   "model": "M",
+   "kind": "network",
+   "name": "fold2019_M_seed2000",
+   "fold": 2019,
+   "seed": 2
+  },
+  {
+   "model": "P",
+   "kind": "network",
+   "name": "fold2019_baseline_seed1000",
+   "fold": 2019,
+   "seed": 1
+  },
+  {
+   "model": "A1",
+   "kind": "network",
+   "name": "fold2019_A1",
+   "fold": 2019,
+   "seed": 0
+  },
+  {
+   "model": "A2",
+   "kind": "network",
+   "name": "fold2019_A2",
+   "fold": 2019,
+   "seed": 0
+  },
+  {
+   "model": "A3",
+   "kind": "network",
+   "name": "fold2019_A3",
+   "fold": 2019,
+   "seed": 0
+  },
+  {
+   "model": "PIX-R",
+   "kind": "network",
+   "name": "fold2019_PIXR",
+   "fold": 2019,
+   "seed": 0
+  },
+  {
+   "model": "A4",
+   "kind": "network",
+   "name": "fold2019_A4",
+   "fold": 2019,
+   "seed": 0
+  },
+  {
+   "model": "M-C7",
+   "kind": "network",
+   "name": "fold2019_MC7",
+   "fold": 2019,
+   "seed": 0
+  },
+  {
+   "model": "M",
+   "kind": "network",
+   "name": "fold2019_M_seed3000",
+   "fold": 2019,
+   "seed": 3
+  },
+  {
+   "model": "M",
+   "kind": "network",
+   "name": "fold2019_M_seed4000",
+   "fold": 2019,
+   "seed": 4
+  },
+  {
+   "model": "P",
+   "kind": "network",
+   "name": "fold2019_baseline_seed2000",
+   "fold": 2019,
+   "seed": 2
+  },
+  {
+   "model": "A3_F-6_TRUE",
+   "kind": "network",
+   "name": "t4_train2017_test2019_TRUE",
+   "fold": 2019,
+   "seed": 0
+  },
+  {
+   "model": "A3_F-6_OTHER",
+   "kind": "network",
+   "name": "t4_train2017_test2019_OTHER",
+   "fold": 2019,
+   "seed": 0
+  },
+  {
+   "model": "A3_F-6_OWN",
+   "kind": "network",
+   "name": "t4_train2017_test2019_OWN",
+   "fold": 2019,
+   "seed": 0
+  },
+  {
+   "model": "A3_F-6_TRUE",
+   "kind": "network",
+   "name": "t4_train2019_test2017_TRUE",
+   "fold": 2017,
+   "seed": 0
+  },
+  {
+   "model": "A3_F-6_OTHER",
+   "kind": "network",
+   "name": "t4_train2019_test2017_OTHER",
+   "fold": 2017,
+   "seed": 0
+  },
+  {
+   "model": "A3_F-6_OWN",
+   "kind": "network",
+   "name": "t4_train2019_test2017_OWN",
+   "fold": 2017,
+   "seed": 0
+  },
+  {
+   "model": "A3_LR-3e-4",
+   "kind": "network",
+   "name": "fold2016_A3_LR-3e-4",
+   "fold": 2016,
+   "seed": 0
+  },
+  {
+   "model": "A3_LR-3e-3",
+   "kind": "network",
+   "name": "fold2016_A3_LR-3e-3",
+   "fold": 2016,
+   "seed": 0
+  },
+  {
+   "model": "PIX-R",
+   "kind": "network",
+   "name": "fold2015_PIXR",
+   "fold": 2015,
+   "seed": 0
+  },
+  {
+   "model": "PIX-R",
+   "kind": "network",
+   "name": "fold2017_PIXR",
+   "fold": 2017,
+   "seed": 0
+  },
+  {
+   "model": "PIX-R",
+   "kind": "network",
+   "name": "fold2018_PIXR",
+   "fold": 2018,
+   "seed": 0
+  },
+  {
+   "model": "P18",
+   "kind": "network",
+   "name": "fold2016_P18",
+   "fold": 2016,
+   "seed": 0
+  },
+  {
+   "model": "CLIM-C",
+   "kind": "baseline",
+   "name": "CLIM-C",
+   "fold": 2016,
+   "seed": null
+  },
+  {
+   "model": "CLIM-C",
+   "kind": "baseline",
+   "name": "CLIM-C",
+   "fold": 2015,
+   "seed": null
+  },
+  {
+   "model": "CLIM-C",
+   "kind": "baseline",
+   "name": "CLIM-C",
+   "fold": 2017,
+   "seed": null
+  },
+  {
+   "model": "CLIM-C",
+   "kind": "baseline",
+   "name": "CLIM-C",
+   "fold": 2018,
+   "seed": null
+  },
+  {
+   "model": "CLIM-C",
+   "kind": "baseline",
+   "name": "CLIM-C",
+   "fold": 2019,
+   "seed": null
+  },
+  {
+   "model": "CLIM-WD",
+   "kind": "baseline",
+   "name": "CLIM-WD",
+   "fold": 2016,
+   "seed": null
+  },
+  {
+   "model": "CLIM-WD",
+   "kind": "baseline",
+   "name": "CLIM-WD",
+   "fold": 2015,
+   "seed": null
+  },
+  {
+   "model": "CLIM-WD",
+   "kind": "baseline",
+   "name": "CLIM-WD",
+   "fold": 2017,
+   "seed": null
+  },
+  {
+   "model": "CLIM-WD",
+   "kind": "baseline",
+   "name": "CLIM-WD",
+   "fold": 2018,
+   "seed": null
+  },
+  {
+   "model": "CLIM-WD",
+   "kind": "baseline",
+   "name": "CLIM-WD",
+   "fold": 2019,
+   "seed": null
+  },
+  {
+   "model": "MET-REG",
+   "kind": "baseline",
+   "name": "MET-REG",
+   "fold": 2016,
+   "seed": null
+  },
+  {
+   "model": "MET-REG",
+   "kind": "baseline",
+   "name": "MET-REG",
+   "fold": 2015,
+   "seed": null
+  },
+  {
+   "model": "MET-REG",
+   "kind": "baseline",
+   "name": "MET-REG",
+   "fold": 2017,
+   "seed": null
+  },
+  {
+   "model": "MET-REG",
+   "kind": "baseline",
+   "name": "MET-REG",
+   "fold": 2018,
+   "seed": null
+  },
+  {
+   "model": "MET-REG",
+   "kind": "baseline",
+   "name": "MET-REG",
+   "fold": 2019,
+   "seed": null
+  },
+  {
+   "model": "GBT",
+   "kind": "baseline",
+   "name": "GBT",
+   "fold": 2016,
+   "seed": null
+  },
+  {
+   "model": "GBT",
+   "kind": "baseline",
+   "name": "GBT",
+   "fold": 2015,
+   "seed": null
+  },
+  {
+   "model": "GBT",
+   "kind": "baseline",
+   "name": "GBT",
+   "fold": 2017,
+   "seed": null
+  },
+  {
+   "model": "GBT",
+   "kind": "baseline",
+   "name": "GBT",
+   "fold": 2018,
+   "seed": null
+  },
+  {
+   "model": "GBT",
+   "kind": "baseline",
+   "name": "GBT",
+   "fold": 2019,
+   "seed": null
+  },
+  {
+   "model": "GBT-RIDGE",
+   "kind": "baseline",
+   "name": "GBT-RIDGE",
+   "fold": 2016,
+   "seed": null
+  },
+  {
+   "model": "GBT-RIDGE",
+   "kind": "baseline",
+   "name": "GBT-RIDGE",
+   "fold": 2015,
+   "seed": null
+  },
+  {
+   "model": "GBT-RIDGE",
+   "kind": "baseline",
+   "name": "GBT-RIDGE",
+   "fold": 2017,
+   "seed": null
+  },
+  {
+   "model": "GBT-RIDGE",
+   "kind": "baseline",
+   "name": "GBT-RIDGE",
+   "fold": 2018,
+   "seed": null
+  },
+  {
+   "model": "GBT-RIDGE",
+   "kind": "baseline",
+   "name": "GBT-RIDGE",
+   "fold": 2019,
+   "seed": null
+  },
+  {
+   "model": "GBT-ES",
+   "kind": "baseline",
+   "name": "GBT-ES",
+   "fold": 2016,
+   "seed": null
+  },
+  {
+   "model": "GBT-ES",
+   "kind": "baseline",
+   "name": "GBT-ES",
+   "fold": 2015,
+   "seed": null
+  },
+  {
+   "model": "GBT-ES",
+   "kind": "baseline",
+   "name": "GBT-ES",
+   "fold": 2017,
+   "seed": null
+  },
+  {
+   "model": "GBT-ES",
+   "kind": "baseline",
+   "name": "GBT-ES",
+   "fold": 2018,
+   "seed": null
+  },
+  {
+   "model": "GBT-ES",
+   "kind": "baseline",
+   "name": "GBT-ES",
+   "fold": 2019,
+   "seed": null
+  },
+  {
+   "model": "CLIM-EM",
+   "kind": "baseline",
+   "name": "CLIM-EM",
+   "fold": 2016,
+   "seed": null
+  },
+  {
+   "model": "CLIM-EM",
+   "kind": "baseline",
+   "name": "CLIM-EM",
+   "fold": 2015,
+   "seed": null
+  },
+  {
+   "model": "CLIM-EM",
+   "kind": "baseline",
+   "name": "CLIM-EM",
+   "fold": 2017,
+   "seed": null
+  },
+  {
+   "model": "CLIM-EM",
+   "kind": "baseline",
+   "name": "CLIM-EM",
+   "fold": 2018,
+   "seed": null
+  },
+  {
+   "model": "CLIM-EM",
+   "kind": "baseline",
+   "name": "CLIM-EM",
+   "fold": 2019,
+   "seed": null
+  }
+ ]
+}

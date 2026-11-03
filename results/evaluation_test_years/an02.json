@@ -1,0 +1,2414 @@
+{
+ "rows": [
+  {
+   "by_urban": {
+    "intermediate": {
+     "n_cell_days": 418106,
+     "n_outside": 238827,
+     "share": 0.571211606626071
+    },
+    "rural": {
+     "n_cell_days": 17505020,
+     "n_outside": 5271055,
+     "share": 0.3011167653621647
+    },
+    "urban": {
+     "n_cell_days": 191646,
+     "n_outside": 117458,
+     "share": 0.6128904334032539
+    }
+   },
+   "channels": [
+    "E-1",
+    "E-2",
+    "E-3",
+    "E-4",
+    "P-1"
+   ],
+   "fold": 2015,
+   "maps": [
+    "an02_fold2015_main_E1-E2-E3-E4-P1_min.npy",
+    "an02_fold2015_main_E1-E2-E3-E4-P1_max.npy"
+   ],
+   "model": "M",
+   "n_cell_days": 18114772,
+   "n_outside": 5627340,
+   "name": "fold2015_M",
+   "outside_by_channel": {
+    "E-1": 3942176,
+    "E-2": 1979908,
+    "E-3": 3062817,
+    "E-4": 1307295,
+    "P-1": 990126
+   },
+   "part": "TEST_CV",
+   "seed": 0,
+   "share": 0.31064923146700385,
+   "source": "main",
+   "train_days": 1080
+  },
+  {
+   "by_urban": {
+    "intermediate": {
+     "n_cell_days": 418106,
+     "n_outside": 238827,
+     "share": 0.571211606626071
+    },
+    "rural": {
+     "n_cell_days": 17505020,
+     "n_outside": 5271055,
+     "share": 0.3011167653621647
+    },
+    "urban": {
+     "n_cell_days": 191646,
+     "n_outside": 117458,
+     "share": 0.6128904334032539
+    }
+   },
+   "channels": [
+    "E-1",
+    "E-2",
+    "E-3",
+    "E-4",
+    "P-1"
+   ],
+   "fold": 2015,
+   "maps": [
+    "an02_fold2015_main_E1-E2-E3-E4-P1_min.npy",
+    "an02_fold2015_main_E1-E2-E3-E4-P1_max.npy"
+   ],
+   "model": "P",
+   "n_cell_days": 18114772,
+   "n_outside": 5627340,
+   "name": "fold2015_baseline",
+   "outside_by_channel": {
+    "E-1": 3942176,
+    "E-2": 1979908,
+    "E-3": 3062817,
+    "E-4": 1307295,
+    "P-1": 990126
+   },
+   "part": "TEST_CV",
+   "seed": 0,
+   "share": 0.31064923146700385,
+   "source": "main",
+   "train_days": 1080
+  },
+  {
+   "by_urban": {
+    "intermediate": {
+     "n_cell_days": 418106,
+     "n_outside": 238827,
+     "share": 0.571211606626071
+    },
+    "rural": {
+     "n_cell_days": 17505020,
+     "n_outside": 5271055,
+     "share": 0.3011167653621647
+    },
+    "urban": {
+     "n_cell_days": 191646,
+     "n_outside": 117458,
+     "share": 0.6128904334032539
+    }
+   },
+   "channels": [
+    "E-1",
+    "E-2",
+    "E-3",
+    "E-4",
+    "P-1"
+   ],
+   "fold": 2015,
+   "maps": [
+    "an02_fold2015_main_E1-E2-E3-E4-P1_min.npy",
+    "an02_fold2015_main_E1-E2-E3-E4-P1_max.npy"
+   ],
+   "model": "PIX-R",
+   "n_cell_days": 18114772,
+   "n_outside": 5627340,
+   "name": "fold2015_PIXR",
+   "outside_by_channel": {
+    "E-1": 3942176,
+    "E-2": 1979908,
+    "E-3": 3062817,
+    "E-4": 1307295,
+    "P-1": 990126
+   },
+   "part": "TEST_CV",
+   "seed": 0,
+   "share": 0.31064923146700385,
+   "source": "main",
+   "train_days": 1080
+  },
+  {
+   "by_urban": {
+    "intermediate": {
+     "n_cell_days": 419343,
+     "n_outside": 0,
+     "share": 0.0
+    },
+    "rural": {
+     "n_cell_days": 17556810,
+     "n_outside": 0,
+     "share": 0.0
+    },
+    "urban": {
+     "n_cell_days": 192213,
+     "n_outside": 0,
+     "share": 0.0
+    }
+   },
+   "channels": [
+    "E-1",
+    "E-2",
+    "E-3",
+    "E-4",
+    "P-1"
+   ],
+   "fold": 2016,
+   "maps": [
+    "an02_fold2016_c7_E1-E2-E3-E4-P1_min.npy",
+    "an02_fold2016_c7_E1-E2-E3-E4-P1_max.npy"
+   ],
+   "mc7_check": {
+    "rule": "share 0 by construction",
+    "status": "PASS"
+   },
+   "model": "M-C7",
+   "n_cell_days": 18168366,
+   "n_outside": 0,
+   "name": "fold2016_MC7",
+   "outside_by_channel": {
+    "E-1": 0,
+    "E-2": 0,
+    "E-3": 0,
+    "E-4": 0,
+    "P-1": 0
+   },
+   "part": "TEST_CV",
+   "seed": 0,
+   "share": 0.0,
+   "source": "c7",
+   "train_days": 1080
+  },
+  {
+   "by_urban": {
+    "intermediate": {
+     "n_cell_days": 419343,
+     "n_outside": 74809,
+     "share": 0.17839572855633692
+    },
+    "rural": {
+     "n_cell_days": 17556810,
+     "n_outside": 1270969,
+     "share": 0.07239179554828012
+    },
+    "urban": {
+     "n_cell_days": 192213,
+     "n_outside": 29671,
+     "share": 0.1543652094291229
+    }
+   },
+   "channels": [
+    "E-1",
+    "E-2",
+    "E-3",
+    "E-4",
+    "P-1"
+   ],
+   "fold": 2016,
+   "maps": [
+    "an02_fold2016_main_E1-E2-E3-E4-P1_min.npy",
+    "an02_fold2016_main_E1-E2-E3-E4-P1_max.npy"
+   ],
+   "model": "M",
+   "n_cell_days": 18168366,
+   "n_outside": 1375449,
+   "name": "fold2016_M",
+   "outside_by_channel": {
+    "E-1": 294540,
+    "E-2": 366139,
+    "E-3": 63792,
+    "E-4": 318826,
+    "P-1": 766972
+   },
+   "part": "TEST_CV",
+   "seed": 0,
+   "share": 0.07570570738172051,
+   "source": "main",
+   "train_days": 1080
+  },
+  {
+   "by_urban": {
+    "intermediate": {
+     "n_cell_days": 419343,
+     "n_outside": 74809,
+     "share": 0.17839572855633692
+    },
+    "rural": {
+     "n_cell_days": 17556810,
+     "n_outside": 1270969,
+     "share": 0.07239179554828012
+    },
+    "urban": {
+     "n_cell_days": 192213,
+     "n_outside": 29671,
+     "share": 0.1543652094291229
+    }
+   },
+   "channels": [
+    "E-1",
+    "E-2",
+    "E-3",
+    "E-4",
+    "P-1"
+   ],
+   "fold": 2016,
+   "maps": [
+    "an02_fold2016_main_E1-E2-E3-E4-P1_min.npy",
+    "an02_fold2016_main_E1-E2-E3-E4-P1_max.npy"
+   ],
+   "model": "P",
+   "n_cell_days": 18168366,
+   "n_outside": 1375449,
+   "name": "fold2016_baseline",
+   "outside_by_channel": {
+    "E-1": 294540,
+    "E-2": 366139,
+    "E-3": 63792,
+    "E-4": 318826,
+    "P-1": 766972
+   },
+   "part": "TEST_CV",
+   "seed": 0,
+   "share": 0.07570570738172051,
+   "source": "main",
+   "train_days": 1080
+  },
+  {
+   "by_urban": {
+    "intermediate": {
+     "n_cell_days": 419343,
+     "n_outside": 74809,
+     "share": 0.17839572855633692
+    },
+    "rural": {
+     "n_cell_days": 17556810,
+     "n_outside": 1270969,
+     "share": 0.07239179554828012
+    },
+    "urban": {
+     "n_cell_days": 192213,
+     "n_outside": 29671,
+     "share": 0.1543652094291229
+    }
+   },
+   "channels": [
+    "E-1",
+    "E-2",
+    "E-3",
+    "E-4",
+    "P-1"
+   ],
+   "fold": 2016,
+   "maps": [
+    "an02_fold2016_main_E1-E2-E3-E4-P1_min.npy",
+    "an02_fold2016_main_E1-E2-E3-E4-P1_max.npy"
+   ],
+   "model": "M",
+   "n_cell_days": 18168366,
+   "n_outside": 1375449,
+   "name": "fold2016_M_seed1000",
+   "outside_by_channel": {
+    "E-1": 294540,
+    "E-2": 366139,
+    "E-3": 63792,
+    "E-4": 318826,
+    "P-1": 766972
+   },
+   "part": "TEST_CV",
+   "seed": 1,
+   "share": 0.07570570738172051,
+   "source": "main",
+   "train_days": 1080
+  },
+  {
+   "by_urban": {
+    "intermediate": {
+     "n_cell_days": 419343,
+     "n_outside": 74809,
+     "share": 0.17839572855633692
+    },
+    "rural": {
+     "n_cell_days": 17556810,
+     "n_outside": 1270969,
+     "share": 0.07239179554828012
+    },
+    "urban": {
+     "n_cell_days": 192213,
+     "n_outside": 29671,
+     "share": 0.1543652094291229
+    }
+   },
+   "channels": [
+    "E-1",
+    "E-2",
+    "E-3",
+    "E-4",
+    "P-1"
+   ],
+   "fold": 2016,
+   "maps": [
+    "an02_fold2016_main_E1-E2-E3-E4-P1_min.npy",
+    "an02_fold2016_main_E1-E2-E3-E4-P1_max.npy"
+   ],
+   "model": "M",
+   "n_cell_days": 18168366,
+   "n_outside": 1375449,
+   "name": "fold2016_M_seed2000",
+   "outside_by_channel": {
+    "E-1": 294540,
+    "E-2": 366139,
+    "E-3": 63792,
+    "E-4": 318826,
+    "P-1": 766972
+   },
+   "part": "TEST_CV",
+   "seed": 2,
+   "share": 0.07570570738172051,
+   "source": "main",
+   "train_days": 1080
+  },
+  {
+   "by_urban": {
+    "intermediate": {
+     "n_cell_days": 419343,
+     "n_outside": 74809,
+     "share": 0.17839572855633692
+    },
+    "rural": {
+     "n_cell_days": 17556810,
+     "n_outside": 1270969,
+     "share": 0.07239179554828012
+    },
+    "urban": {
+     "n_cell_days": 192213,
+     "n_outside": 29671,
+     "share": 0.1543652094291229
+    }
+   },
+   "channels": [
+    "E-1",
+    "E-2",
+    "E-3",
+    "E-4",
+    "P-1"
+   ],
+   "fold": 2016,
+   "maps": [
+    "an02_fold2016_main_E1-E2-E3-E4-P1_min.npy",
+    "an02_fold2016_main_E1-E2-E3-E4-P1_max.npy"
+   ],
+   "model": "M",
+   "n_cell_days": 18168366,
+   "n_outside": 1375449,
+   "name": "fold2016_M_seed3000",
+   "outside_by_channel": {
+    "E-1": 294540,
+    "E-2": 366139,
+    "E-3": 63792,
+    "E-4": 318826,
+    "P-1": 766972
+   },
+   "part": "TEST_CV",
+   "seed": 3,
+   "share": 0.07570570738172051,
+   "source": "main",
+   "train_days": 1080
+  },
+  {
+   "by_urban": {
+    "intermediate": {
+     "n_cell_days": 419343,
+     "n_outside": 74809,
+     "share": 0.17839572855633692
+    },
+    "rural": {
+     "n_cell_days": 17556810,
+     "n_outside": 1270969,
+     "share": 0.07239179554828012
+    },
+    "urban": {
+     "n_cell_days": 192213,
+     "n_outside": 29671,
+     "share": 0.1543652094291229
+    }
+   },
+   "channels": [
+    "E-1",
+    "E-2",
+    "E-3",
+    "E-4",
+    "P-1"
+   ],
+   "fold": 2016,
+   "maps": [
+    "an02_fold2016_main_E1-E2-E3-E4-P1_min.npy",
+    "an02_fold2016_main_E1-E2-E3-E4-P1_max.npy"
+   ],
+   "model": "M",
+   "n_cell_days": 18168366,
+   "n_outside": 1375449,
+   "name": "fold2016_M_seed4000",
+   "outside_by_channel": {
+    "E-1": 294540,
+    "E-2": 366139,
+    "E-3": 63792,
+    "E-4": 318826,
+    "P-1": 766972
+   },
+   "part": "TEST_CV",
+   "seed": 4,
+   "share": 0.07570570738172051,
+   "source": "main",
+   "train_days": 1080
+  },
+  {
+   "by_urban": {
+    "intermediate": {
+     "n_cell_days": 419343,
+     "n_outside": 74809,
+     "share": 0.17839572855633692
+    },
+    "rural": {
+     "n_cell_days": 17556810,
+     "n_outside": 1270969,
+     "share": 0.07239179554828012
+    },
+    "urban": {
+     "n_cell_days": 192213,
+     "n_outside": 29671,
+     "share": 0.1543652094291229
+    }
+   },
+   "channels": [
+    "E-1",
+    "E-2",
+    "E-3",
+    "E-4",
+    "P-1"
+   ],
+   "fold": 2016,
+   "maps": [
+    "an02_fold2016_main_E1-E2-E3-E4-P1_min.npy",
+    "an02_fold2016_main_E1-E2-E3-E4-P1_max.npy"
+   ],
+   "model": "P",
+   "n_cell_days": 18168366,
+   "n_outside": 1375449,
+   "name": "fold2016_baseline_seed1000",
+   "outside_by_channel": {
+    "E-1": 294540,
+    "E-2": 366139,
+    "E-3": 63792,
+    "E-4": 318826,
+    "P-1": 766972
+   },
+   "part": "TEST_CV",
+   "seed": 1,
+   "share": 0.07570570738172051,
+   "source": "main",
+   "train_days": 1080
+  },
+  {
+   "by_urban": {
+    "intermediate": {
+     "n_cell_days": 419343,
+     "n_outside": 74809,
+     "share": 0.17839572855633692
+    },
+    "rural": {
+     "n_cell_days": 17556810,
+     "n_outside": 1270969,
+     "share": 0.07239179554828012
+    },
+    "urban": {
+     "n_cell_days": 192213,
+     "n_outside": 29671,
+     "share": 0.1543652094291229
+    }
+   },
+   "channels": [
+    "E-1",
+    "E-2",
+    "E-3",
+    "E-4",
+    "P-1"
+   ],
+   "fold": 2016,
+   "maps": [
+    "an02_fold2016_main_E1-E2-E3-E4-P1_min.npy",
+    "an02_fold2016_main_E1-E2-E3-E4-P1_max.npy"
+   ],
+   "model": "P",
+   "n_cell_days": 18168366,
+   "n_outside": 1375449,
+   "name": "fold2016_baseline_seed2000",
+   "outside_by_channel": {
+    "E-1": 294540,
+    "E-2": 366139,
+    "E-3": 63792,
+    "E-4": 318826,
+    "P-1": 766972
+   },
+   "part": "TEST_CV",
+   "seed": 2,
+   "share": 0.07570570738172051,
+   "source": "main",
+   "train_days": 1080
+  },
+  {
+   "by_urban": {
+    "intermediate": {
+     "n_cell_days": 419343,
+     "n_outside": 74809,
+     "share": 0.17839572855633692
+    },
+    "rural": {
+     "n_cell_days": 17556810,
+     "n_outside": 1270969,
+     "share": 0.07239179554828012
+    },
+    "urban": {
+     "n_cell_days": 192213,
+     "n_outside": 29671,
+     "share": 0.1543652094291229
+    }
+   },
+   "channels": [
+    "E-1",
+    "E-2",
+    "E-3",
+    "E-4",
+    "P-1"
+   ],
+   "fold": 2016,
+   "maps": [
+    "an02_fold2016_main_E1-E2-E3-E4-P1_min.npy",
+    "an02_fold2016_main_E1-E2-E3-E4-P1_max.npy"
+   ],
+   "model": "P",
+   "n_cell_days": 18168366,
+   "n_outside": 1375449,
+   "name": "fold2016_baseline_seed3000",
+   "outside_by_channel": {
+    "E-1": 294540,
+    "E-2": 366139,
+    "E-3": 63792,
+    "E-4": 318826,
+    "P-1": 766972
+   },
+   "part": "TEST_CV",
+   "seed": 3,
+   "share": 0.07570570738172051,
+   "source": "main",
+   "train_days": 1080
+  },
+  {
+   "by_urban": {
+    "intermediate": {
+     "n_cell_days": 419343,
+     "n_outside": 74809,
+     "share": 0.17839572855633692
+    },
+    "rural": {
+     "n_cell_days": 17556810,
+     "n_outside": 1270969,
+     "share": 0.07239179554828012
+    },
+    "urban": {
+     "n_cell_days": 192213,
+     "n_outside": 29671,
+     "share": 0.1543652094291229
+    }
+   },
+   "channels": [
+    "E-1",
+    "E-2",
+    "E-3",
+    "E-4",
+    "P-1"
+   ],
+   "fold": 2016,
+   "maps": [
+    "an02_fold2016_main_E1-E2-E3-E4-P1_min.npy",
+    "an02_fold2016_main_E1-E2-E3-E4-P1_max.npy"
+   ],
+   "model": "P",
+   "n_cell_days": 18168366,
+   "n_outside": 1375449,
+   "name": "fold2016_baseline_seed4000",
+   "outside_by_channel": {
+    "E-1": 294540,
+    "E-2": 366139,
+    "E-3": 63792,
+    "E-4": 318826,
+    "P-1": 766972
+   },
+   "part": "TEST_CV",
+   "seed": 4,
+   "share": 0.07570570738172051,
+   "source": "main",
+   "train_days": 1080
+  },
+  {
+   "by_urban": {
+    "intermediate": {
+     "n_cell_days": 419343,
+     "n_outside": 74809,
+     "share": 0.17839572855633692
+    },
+    "rural": {
+     "n_cell_days": 17556810,
+     "n_outside": 1270969,
+     "share": 0.07239179554828012
+    },
+    "urban": {
+     "n_cell_days": 192213,
+     "n_outside": 29671,
+     "share": 0.1543652094291229
+    }
+   },
+   "channels": [
+    "E-1",
+    "E-2",
+    "E-3",
+    "E-4",
+    "P-1"
+   ],
+   "fold": 2016,
+   "maps": [
+    "an02_fold2016_main_E1-E2-E3-E4-P1_min.npy",
+    "an02_fold2016_main_E1-E2-E3-E4-P1_max.npy"
+   ],
+   "model": "A1",
+   "n_cell_days": 18168366,
+   "n_outside": 1375449,
+   "name": "fold2016_A1",
+   "outside_by_channel": {
+    "E-1": 294540,
+    "E-2": 366139,
+    "E-3": 63792,
+    "E-4": 318826,
+    "P-1": 766972
+   },
+   "part": "TEST_CV",
+   "seed": 0,
+   "share": 0.07570570738172051,
+   "source": "main",
+   "train_days": 1080
+  },
+  {
+   "by_urban": {
+    "intermediate": {
+     "n_cell_days": 419343,
+     "n_outside": 74809,
+     "share": 0.17839572855633692
+    },
+    "rural": {
+     "n_cell_days": 17556810,
+     "n_outside": 1270969,
+     "share": 0.07239179554828012
+    },
+    "urban": {
+     "n_cell_days": 192213,
+     "n_outside": 29671,
+     "share": 0.1543652094291229
+    }
+   },
+   "channels": [
+    "E-1",
+    "E-2",
+    "E-3",
+    "E-4",
+    "P-1"
+   ],
+   "fold": 2016,
+   "maps": [
+    "an02_fold2016_main_E1-E2-E3-E4-P1_min.npy",
+    "an02_fold2016_main_E1-E2-E3-E4-P1_max.npy"
+   ],
+   "model": "A2",
+   "n_cell_days": 18168366,
+   "n_outside": 1375449,
+   "name": "fold2016_A2",
+   "outside_by_channel": {
+    "E-1": 294540,
+    "E-2": 366139,
+    "E-3": 63792,
+    "E-4": 318826,
+    "P-1": 766972
+   },
+   "part": "TEST_CV",
+   "seed": 0,
+   "share": 0.07570570738172051,
+   "source": "main",
+   "train_days": 1080
+  },
+  {
+   "by_urban": {
+    "intermediate": {
+     "n_cell_days": 419343,
+     "n_outside": 74809,
+     "share": 0.17839572855633692
+    },
+    "rural": {
+     "n_cell_days": 17556810,
+     "n_outside": 1270969,
+     "share": 0.07239179554828012
+    },
+    "urban": {
+     "n_cell_days": 192213,
+     "n_outside": 29671,
+     "share": 0.1543652094291229
+    }
+   },
+   "channels": [
+    "E-1",
+    "E-2",
+    "E-3",
+    "E-4",
+    "P-1"
+   ],
+   "fold": 2016,
+   "maps": [
+    "an02_fold2016_main_E1-E2-E3-E4-P1_min.npy",
+    "an02_fold2016_main_E1-E2-E3-E4-P1_max.npy"
+   ],
+   "model": "A3",
+   "n_cell_days": 18168366,
+   "n_outside": 1375449,
+   "name": "fold2016_A3",
+   "outside_by_channel": {
+    "E-1": 294540,
+    "E-2": 366139,
+    "E-3": 63792,
+    "E-4": 318826,
+    "P-1": 766972
+   },
+   "part": "TEST_CV",
+   "seed": 0,
+   "share": 0.07570570738172051,
+   "source": "main",
+   "train_days": 1080
+  },
+  {
+   "by_urban": {
+    "intermediate": {
+     "n_cell_days": 419343,
+     "n_outside": 74809,
+     "share": 0.17839572855633692
+    },
+    "rural": {
+     "n_cell_days": 17556810,
+     "n_outside": 1270969,
+     "share": 0.07239179554828012
+    },
+    "urban": {
+     "n_cell_days": 192213,
+     "n_outside": 29671,
+     "share": 0.1543652094291229
+    }
+   },
+   "channels": [
+    "E-1",
+    "E-2",
+    "E-3",
+    "E-4",
+    "P-1"
+   ],
+   "fold": 2016,
+   "maps": [
+    "an02_fold2016_main_E1-E2-E3-E4-P1_min.npy",
+    "an02_fold2016_main_E1-E2-E3-E4-P1_max.npy"
+   ],
+   "model": "A4",
+   "n_cell_days": 18168366,
+   "n_outside": 1375449,
+   "name": "fold2016_A4",
+   "outside_by_channel": {
+    "E-1": 294540,
+    "E-2": 366139,
+    "E-3": 63792,
+    "E-4": 318826,
+    "P-1": 766972
+   },
+   "part": "TEST_CV",
+   "seed": 0,
+   "share": 0.07570570738172051,
+   "source": "main",
+   "train_days": 1080
+  },
+  {
+   "by_urban": {
+    "intermediate": {
+     "n_cell_days": 419343,
+     "n_outside": 74809,
+     "share": 0.17839572855633692
+    },
+    "rural": {
+     "n_cell_days": 17556810,
+     "n_outside": 1270969,
+     "share": 0.07239179554828012
+    },
+    "urban": {
+     "n_cell_days": 192213,
+     "n_outside": 29671,
+     "share": 0.1543652094291229
+    }
+   },
+   "channels": [
+    "E-1",
+    "E-2",
+    "E-3",
+    "E-4",
+    "P-1"
+   ],
+   "fold": 2016,
+   "maps": [
+    "an02_fold2016_main_E1-E2-E3-E4-P1_min.npy",
+    "an02_fold2016_main_E1-E2-E3-E4-P1_max.npy"
+   ],
+   "model": "A3BL",
+   "n_cell_days": 18168366,
+   "n_outside": 1375449,
+   "name": "fold2016_A3BL",
+   "outside_by_channel": {
+    "E-1": 294540,
+    "E-2": 366139,
+    "E-3": 63792,
+    "E-4": 318826,
+    "P-1": 766972
+   },
+   "part": "TEST_CV",
+   "seed": 0,
+   "share": 0.07570570738172051,
+   "source": "main",
+   "train_days": 1080
+  },
+  {
+   "by_urban": {
+    "intermediate": {
+     "n_cell_days": 419343,
+     "n_outside": 74809,
+     "share": 0.17839572855633692
+    },
+    "rural": {
+     "n_cell_days": 17556810,
+     "n_outside": 1270969,
+     "share": 0.07239179554828012
+    },
+    "urban": {
+     "n_cell_days": 192213,
+     "n_outside": 29671,
+     "share": 0.1543652094291229
+    }
+   },
+   "channels": [
+    "E-1",
+    "E-2",
+    "E-3",
+    "E-4",
+    "P-1"
+   ],
+   "fold": 2016,
+   "maps": [
+    "an02_fold2016_main_E1-E2-E3-E4-P1_min.npy",
+    "an02_fold2016_main_E1-E2-E3-E4-P1_max.npy"
+   ],
+   "model": "A3OFF",
+   "n_cell_days": 18168366,
+   "n_outside": 1375449,
+   "name": "fold2016_A3OFF",
+   "outside_by_channel": {
+    "E-1": 294540,
+    "E-2": 366139,
+    "E-3": 63792,
+    "E-4": 318826,
+    "P-1": 766972
+   },
+   "part": "TEST_CV",
+   "seed": 0,
+   "share": 0.07570570738172051,
+   "source": "main",
+   "train_days": 1080
+  },
+  {
+   "by_urban": {
+    "intermediate": {
+     "n_cell_days": 419343,
+     "n_outside": 74809,
+     "share": 0.17839572855633692
+    },
+    "rural": {
+     "n_cell_days": 17556810,
+     "n_outside": 1270969,
+     "share": 0.07239179554828012
+    },
+    "urban": {
+     "n_cell_days": 192213,
+     "n_outside": 29671,
+     "share": 0.1543652094291229
+    }
+   },
+   "channels": [
+    "E-1",
+    "E-2",
+    "E-3",
+    "E-4",
+    "P-1"
+   ],
+   "fold": 2016,
+   "maps": [
+    "an02_fold2016_main_E1-E2-E3-E4-P1_min.npy",
+    "an02_fold2016_main_E1-E2-E3-E4-P1_max.npy"
+   ],
+   "model": "PIX-R",
+   "n_cell_days": 18168366,
+   "n_outside": 1375449,
+   "name": "fold2016_PIXR",
+   "outside_by_channel": {
+    "E-1": 294540,
+    "E-2": 366139,
+    "E-3": 63792,
+    "E-4": 318826,
+    "P-1": 766972
+   },
+   "part": "TEST_CV",
+   "seed": 0,
+   "share": 0.07570570738172051,
+   "source": "main",
+   "train_days": 1080
+  },
+  {
+   "by_urban": {
+    "intermediate": {
+     "n_cell_days": 419343,
+     "n_outside": 74809,
+     "share": 0.17839572855633692
+    },
+    "rural": {
+     "n_cell_days": 17556810,
+     "n_outside": 1270969,
+     "share": 0.07239179554828012
+    },
+    "urban": {
+     "n_cell_days": 192213,
+     "n_outside": 29671,
+     "share": 0.1543652094291229
+    }
+   },
+   "channels": [
+    "E-1",
+    "E-2",
+    "E-3",
+    "E-4",
+    "P-1"
+   ],
+   "fold": 2016,
+   "maps": [
+    "an02_fold2016_main_E1-E2-E3-E4-P1_min.npy",
+    "an02_fold2016_main_E1-E2-E3-E4-P1_max.npy"
+   ],
+   "model": "A3_LR-3e-4",
+   "n_cell_days": 18168366,
+   "n_outside": 1375449,
+   "name": "fold2016_A3_LR-3e-4",
+   "outside_by_channel": {
+    "E-1": 294540,
+    "E-2": 366139,
+    "E-3": 63792,
+    "E-4": 318826,
+    "P-1": 766972
+   },
+   "part": "TEST_CV",
+   "seed": 0,
+   "share": 0.07570570738172051,
+   "source": "main",
+   "train_days": 1080
+  },
+  {
+   "by_urban": {
+    "intermediate": {
+     "n_cell_days": 419343,
+     "n_outside": 74809,
+     "share": 0.17839572855633692
+    },
+    "rural": {
+     "n_cell_days": 17556810,
+     "n_outside": 1270969,
+     "share": 0.07239179554828012
+    },
+    "urban": {
+     "n_cell_days": 192213,
+     "n_outside": 29671,
+     "share": 0.1543652094291229
+    }
+   },
+   "channels": [
+    "E-1",
+    "E-2",
+    "E-3",
+    "E-4",
+    "P-1"
+   ],
+   "fold": 2016,
+   "maps": [
+    "an02_fold2016_main_E1-E2-E3-E4-P1_min.npy",
+    "an02_fold2016_main_E1-E2-E3-E4-P1_max.npy"
+   ],
+   "model": "A3_LR-3e-3",
+   "n_cell_days": 18168366,
+   "n_outside": 1375449,
+   "name": "fold2016_A3_LR-3e-3",
+   "outside_by_channel": {
+    "E-1": 294540,
+    "E-2": 366139,
+    "E-3": 63792,
+    "E-4": 318826,
+    "P-1": 766972
+   },
+   "part": "TEST_CV",
+   "seed": 0,
+   "share": 0.07570570738172051,
+   "source": "main",
+   "train_days": 1080
+  },
+  {
+   "by_urban": {
+    "intermediate": {
+     "n_cell_days": 419343,
+     "n_outside": 74809,
+     "share": 0.17839572855633692
+    },
+    "rural": {
+     "n_cell_days": 17556810,
+     "n_outside": 1270969,
+     "share": 0.07239179554828012
+    },
+    "urban": {
+     "n_cell_days": 192213,
+     "n_outside": 29671,
+     "share": 0.1543652094291229
+    }
+   },
+   "channels": [
+    "E-1",
+    "E-2",
+    "E-3",
+    "E-4",
+    "P-1"
+   ],
+   "fold": 2016,
+   "maps": [
+    "an02_fold2016_main_E1-E2-E3-E4-P1_min.npy",
+    "an02_fold2016_main_E1-E2-E3-E4-P1_max.npy"
+   ],
+   "model": "P18",
+   "n_cell_days": 18168366,
+   "n_outside": 1375449,
+   "name": "fold2016_P18",
+   "outside_by_channel": {
+    "E-1": 294540,
+    "E-2": 366139,
+    "E-3": 63792,
+    "E-4": 318826,
+    "P-1": 766972
+   },
+   "part": "TEST_CV",
+   "seed": 0,
+   "share": 0.07570570738172051,
+   "source": "main",
+   "train_days": 1080
+  },
+  {
+   "by_urban": {
+    "intermediate": {
+     "n_cell_days": 418106,
+     "n_outside": 49995,
+     "share": 0.11957494032613739
+    },
+    "rural": {
+     "n_cell_days": 17505020,
+     "n_outside": 977631,
+     "share": 0.05584860799930534
+    },
+    "urban": {
+     "n_cell_days": 191646,
+     "n_outside": 24908,
+     "share": 0.1299687966354633
+    }
+   },
+   "channels": [
+    "E-1",
+    "E-2",
+    "E-3",
+    "E-4",
+    "P-1"
+   ],
+   "fold": 2017,
+   "maps": [
+    "an02_fold2017_main_E1-E2-E3-E4-P1_min.npy",
+    "an02_fold2017_main_E1-E2-E3-E4-P1_max.npy"
+   ],
+   "model": "M",
+   "n_cell_days": 18114772,
+   "n_outside": 1052534,
+   "name": "fold2017_M",
+   "outside_by_channel": {
+    "E-1": 227640,
+    "E-2": 217305,
+    "E-3": 10357,
+    "E-4": 258103,
+    "P-1": 621056
+   },
+   "part": "TEST_CV",
+   "seed": 0,
+   "share": 0.05810362945777071,
+   "source": "main",
+   "train_days": 1080
+  },
+  {
+   "by_urban": {
+    "intermediate": {
+     "n_cell_days": 418106,
+     "n_outside": 49995,
+     "share": 0.11957494032613739
+    },
+    "rural": {
+     "n_cell_days": 17505020,
+     "n_outside": 977631,
+     "share": 0.05584860799930534
+    },
+    "urban": {
+     "n_cell_days": 191646,
+     "n_outside": 24908,
+     "share": 0.1299687966354633
+    }
+   },
+   "channels": [
+    "E-1",
+    "E-2",
+    "E-3",
+    "E-4",
+    "P-1"
+   ],
+   "fold": 2017,
+   "maps": [
+    "an02_fold2017_main_E1-E2-E3-E4-P1_min.npy",
+    "an02_fold2017_main_E1-E2-E3-E4-P1_max.npy"
+   ],
+   "model": "P",
+   "n_cell_days": 18114772,
+   "n_outside": 1052534,
+   "name": "fold2017_baseline",
+   "outside_by_channel": {
+    "E-1": 227640,
+    "E-2": 217305,
+    "E-3": 10357,
+    "E-4": 258103,
+    "P-1": 621056
+   },
+   "part": "TEST_CV",
+   "seed": 0,
+   "share": 0.05810362945777071,
+   "source": "main",
+   "train_days": 1080
+  },
+  {
+   "by_urban": {
+    "intermediate": {
+     "n_cell_days": 418106,
+     "n_outside": 49995,
+     "share": 0.11957494032613739
+    },
+    "rural": {
+     "n_cell_days": 17505020,
+     "n_outside": 977631,
+     "share": 0.05584860799930534
+    },
+    "urban": {
+     "n_cell_days": 191646,
+     "n_outside": 24908,
+     "share": 0.1299687966354633
+    }
+   },
+   "channels": [
+    "E-1",
+    "E-2",
+    "E-3",
+    "E-4",
+    "P-1"
+   ],
+   "fold": 2017,
+   "maps": [
+    "an02_fold2017_main_E1-E2-E3-E4-P1_min.npy",
+    "an02_fold2017_main_E1-E2-E3-E4-P1_max.npy"
+   ],
+   "model": "A3_F-6_TRUE",
+   "n_cell_days": 18114772,
+   "n_outside": 1052534,
+   "name": "t4_train2019_test2017_TRUE",
+   "outside_by_channel": {
+    "E-1": 227640,
+    "E-2": 217305,
+    "E-3": 10357,
+    "E-4": 258103,
+    "P-1": 621056
+   },
+   "part": "TEST_CV",
+   "seed": 0,
+   "share": 0.05810362945777071,
+   "source": "main",
+   "train_days": 1080
+  },
+  {
+   "by_urban": {
+    "intermediate": {
+     "n_cell_days": 418106,
+     "n_outside": 49995,
+     "share": 0.11957494032613739
+    },
+    "rural": {
+     "n_cell_days": 17505020,
+     "n_outside": 977631,
+     "share": 0.05584860799930534
+    },
+    "urban": {
+     "n_cell_days": 191646,
+     "n_outside": 24908,
+     "share": 0.1299687966354633
+    }
+   },
+   "channels": [
+    "E-1",
+    "E-2",
+    "E-3",
+    "E-4",
+    "P-1"
+   ],
+   "fold": 2017,
+   "maps": [
+    "an02_fold2017_main_E1-E2-E3-E4-P1_min.npy",
+    "an02_fold2017_main_E1-E2-E3-E4-P1_max.npy"
+   ],
+   "model": "A3_F-6_OTHER",
+   "n_cell_days": 18114772,
+   "n_outside": 1052534,
+   "name": "t4_train2019_test2017_OTHER",
+   "outside_by_channel": {
+    "E-1": 227640,
+    "E-2": 217305,
+    "E-3": 10357,
+    "E-4": 258103,
+    "P-1": 621056
+   },
+   "part": "TEST_CV",
+   "seed": 0,
+   "share": 0.05810362945777071,
+   "source": "main",
+   "train_days": 1080
+  },
+  {
+   "by_urban": {
+    "intermediate": {
+     "n_cell_days": 418106,
+     "n_outside": 49995,
+     "share": 0.11957494032613739
+    },
+    "rural": {
+     "n_cell_days": 17505020,
+     "n_outside": 977631,
+     "share": 0.05584860799930534
+    },
+    "urban": {
+     "n_cell_days": 191646,
+     "n_outside": 24908,
+     "share": 0.1299687966354633
+    }
+   },
+   "channels": [
+    "E-1",
+    "E-2",
+    "E-3",
+    "E-4",
+    "P-1"
+   ],
+   "fold": 2017,
+   "maps": [
+    "an02_fold2017_main_E1-E2-E3-E4-P1_min.npy",
+    "an02_fold2017_main_E1-E2-E3-E4-P1_max.npy"
+   ],
+   "model": "A3_F-6_OWN",
+   "n_cell_days": 18114772,
+   "n_outside": 1052534,
+   "name": "t4_train2019_test2017_OWN",
+   "outside_by_channel": {
+    "E-1": 227640,
+    "E-2": 217305,
+    "E-3": 10357,
+    "E-4": 258103,
+    "P-1": 621056
+   },
+   "part": "TEST_CV",
+   "seed": 0,
+   "share": 0.05810362945777071,
+   "source": "main",
+   "train_days": 1080
+  },
+  {
+   "by_urban": {
+    "intermediate": {
+     "n_cell_days": 418106,
+     "n_outside": 49995,
+     "share": 0.11957494032613739
+    },
+    "rural": {
+     "n_cell_days": 17505020,
+     "n_outside": 977631,
+     "share": 0.05584860799930534
+    },
+    "urban": {
+     "n_cell_days": 191646,
+     "n_outside": 24908,
+     "share": 0.1299687966354633
+    }
+   },
+   "channels": [
+    "E-1",
+    "E-2",
+    "E-3",
+    "E-4",
+    "P-1"
+   ],
+   "fold": 2017,
+   "maps": [
+    "an02_fold2017_main_E1-E2-E3-E4-P1_min.npy",
+    "an02_fold2017_main_E1-E2-E3-E4-P1_max.npy"
+   ],
+   "model": "PIX-R",
+   "n_cell_days": 18114772,
+   "n_outside": 1052534,
+   "name": "fold2017_PIXR",
+   "outside_by_channel": {
+    "E-1": 227640,
+    "E-2": 217305,
+    "E-3": 10357,
+    "E-4": 258103,
+    "P-1": 621056
+   },
+   "part": "TEST_CV",
+   "seed": 0,
+   "share": 0.05810362945777071,
+   "source": "main",
+   "train_days": 1080
+  },
+  {
+   "by_urban": {
+    "intermediate": {
+     "n_cell_days": 418106,
+     "n_outside": 0,
+     "share": 0.0
+    },
+    "rural": {
+     "n_cell_days": 17505020,
+     "n_outside": 0,
+     "share": 0.0
+    },
+    "urban": {
+     "n_cell_days": 191646,
+     "n_outside": 0,
+     "share": 0.0
+    }
+   },
+   "channels": [
+    "E-1",
+    "E-2",
+    "E-3",
+    "E-4",
+    "P-1"
+   ],
+   "fold": 2018,
+   "maps": [
+    "an02_fold2018_c7_E1-E2-E3-E4-P1_min.npy",
+    "an02_fold2018_c7_E1-E2-E3-E4-P1_max.npy"
+   ],
+   "mc7_check": {
+    "rule": "share 0 by construction",
+    "status": "PASS"
+   },
+   "model": "M-C7",
+   "n_cell_days": 18114772,
+   "n_outside": 0,
+   "name": "fold2018_MC7",
+   "outside_by_channel": {
+    "E-1": 0,
+    "E-2": 0,
+    "E-3": 0,
+    "E-4": 0,
+    "P-1": 0
+   },
+   "part": "TEST_CV",
+   "seed": 0,
+   "share": 0.0,
+   "source": "c7",
+   "train_days": 1081
+  },
+  {
+   "by_urban": {
+    "intermediate": {
+     "n_cell_days": 418106,
+     "n_outside": 359931,
+     "share": 0.8608606429948387
+    },
+    "rural": {
+     "n_cell_days": 17505020,
+     "n_outside": 3636400,
+     "share": 0.2077346955330528
+    },
+    "urban": {
+     "n_cell_days": 191646,
+     "n_outside": 186845,
+     "share": 0.9749486031537313
+    }
+   },
+   "channels": [
+    "E-1",
+    "E-2",
+    "E-3",
+    "E-4",
+    "P-1"
+   ],
+   "fold": 2018,
+   "maps": [
+    "an02_fold2018_main_E1-E2-E3-E4-P1_min.npy",
+    "an02_fold2018_main_E1-E2-E3-E4-P1_max.npy"
+   ],
+   "model": "M",
+   "n_cell_days": 18114772,
+   "n_outside": 4183176,
+   "name": "fold2018_M",
+   "outside_by_channel": {
+    "E-1": 247863,
+    "E-2": 202386,
+    "E-3": 82245,
+    "E-4": 3630593,
+    "P-1": 498530
+   },
+   "part": "TEST_CV",
+   "seed": 0,
+   "share": 0.2309262297091015,
+   "source": "main",
+   "train_days": 1081
+  },
+  {
+   "by_urban": {
+    "intermediate": {
+     "n_cell_days": 418106,
+     "n_outside": 359931,
+     "share": 0.8608606429948387
+    },
+    "rural": {
+     "n_cell_days": 17505020,
+     "n_outside": 3636400,
+     "share": 0.2077346955330528
+    },
+    "urban": {
+     "n_cell_days": 191646,
+     "n_outside": 186845,
+     "share": 0.9749486031537313
+    }
+   },
+   "channels": [
+    "E-1",
+    "E-2",
+    "E-3",
+    "E-4",
+    "P-1"
+   ],
+   "fold": 2018,
+   "maps": [
+    "an02_fold2018_main_E1-E2-E3-E4-P1_min.npy",
+    "an02_fold2018_main_E1-E2-E3-E4-P1_max.npy"
+   ],
+   "model": "P",
+   "n_cell_days": 18114772,
+   "n_outside": 4183176,
+   "name": "fold2018_baseline",
+   "outside_by_channel": {
+    "E-1": 247863,
+    "E-2": 202386,
+    "E-3": 82245,
+    "E-4": 3630593,
+    "P-1": 498530
+   },
+   "part": "TEST_CV",
+   "seed": 0,
+   "share": 0.2309262297091015,
+   "source": "main",
+   "train_days": 1081
+  },
+  {
+   "by_urban": {
+    "intermediate": {
+     "n_cell_days": 418106,
+     "n_outside": 359931,
+     "share": 0.8608606429948387
+    },
+    "rural": {
+     "n_cell_days": 17505020,
+     "n_outside": 3636400,
+     "share": 0.2077346955330528
+    },
+    "urban": {
+     "n_cell_days": 191646,
+     "n_outside": 186845,
+     "share": 0.9749486031537313
+    }
+   },
+   "channels": [
+    "E-1",
+    "E-2",
+    "E-3",
+    "E-4",
+    "P-1"
+   ],
+   "fold": 2018,
+   "maps": [
+    "an02_fold2018_main_E1-E2-E3-E4-P1_min.npy",
+    "an02_fold2018_main_E1-E2-E3-E4-P1_max.npy"
+   ],
+   "model": "PIX-R",
+   "n_cell_days": 18114772,
+   "n_outside": 4183176,
+   "name": "fold2018_PIXR",
+   "outside_by_channel": {
+    "E-1": 247863,
+    "E-2": 202386,
+    "E-3": 82245,
+    "E-4": 3630593,
+    "P-1": 498530
+   },
+   "part": "TEST_CV",
+   "seed": 0,
+   "share": 0.2309262297091015,
+   "source": "main",
+   "train_days": 1081
+  },
+  {
+   "by_urban": {
+    "intermediate": {
+     "n_cell_days": 413158,
+     "n_outside": 0,
+     "share": 0.0
+    },
+    "rural": {
+     "n_cell_days": 17297860,
+     "n_outside": 0,
+     "share": 0.0
+    },
+    "urban": {
+     "n_cell_days": 189378,
+     "n_outside": 0,
+     "share": 0.0
+    }
+   },
+   "channels": [
+    "E-1",
+    "E-2",
+    "E-3",
+    "E-4",
+    "P-1"
+   ],
+   "fold": 2019,
+   "maps": [
+    "an02_fold2019_c7_E1-E2-E3-E4-P1_min.npy",
+    "an02_fold2019_c7_E1-E2-E3-E4-P1_max.npy"
+   ],
+   "mc7_check": {
+    "rule": "share 0 by construction",
+    "status": "PASS"
+   },
+   "model": "M-C7",
+   "n_cell_days": 17900396,
+   "n_outside": 0,
+   "name": "fold2019_MC7",
+   "outside_by_channel": {
+    "E-1": 0,
+    "E-2": 0,
+    "E-3": 0,
+    "E-4": 0,
+    "P-1": 0
+   },
+   "part": "TEST_CV",
+   "seed": 0,
+   "share": 0.0,
+   "source": "c7",
+   "train_days": 1079
+  },
+  {
+   "by_urban": {
+    "intermediate": {
+     "n_cell_days": 413158,
+     "n_outside": 93349,
+     "share": 0.2259401972126886
+    },
+    "rural": {
+     "n_cell_days": 17297860,
+     "n_outside": 3561517,
+     "share": 0.20589350358946135
+    },
+    "urban": {
+     "n_cell_days": 189378,
+     "n_outside": 44742,
+     "share": 0.2362576434432722
+    }
+   },
+   "channels": [
+    "E-1",
+    "E-2",
+    "E-3",
+    "E-4",
+    "P-1"
+   ],
+   "fold": 2019,
+   "maps": [
+    "an02_fold2019_main_E1-E2-E3-E4-P1_min.npy",
+    "an02_fold2019_main_E1-E2-E3-E4-P1_max.npy"
+   ],
+   "model": "M",
+   "n_cell_days": 17900396,
+   "n_outside": 3699608,
+   "name": "fold2019_M",
+   "outside_by_channel": {
+    "E-1": 1193295,
+    "E-2": 1089089,
+    "E-3": 857172,
+    "E-4": 1897765,
+    "P-1": 962333
+   },
+   "part": "TEST_CV",
+   "seed": 0,
+   "share": 0.20667743886783288,
+   "source": "main",
+   "train_days": 1079
+  },
+  {
+   "by_urban": {
+    "intermediate": {
+     "n_cell_days": 413158,
+     "n_outside": 93349,
+     "share": 0.2259401972126886
+    },
+    "rural": {
+     "n_cell_days": 17297860,
+     "n_outside": 3561517,
+     "share": 0.20589350358946135
+    },
+    "urban": {
+     "n_cell_days": 189378,
+     "n_outside": 44742,
+     "share": 0.2362576434432722
+    }
+   },
+   "channels": [
+    "E-1",
+    "E-2",
+    "E-3",
+    "E-4",
+    "P-1"
+   ],
+   "fold": 2019,
+   "maps": [
+    "an02_fold2019_main_E1-E2-E3-E4-P1_min.npy",
+    "an02_fold2019_main_E1-E2-E3-E4-P1_max.npy"
+   ],
+   "model": "P",
+   "n_cell_days": 17900396,
+   "n_outside": 3699608,
+   "name": "fold2019_baseline",
+   "outside_by_channel": {
+    "E-1": 1193295,
+    "E-2": 1089089,
+    "E-3": 857172,
+    "E-4": 1897765,
+    "P-1": 962333
+   },
+   "part": "TEST_CV",
+   "seed": 0,
+   "share": 0.20667743886783288,
+   "source": "main",
+   "train_days": 1079
+  },
+  {
+   "by_urban": {
+    "intermediate": {
+     "n_cell_days": 413158,
+     "n_outside": 93349,
+     "share": 0.2259401972126886
+    },
+    "rural": {
+     "n_cell_days": 17297860,
+     "n_outside": 3561517,
+     "share": 0.20589350358946135
+    },
+    "urban": {
+     "n_cell_days": 189378,
+     "n_outside": 44742,
+     "share": 0.2362576434432722
+    }
+   },
+   "channels": [
+    "E-1",
+    "E-2",
+    "E-3",
+    "E-4",
+    "P-1"
+   ],
+   "fold": 2019,
+   "maps": [
+    "an02_fold2019_main_E1-E2-E3-E4-P1_min.npy",
+    "an02_fold2019_main_E1-E2-E3-E4-P1_max.npy"
+   ],
+   "model": "M",
+   "n_cell_days": 17900396,
+   "n_outside": 3699608,
+   "name": "fold2019_M_seed1000",
+   "outside_by_channel": {
+    "E-1": 1193295,
+    "E-2": 1089089,
+    "E-3": 857172,
+    "E-4": 1897765,
+    "P-1": 962333
+   },
+   "part": "TEST_CV",
+   "seed": 1,
+   "share": 0.20667743886783288,
+   "source": "main",
+   "train_days": 1079
+  },
+  {
+   "by_urban": {
+    "intermediate": {
+     "n_cell_days": 413158,
+     "n_outside": 93349,
+     "share": 0.2259401972126886
+    },
+    "rural": {
+     "n_cell_days": 17297860,
+     "n_outside": 3561517,
+     "share": 0.20589350358946135
+    },
+    "urban": {
+     "n_cell_days": 189378,
+     "n_outside": 44742,
+     "share": 0.2362576434432722
+    }
+   },
+   "channels": [
+    "E-1",
+    "E-2",
+    "E-3",
+    "E-4",
+    "P-1"
+   ],
+   "fold": 2019,
+   "maps": [
+    "an02_fold2019_main_E1-E2-E3-E4-P1_min.npy",
+    "an02_fold2019_main_E1-E2-E3-E4-P1_max.npy"
+   ],
+   "model": "M",
+   "n_cell_days": 17900396,
+   "n_outside": 3699608,
+   "name": "fold2019_M_seed2000",
+   "outside_by_channel": {
+    "E-1": 1193295,
+    "E-2": 1089089,
+    "E-3": 857172,
+    "E-4": 1897765,
+    "P-1": 962333
+   },
+   "part": "TEST_CV",
+   "seed": 2,
+   "share": 0.20667743886783288,
+   "source": "main",
+   "train_days": 1079
+  },
+  {
+   "by_urban": {
+    "intermediate": {
+     "n_cell_days": 413158,
+     "n_outside": 93349,
+     "share": 0.2259401972126886
+    },
+    "rural": {
+     "n_cell_days": 17297860,
+     "n_outside": 3561517,
+     "share": 0.20589350358946135
+    },
+    "urban": {
+     "n_cell_days": 189378,
+     "n_outside": 44742,
+     "share": 0.2362576434432722
+    }
+   },
+   "channels": [
+    "E-1",
+    "E-2",
+    "E-3",
+    "E-4",
+    "P-1"
+   ],
+   "fold": 2019,
+   "maps": [
+    "an02_fold2019_main_E1-E2-E3-E4-P1_min.npy",
+    "an02_fold2019_main_E1-E2-E3-E4-P1_max.npy"
+   ],
+   "model": "P",
+   "n_cell_days": 17900396,
+   "n_outside": 3699608,
+   "name": "fold2019_baseline_seed1000",
+   "outside_by_channel": {
+    "E-1": 1193295,
+    "E-2": 1089089,
+    "E-3": 857172,
+    "E-4": 1897765,
+    "P-1": 962333
+   },
+   "part": "TEST_CV",
+   "seed": 1,
+   "share": 0.20667743886783288,
+   "source": "main",
+   "train_days": 1079
+  },
+  {
+   "by_urban": {
+    "intermediate": {
+     "n_cell_days": 413158,
+     "n_outside": 93349,
+     "share": 0.2259401972126886
+    },
+    "rural": {
+     "n_cell_days": 17297860,
+     "n_outside": 3561517,
+     "share": 0.20589350358946135
+    },
+    "urban": {
+     "n_cell_days": 189378,
+     "n_outside": 44742,
+     "share": 0.2362576434432722
+    }
+   },
+   "channels": [
+    "E-1",
+    "E-2",
+    "E-3",
+    "E-4",
+    "P-1"
+   ],
+   "fold": 2019,
+   "maps": [
+    "an02_fold2019_main_E1-E2-E3-E4-P1_min.npy",
+    "an02_fold2019_main_E1-E2-E3-E4-P1_max.npy"
+   ],
+   "model": "A1",
+   "n_cell_days": 17900396,
+   "n_outside": 3699608,
+   "name": "fold2019_A1",
+   "outside_by_channel": {
+    "E-1": 1193295,
+    "E-2": 1089089,
+    "E-3": 857172,
+    "E-4": 1897765,
+    "P-1": 962333
+   },
+   "part": "TEST_CV",
+   "seed": 0,
+   "share": 0.20667743886783288,
+   "source": "main",
+   "train_days": 1079
+  },
+  {
+   "by_urban": {
+    "intermediate": {
+     "n_cell_days": 413158,
+     "n_outside": 93349,
+     "share": 0.2259401972126886
+    },
+    "rural": {
+     "n_cell_days": 17297860,
+     "n_outside": 3561517,
+     "share": 0.20589350358946135
+    },
+    "urban": {
+     "n_cell_days": 189378,
+     "n_outside": 44742,
+     "share": 0.2362576434432722
+    }
+   },
+   "channels": [
+    "E-1",
+    "E-2",
+    "E-3",
+    "E-4",
+    "P-1"
+   ],
+   "fold": 2019,
+   "maps": [
+    "an02_fold2019_main_E1-E2-E3-E4-P1_min.npy",
+    "an02_fold2019_main_E1-E2-E3-E4-P1_max.npy"
+   ],
+   "model": "A2",
+   "n_cell_days": 17900396,
+   "n_outside": 3699608,
+   "name": "fold2019_A2",
+   "outside_by_channel": {
+    "E-1": 1193295,
+    "E-2": 1089089,
+    "E-3": 857172,
+    "E-4": 1897765,
+    "P-1": 962333
+   },
+   "part": "TEST_CV",
+   "seed": 0,
+   "share": 0.20667743886783288,
+   "source": "main",
+   "train_days": 1079
+  },
+  {
+   "by_urban": {
+    "intermediate": {
+     "n_cell_days": 413158,
+     "n_outside": 93349,
+     "share": 0.2259401972126886
+    },
+    "rural": {
+     "n_cell_days": 17297860,
+     "n_outside": 3561517,
+     "share": 0.20589350358946135
+    },
+    "urban": {
+     "n_cell_days": 189378,
+     "n_outside": 44742,
+     "share": 0.2362576434432722
+    }
+   },
+   "channels": [
+    "E-1",
+    "E-2",
+    "E-3",
+    "E-4",
+    "P-1"
+   ],
+   "fold": 2019,
+   "maps": [
+    "an02_fold2019_main_E1-E2-E3-E4-P1_min.npy",
+    "an02_fold2019_main_E1-E2-E3-E4-P1_max.npy"
+   ],
+   "model": "A3",
+   "n_cell_days": 17900396,
+   "n_outside": 3699608,
+   "name": "fold2019_A3",
+   "outside_by_channel": {
+    "E-1": 1193295,
+    "E-2": 1089089,
+    "E-3": 857172,
+    "E-4": 1897765,
+    "P-1": 962333
+   },
+   "part": "TEST_CV",
+   "seed": 0,
+   "share": 0.20667743886783288,
+   "source": "main",
+   "train_days": 1079
+  },
+  {
+   "by_urban": {
+    "intermediate": {
+     "n_cell_days": 413158,
+     "n_outside": 93349,
+     "share": 0.2259401972126886
+    },
+    "rural": {
+     "n_cell_days": 17297860,
+     "n_outside": 3561517,
+     "share": 0.20589350358946135
+    },
+    "urban": {
+     "n_cell_days": 189378,
+     "n_outside": 44742,
+     "share": 0.2362576434432722
+    }
+   },
+   "channels": [
+    "E-1",
+    "E-2",
+    "E-3",
+    "E-4",
+    "P-1"
+   ],
+   "fold": 2019,
+   "maps": [
+    "an02_fold2019_main_E1-E2-E3-E4-P1_min.npy",
+    "an02_fold2019_main_E1-E2-E3-E4-P1_max.npy"
+   ],
+   "model": "PIX-R",
+   "n_cell_days": 17900396,
+   "n_outside": 3699608,
+   "name": "fold2019_PIXR",
+   "outside_by_channel": {
+    "E-1": 1193295,
+    "E-2": 1089089,
+    "E-3": 857172,
+    "E-4": 1897765,
+    "P-1": 962333
+   },
+   "part": "TEST_CV",
+   "seed": 0,
+   "share": 0.20667743886783288,
+   "source": "main",
+   "train_days": 1079
+  },
+  {
+   "by_urban": {
+    "intermediate": {
+     "n_cell_days": 413158,
+     "n_outside": 93349,
+     "share": 0.2259401972126886
+    },
+    "rural": {
+     "n_cell_days": 17297860,
+     "n_outside": 3561517,
+     "share": 0.20589350358946135
+    },
+    "urban": {
+     "n_cell_days": 189378,
+     "n_outside": 44742,
+     "share": 0.2362576434432722
+    }
+   },
+   "channels": [
+    "E-1",
+    "E-2",
+    "E-3",
+    "E-4",
+    "P-1"
+   ],
+   "fold": 2019,
+   "maps": [
+    "an02_fold2019_main_E1-E2-E3-E4-P1_min.npy",
+    "an02_fold2019_main_E1-E2-E3-E4-P1_max.npy"
+   ],
+   "model": "A4",
+   "n_cell_days": 17900396,
+   "n_outside": 3699608,
+   "name": "fold2019_A4",
+   "outside_by_channel": {
+    "E-1": 1193295,
+    "E-2": 1089089,
+    "E-3": 857172,
+    "E-4": 1897765,
+    "P-1": 962333
+   },
+   "part": "TEST_CV",
+   "seed": 0,
+   "share": 0.20667743886783288,
+   "source": "main",
+   "train_days": 1079
+  },
+  {
+   "by_urban": {
+    "intermediate": {
+     "n_cell_days": 413158,
+     "n_outside": 93349,
+     "share": 0.2259401972126886
+    },
+    "rural": {
+     "n_cell_days": 17297860,
+     "n_outside": 3561517,
+     "share": 0.20589350358946135
+    },
+    "urban": {
+     "n_cell_days": 189378,
+     "n_outside": 44742,
+     "share": 0.2362576434432722
+    }
+   },
+   "channels": [
+    "E-1",
+    "E-2",
+    "E-3",
+    "E-4",
+    "P-1"
+   ],
+   "fold": 2019,
+   "maps": [
+    "an02_fold2019_main_E1-E2-E3-E4-P1_min.npy",
+    "an02_fold2019_main_E1-E2-E3-E4-P1_max.npy"
+   ],
+   "model": "M",
+   "n_cell_days": 17900396,
+   "n_outside": 3699608,
+   "name": "fold2019_M_seed3000",
+   "outside_by_channel": {
+    "E-1": 1193295,
+    "E-2": 1089089,
+    "E-3": 857172,
+    "E-4": 1897765,
+    "P-1": 962333
+   },
+   "part": "TEST_CV",
+   "seed": 3,
+   "share": 0.20667743886783288,
+   "source": "main",
+   "train_days": 1079
+  },
+  {
+   "by_urban": {
+    "intermediate": {
+     "n_cell_days": 413158,
+     "n_outside": 93349,
+     "share": 0.2259401972126886
+    },
+    "rural": {
+     "n_cell_days": 17297860,
+     "n_outside": 3561517,
+     "share": 0.20589350358946135
+    },
+    "urban": {
+     "n_cell_days": 189378,
+     "n_outside": 44742,
+     "share": 0.2362576434432722
+    }
+   },
+   "channels": [
+    "E-1",
+    "E-2",
+    "E-3",
+    "E-4",
+    "P-1"
+   ],
+   "fold": 2019,
+   "maps": [
+    "an02_fold2019_main_E1-E2-E3-E4-P1_min.npy",
+    "an02_fold2019_main_E1-E2-E3-E4-P1_max.npy"
+   ],
+   "model": "M",
+   "n_cell_days": 17900396,
+   "n_outside": 3699608,
+   "name": "fold2019_M_seed4000",
+   "outside_by_channel": {
+    "E-1": 1193295,
+    "E-2": 1089089,
+    "E-3": 857172,
+    "E-4": 1897765,
+    "P-1": 962333
+   },
+   "part": "TEST_CV",
+   "seed": 4,
+   "share": 0.20667743886783288,
+   "source": "main",
+   "train_days": 1079
+  },
+  {
+   "by_urban": {
+    "intermediate": {
+     "n_cell_days": 413158,
+     "n_outside": 93349,
+     "share": 0.2259401972126886
+    },
+    "rural": {
+     "n_cell_days": 17297860,
+     "n_outside": 3561517,
+     "share": 0.20589350358946135
+    },
+    "urban": {
+     "n_cell_days": 189378,
+     "n_outside": 44742,
+     "share": 0.2362576434432722
+    }
+   },
+   "channels": [
+    "E-1",
+    "E-2",
+    "E-3",
+    "E-4",
+    "P-1"
+   ],
+   "fold": 2019,
+   "maps": [
+    "an02_fold2019_main_E1-E2-E3-E4-P1_min.npy",
+    "an02_fold2019_main_E1-E2-E3-E4-P1_max.npy"
+   ],
+   "model": "P",
+   "n_cell_days": 17900396,
+   "n_outside": 3699608,
+   "name": "fold2019_baseline_seed2000",
+   "outside_by_channel": {
+    "E-1": 1193295,
+    "E-2": 1089089,
+    "E-3": 857172,
+    "E-4": 1897765,
+    "P-1": 962333
+   },
+   "part": "TEST_CV",
+   "seed": 2,
+   "share": 0.20667743886783288,
+   "source": "main",
+   "train_days": 1079
+  },
+  {
+   "by_urban": {
+    "intermediate": {
+     "n_cell_days": 413158,
+     "n_outside": 93349,
+     "share": 0.2259401972126886
+    },
+    "rural": {
+     "n_cell_days": 17297860,
+     "n_outside": 3561517,
+     "share": 0.20589350358946135
+    },
+    "urban": {
+     "n_cell_days": 189378,
+     "n_outside": 44742,
+     "share": 0.2362576434432722
+    }
+   },
+   "channels": [
+    "E-1",
+    "E-2",
+    "E-3",
+    "E-4",
+    "P-1"
+   ],
+   "fold": 2019,
+   "maps": [
+    "an02_fold2019_main_E1-E2-E3-E4-P1_min.npy",
+    "an02_fold2019_main_E1-E2-E3-E4-P1_max.npy"
+   ],
+   "model": "A3_F-6_TRUE",
+   "n_cell_days": 17900396,
+   "n_outside": 3699608,
+   "name": "t4_train2017_test2019_TRUE",
+   "outside_by_channel": {
+    "E-1": 1193295,
+    "E-2": 1089089,
+    "E-3": 857172,
+    "E-4": 1897765,
+    "P-1": 962333
+   },
+   "part": "TEST_CV",
+   "seed": 0,
+   "share": 0.20667743886783288,
+   "source": "main",
+   "train_days": 1079
+  },
+  {
+   "by_urban": {
+    "intermediate": {
+     "n_cell_days": 413158,
+     "n_outside": 93349,
+     "share": 0.2259401972126886
+    },
+    "rural": {
+     "n_cell_days": 17297860,
+     "n_outside": 3561517,
+     "share": 0.20589350358946135
+    },
+    "urban": {
+     "n_cell_days": 189378,
+     "n_outside": 44742,
+     "share": 0.2362576434432722
+    }
+   },
+   "channels": [
+    "E-1",
+    "E-2",
+    "E-3",
+    "E-4",
+    "P-1"
+   ],
+   "fold": 2019,
+   "maps": [
+    "an02_fold2019_main_E1-E2-E3-E4-P1_min.npy",
+    "an02_fold2019_main_E1-E2-E3-E4-P1_max.npy"
+   ],
+   "model": "A3_F-6_OTHER",
+   "n_cell_days": 17900396,
+   "n_outside": 3699608,
+   "name": "t4_train2017_test2019_OTHER",
+   "outside_by_channel": {
+    "E-1": 1193295,
+    "E-2": 1089089,
+    "E-3": 857172,
+    "E-4": 1897765,
+    "P-1": 962333
+   },
+   "part": "TEST_CV",
+   "seed": 0,
+   "share": 0.20667743886783288,
+   "source": "main",
+   "train_days": 1079
+  },
+  {
+   "by_urban": {
+    "intermediate": {
+     "n_cell_days": 413158,
+     "n_outside": 93349,
+     "share": 0.2259401972126886
+    },
+    "rural": {
+     "n_cell_days": 17297860,
+     "n_outside": 3561517,
+     "share": 0.20589350358946135
+    },
+    "urban": {
+     "n_cell_days": 189378,
+     "n_outside": 44742,
+     "share": 0.2362576434432722
+    }
+   },
+   "channels": [
+    "E-1",
+    "E-2",
+    "E-3",
+    "E-4",
+    "P-1"
+   ],
+   "fold": 2019,
+   "maps": [
+    "an02_fold2019_main_E1-E2-E3-E4-P1_min.npy",
+    "an02_fold2019_main_E1-E2-E3-E4-P1_max.npy"
+   ],
+   "model": "A3_F-6_OWN",
+   "n_cell_days": 17900396,
+   "n_outside": 3699608,
+   "name": "t4_train2017_test2019_OWN",
+   "outside_by_channel": {
+    "E-1": 1193295,
+    "E-2": 1089089,
+    "E-3": 857172,
+    "E-4": 1897765,
+    "P-1": 962333
+   },
+   "part": "TEST_CV",
+   "seed": 0,
+   "share": 0.20667743886783288,
+   "source": "main",
+   "train_days": 1079
+  }
+ ],
+ "source": "the study design"
+}
