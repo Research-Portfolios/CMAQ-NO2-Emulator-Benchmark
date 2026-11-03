@@ -66,7 +66,7 @@ The scripts above import these modules.
 | `build_port_fig_A_F7.py` | The drawing part of figure fig_A_F7: the shares as markers for all land cells and each urban class, with a strip of gray tiles that gives each share in percent. |
 | `build_port_fig_F2S.py` | The drawing part of figure fig_F2S: the two-way histograms of per-cell means on log axes with the 1:1 line, the cumulative curves of the differences, and their binned percentiles. |
 | `build_port_fig_F3.py` | The drawing parts of figures fig_F3 and fig_A_F1: the city panels of daily series, the month labels and one key. |
-| `build_port_fig_F5.py` | The drawing part of figure fig_F5: the skill scores of nine models, the seeds of the two U-Nets, RMSE by held-out year, and mean error against unbiased RMSE (the square root of RMSE squared minus mean error squared) for four models. |
+| `build_port_fig_F5.py` | The drawing part of figure fig_F5: the skill scores of nine models, the seeds of the two U-Nets, RMSE by held-out year, and mean error against centered RMSE (the square root of RMSE squared minus mean error squared) for four models. |
 | `build_port_fig_F6.py` | The drawing part of figure fig_F6: the five-year mean error by CMAQ decile with each U-Net's range over the years, CMAQ's decile bounds on the top axis, and the top decile of each held-out year. |
 | `build_style.py` | The shared style of every figure: one sans-serif family at 7 and 8 pt, the colors, the panel letters, the text and layout checks, and the saving of a vector PDF, a 300 dpi PNG and the plotted values beside each figure. |
 | `figure_style.py` | The font choice of the figure style: finds the installed font families and resolves the sans-serif family that the figures use. |

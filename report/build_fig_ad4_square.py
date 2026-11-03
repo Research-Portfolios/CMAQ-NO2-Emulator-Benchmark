@@ -1,4 +1,4 @@
-"""Draws figure fig_ad4_square: the two-by-two of target form (direct or climatology residual) and training length, with the RMSE change along each side and the interaction with its interval."""
+"""Draws figure fig_ad4_square: the two-by-two of target and climatology input together (direct without the input, or the climatology residual with it) and training length, with the RMSE change along each side and the interaction with its interval."""
 import json
 import os
 import sys
@@ -89,7 +89,7 @@ def main():
     C.setup()
     W = 6.5
     YLEV = ['Direct', 'Departure']
-    YTITLE = 'Target'
+    YTITLE = 'Target and climatology input'
     mf = S.plt.figure(figsize=(W, 2.0))
     rr = mf.canvas.get_renderer()
     wlab = max((mf.text(0, 0, s, fontsize=S.FS_TICK).get_window_extent(rr).width for s in YLEV)) / mf.dpi
@@ -181,9 +181,9 @@ def main():
     print('text_check pass', tc['pass'], tc['overlaps'], tc['within_0.08in_of_edge'], 'fig', tc['figure_in'])
     print('nv', nv)
     S.save(fig, STEM, plotted, [src, NUMBERS, F8, TAB])
-    cap = '\\textbf{RMSE (ppb) of modeled daily mean surface NO$_2$ against CMAQ of four networks in a two-by-two design of target (direct, or the departure from the weekday climatology) and training length (%s or %s steps), 2016 (a) and 2019 (b) held out, contiguous US land cells.} The corners are step 2, step 3 (step 2 with the residual target and the climatology input), step 2 trained for 16,000 steps and the residual U-Net (vermilion), each with its RMSE. The number beside each arrow is the RMSE at its tail minus that at its head, from the unrounded values. The center shows the interaction, the gain from the target change at 16,000 steps (step 2 trained for 16,000 steps minus the residual U-Net) minus its gain at 6,000 steps (step 2 minus step 3), as a dot with its unadjusted 95 percent interval. The black line marks zero difference, and an interval narrower than its dot is hidden by the dot. Seed 0; values as in Table~\\ref{tab:alltrain} and Figure~\\ref{fig:AF8}. The figure was not specified in advance; the values it shows were. The interaction was expected in advance to be negative.' % (nb['rec.steps.p']['text'].replace(',', '{,}'), nb['rec.steps.m']['text'].replace(',', '{,}'))
-    alt = 'Two-by-two diagrams of target and training length with the RMSE of four networks, 2016 and 2019.'
-    parts = ['Two square panels, 2016 and 2019 held out. Horizontal: training length, 6,000 and 16,000 steps; vertical: target, direct and departure from climatology.']
+    cap = '\\textbf{RMSE (ppb) of modeled daily mean surface NO$_2$ against CMAQ of four networks in a two-by-two design of target and climatology input together (a direct target without the climatology input, or the departure from the weekday climatology with it), and training length (%s or %s steps), 2016 (a) and 2019 (b) held out, contiguous US land cells.} The corners are step 2, step 3 (step 2 with the residual target and the climatology input), step 2 trained for 16,000 steps and the residual U-Net (vermilion), each with its RMSE. The number beside each arrow is the RMSE at its tail minus that at its head, from the unrounded values. The center shows the interaction, the gain from the change of target and climatology input at 16,000 steps (step 2 trained for 16,000 steps minus the residual U-Net) minus its gain at 6,000 steps (step 2 minus step 3), as a dot with its unadjusted 95 percent interval. The black line marks zero difference, and an interval narrower than its dot is hidden by the dot. Seed 0; values as in Table~\\ref{tab:alltrain} and Figure~\\ref{fig:AF8}. The figure was not specified in advance; the values it shows were. The interaction was expected in advance to be negative.' % (nb['rec.steps.p']['text'].replace(',', '{,}'), nb['rec.steps.m']['text'].replace(',', '{,}'))
+    alt = 'Two-by-two diagrams of target and climatology input together, and training length: RMSE of four networks, 2016 and 2019.'
+    parts = ['Two square panels, 2016 and 2019 held out. Horizontal: training length, 6,000 and 16,000 steps; vertical: target and climatology input, direct (without the climatology input) and departure from climatology (with it).']
     for y in YEARS:
         parts.append('%d: step 2 %s, step 3 %s, step 2 at 16,000 steps %s, residual U-Net %s ppb; interaction %s ppb (95 percent interval %s to %s).' % (y, tr[PLAIN_TAB['A2'], y], tr[PLAIN_TAB['A3'], y], tr[PLAIN_TAB['A4'], y], tr[PLAIN_TAB['M'], y], inter[y]['printed'].replace('\\textminus{}', 'minus '), nb['lad.int.%d.lo' % y]['text'].replace('\\textminus{}', 'minus '), nb['lad.int.%d.hi' % y]['text'].replace('\\textminus{}', 'minus ')))
     C.write_text(STEM, cap, alt, '\n'.join(parts))

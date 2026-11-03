@@ -36,7 +36,7 @@ def draw(data, models, row_label, bands, band_name, colour, marker, open_, lim):
     rowlab = {m: row_label[m] for m in models}
     prof = [m for m in models if m not in open_]
     kord = list(prof)
-    L0 = 1.18
+    L0 = 1.8
     R0 = 0.14
     gut = (S.GUTTER_PT + 3.1) / 72.0
     pw = (W - L0 - R0 - 3 * gut) / 4.0

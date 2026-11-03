@@ -1,4 +1,4 @@
-"""The drawing part of figure fig_F5: the skill scores of nine models, the seeds of the two U-Nets, RMSE by held-out year, and mean error against unbiased RMSE (the square root of RMSE squared minus mean error squared) for four models."""
+"""The drawing part of figure fig_F5: the skill scores of nine models, the seeds of the two U-Nets, RMSE by held-out year, and mean error against centered RMSE (the square root of RMSE squared minus mean error squared) for four models."""
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.lines import Line2D
@@ -77,7 +77,7 @@ def draw(plotted, pts):
     allub = [v for m in D4 for v in ub[m]]
     allmb = [v for m in D4 for v in mb[m]]
     if min(allub) < X0 + 0.02 or max(allub) > X1 - 0.02:
-        raise SystemExit("STOP: (d)'s unbiased RMSE outside its axis")
+        raise SystemExit("STOP: (d)'s centered RMSE outside its axis")
     Y0 = np.floor((min(allmb) - 0.02) / 0.05) * 0.05
     Y1 = np.ceil((max(allmb) + 0.03) / 0.05) * 0.05
     fig = plt.figure(figsize=(W, 8.0))
@@ -211,10 +211,10 @@ def draw(plotted, pts):
     yt = np.round(np.arange(np.ceil(Y0 / 0.1) * 0.1, Y1 + 1e-09, 0.1), 1)
     dx.set_yticks(yt)
     dx.set_yticklabels([('%.1f' % t).replace('-', S.MINUS) if abs(t) > 1e-09 else '0' for t in yt])
-    dx.set_xlabel('Unbiased RMSE (ppb)')
+    dx.set_xlabel('Centered RMSE (ppb)')
     dx.set_ylabel('Mean error (ppb)')
     FC.frame(dx)
-    FC.tag(dx, 'd', 'Mean error and unbiased RMSE', gap_pt=FC.title_gap_over(dx))
+    FC.tag(dx, 'd', 'Mean error and centered RMSE', gap_pt=FC.title_gap_over(dx))
     fig.canvas.draw()
     r = fig.canvas.get_renderer()
     E = {k: _ext(fig, a_, r) for k, a_ in (('a', ax), ('b', bx), ('c', cx), ('d', dx))}

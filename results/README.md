@@ -52,7 +52,7 @@ The NumPy arrays (`.npy`) are named by kind, held-out year (fold), model and see
 
 ## report/
 
-`numbers.json` holds every number the report prints, by key, with its printed text and its value; `numbers.tex` holds the same as LaTeX definitions. The figure scripts read them to check that each value they draw or write in a caption equals the report's.
+`numbers.json` is the report's record of numbers, by key, each with its printed text and its value. The report's text reads part of this record, and some values are written directly in the text. `numbers.tex` holds the printed texts as LaTeX definitions, under the same keys. Some of the figure scripts read these files, to take a value from the record or to check one against it.
 
 ## published/
 
@@ -62,5 +62,5 @@ The NumPy arrays (`.npy`) are named by kind, held-out year (fold), model and see
 
 `EQUATES_Data_Use_Policy.pdf` is EPA's EQUATES Data Use Policy Statement, which asks that a copy of the policy accompany the data passed on, and that published material cite the datasets (DOI 10.15139/S3/F2KJSK) and the emissions data (Foley et al., 2023); they are cited here as follows.
 
-- U.S. Environmental Protection Agency (U.S. EPA) (2021). EQUATES CMAQv5.3.2 output (version 1.0) [data file and documentation]. <https://doi.org/10.15139/S3/F2KJSK>. Accessed 24 October 2026 through EPA's Remote Sensing Information Gateway and the CMAS Data Warehouse (Amazon Web Services and Google Drive).
+- U.S. Environmental Protection Agency (U.S. EPA) (2021). EQUATES CMAQv5.3.2 output (version 1.0) [data file and documentation]. <https://doi.org/10.15139/S3/F2KJSK>. Accessed 24 October 2026 through EPA's Remote Sensing Information Gateway and the CMAS Data Warehouse (Amazon Web Services, <https://registry.opendata.aws/cmas-data-warehouse>, and Google Drive).
 - Foley, K. M., Pouliot, G. A., Eyth, A., Aldridge, M. F., Allen, C., Appel, K. W., Bash, J. O., Beardsley, M., Beidler, J., Choi, D., Farkas, C., Gilliam, R. C., Godfrey, J., Henderson, B. H., Hogrefe, C., Koplitz, S. N., Mason, R., Mathur, R., Misenis, C., Possiel, N., Pye, H. O. T., Reynolds, L., Roark, M., Roberts, S., Schwede, D. B., Seltzer, K. M., Sonntag, D., Talgo, K., Toro, C., Vukovich, J., Xing, J., Adams, E. (2023). 2002&ndash;2017 anthropogenic emissions data for air quality modeling over the United States. *Data in Brief* 47, 109022. <https://doi.org/10.1016/j.dib.2023.109022>

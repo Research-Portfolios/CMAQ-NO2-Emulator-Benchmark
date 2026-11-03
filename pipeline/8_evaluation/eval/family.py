@@ -1,4 +1,4 @@
-"""The four comparisons fixed in advance, C-1 to C-4: a seeded paired moving-block bootstrap of whole test days within each year, statistics from per-day sums, percentile intervals, Holm's step-down procedure with the margins, the seed rule, the 14-day sensitivity, the exploratory intervals and the held-back-day replication."""
+"""The four comparisons fixed in advance, C-1 to C-4: a seeded paired moving-block bootstrap of whole test days within each year, statistics from per-day sums, percentile intervals, Holm's step-down procedure with the margins, the seed rule, the 14-day sensitivity, the exploratory intervals and the further check on the held-back days."""
 import math
 import numpy as np
 SEED = 20261016
